@@ -1,0 +1,254 @@
+div.container
+{
+   background-image: url(https://drive.google.com/file/d/1W8s1UMGQLwwfTZe2PalSlmWcKZWG8IQq/view?usp=drive_link);
+   background-repeat: no-repeat;
+}
+
+/*    CHARACTER CSS     */
+
+input.Character_name
+{
+   position : fixed;
+   left     : 50px;
+   top      : 156px;
+   width    : 241px;
+}
+
+input.Character_level
+{
+   position : fixed;
+   left     : 300px;
+   top      : 156px;
+   width    : 50px;
+}
+
+input.Character_XP
+{
+   position : fixed;
+   left     : ;
+   top      : ;
+   width    : ;
+}
+
+/*    STATS CSS         */
+
+input.Stats_STR
+{
+   position : fixed;
+   left     : 65px;
+   top      : 264px;
+   width    : 32px;
+}
+
+input.Stats_DEX
+{
+   position : fixed;
+   left     : 141px;
+   top      : 264px;
+   width    : 32px;
+}
+
+input.Stats_CON
+{
+   position : fixed;
+   left     : 217px;
+   top      : 264px;
+   width    : 32px;
+}
+
+input.Stats_WIL
+{
+   position : fixed;
+   left     : 293px;
+   top      : 264px;
+   width    : 32px;
+}
+
+input.Stats_INT
+{
+   position : fixed;
+   left     : 369px;
+   top      : 264px;
+   width    : 32px;
+}
+
+input.Stats_CHA
+{
+   position : fixed;
+   left     : 445px;
+   top      : 264px;
+   width    : 32px;
+}
+
+/*    STRESS CSS        */
+
+input.Stress_StrLevel
+{
+   position : fixed;
+   left     : 57px;
+   top      : 347px;
+   width    : 38px;
+}
+
+input.Stress_NervTic
+{
+   position : fixed;
+   left     : 115px;
+   top      : 355px;
+   width    : 188px;
+}
+
+input.Stress_ObsNegTrait
+{
+   position : fixed;
+   left     : 57px;
+   top      : 404px;
+   width    : 246px;
+   height   : 100px;
+}
+
+/*    SKILL CSS         */
+
+input.Skill_ArTech
+{
+   position : fixed;
+   left     : 548px;
+   top      : 102px;
+   width    : 24px;
+   height   : 24px;
+}
+
+input.Skill_ClComb
+{
+   position : fixed;
+   left     : 548px;
+   top      : 137px;
+   width    : 24px;
+   height   : 24px;
+}
+
+input.Skill_Percept
+{
+   position : fixed;
+   left     : 548px;
+   top      : 172px;
+   width    : 24px;
+   height   : 24px;
+}
+
+input.Skill_Manipul
+{
+   position : fixed;
+   left     : 548px;
+   top      : 207px;
+   width    : 24px;
+   height   : 24px;
+}
+
+input.Skill_MedAid
+{
+   position : fixed;
+   left     : 548px;
+   top      : 242px;
+   width    : 24px;
+   height   : 24px;
+}
+
+input.Skill_Pilot
+{
+   position : fixed;
+   left     : 548px;
+   top      : 277px;
+   width    : 24px;
+   height   : 24px;
+}
+
+input.Skill_RaComb
+{
+   position : fixed;
+   left     : 548px;
+   top      : 312px;
+   width    : 24px;
+   height   : 24px;
+}
+
+input.Skill_Resolve
+{
+   position : fixed;
+   left     : 548px;
+   top      : 347px;
+   width    : 24px;
+   height   : 24px;
+}
+
+input.Skill_Science
+{
+   position : fixed;
+   left     : 548px;
+   top      : 382px;
+   width    : 24px;
+   height   : 24px;
+}
+
+input.Skill_Stealth
+{
+   position : fixed;
+   left     : 548px;
+   top      : 417px;
+   width    : 24px;
+   height   : 24px;
+}
+
+input.Skill_Survival
+{
+   position : fixed;
+   left     : 548px;
+   top      : 452px;
+   width    : 24px;
+   height   : 24px;
+}
+
+input.Skill_Techno
+{
+   position : fixed;
+   left     : 548px;
+   top      : 487px;
+   width    : 24px;
+   height   : 24px;
+}
+
+input.Talent_0
+{
+   position : fixed;
+   left     : 848px;
+   top      : 215px;
+   width    : 202px;
+   height   : 25px;
+}
+
+input.Talent_1
+{
+   position : fixed;
+   left     : 848px;
+   top      : 251px;
+   width    : 202px;
+   height   : 25px;
+}
+
+input.Talent_2
+{
+   position : fixed;
+   left     : 848px;
+   top      : 287px;
+   width    : 202px;
+   height   : 25px;
+}
+
+input.Talent_3
+{
+   position : fixed;
+   left     : 848px;
+   top      : 323px;
+   width    : 202px;
+   height   : 25px;
+}
