@@ -1,0 +1,37 @@
+/*Configure the tab buttons*/
+.charsheet .sheet-character,
+.charsheet .sheet-config,
+.charsheet .sheet-journal {
+    display: none;
+}
+
+/* show the selected tab */
+.charsheet .sheet-tabstoggle[value="character"] ~ div.sheet-character,
+.charsheet .sheet-tabstoggle[value="configuration"] ~ div.sheet-config,
+.charsheet .sheet-tabstoggle[value="journal"] ~ div.sheet-journal {
+    display: block;
+}
+
+div.sheet-character
+{
+   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Character_sheet_0.png');
+   background-repeat			: no-repeat;
+   background-attachment	: fixed;
+	background-size			: 1135px 804px;
+	height						: 804px;
+	width							: 1135px;
+	top							: 0px;
+	left							: 0px;
+}
+
+div.sheet-config
+{
+   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Character_sheet_1.png');
+   background-repeat			: no-repeat;
+   background-attachment	: fixed;
+	background-size			: 1135px 804px;
+	height						: 804px;
+	width							: 1135px;
+	top							: 0px;
+	left							: 0px;
+}

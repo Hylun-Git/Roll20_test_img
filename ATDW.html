@@ -1,37 +1,142 @@
-<div class="container">
-   <div>
-      <!-- <img src="https://drive.google.com/file/d/1W8s1UMGQLwwfTZe2PalSlmWcKZWG8IQq/view?usp=drive_link"> -->
-      <input class="Character_name" type="text" name="attr_name" value="">
-      <input class="Character_level" type="text" name="attr_level" value="1">
-      
-      <input class="Stats_STR" type="text" name="attr_Stats_STR" value="8">
-      <input class="Stats_DEX" type="text" name="attr_Stats_DEX" value="8">
-      <input class="Stats_CON" type="text" name="attr_Stats_CON" value="8">
-      <input class="Stats_WIL" type="text" name="attr_Stats_WIL" value="8">
-      <input class="Stats_INT" type="text" name="attr_Stats_INT" value="8">
-      <input class="Stats_CHA" type="text" name="attr_Stats_CHA" value="8">
-      
-      <input class="Stress_StrLevel" type="text" name="attr_Stress_StrLevel" value="0">
-      <input class="Stress_NervTic" type="text" name="attr_Stress_NervTic" value="">
-      <textarea class="Stress_ObsNegTrait" name="attr_Stress_ObsNegTrait"></textarea>
-      <!-- <input class="Stress_ObsNegTrait" type="text" name="attr_Stress_ObsNegTrait" value=""> -->
-      
-      <input class="Skill_ArTech" type="text" name="attr_Skill_ArTech" value="-5">
-      <input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
-      <input class="Skill_Percept" type="text" name="attr_Skill_Percept" value="0">
-      <input class="Skill_Manipul" type="text" name="attr_Skill_Manipul" value="0">
-      <input class="Skill_MedAid" type="text" name="attr_Skill_MedAid" value="0">
-      <input class="Skill_Pilot" type="text" name="attr_Skill_Pilot" value="0">
-      <input class="Skill_RaComb" type="text" name="attr_Skill_RaComb" value="0">
-      <input class="Skill_Resolve" type="text" name="attr_Skill_Resolve" value="0">
-      <input class="Skill_Science" type="text" name="attr_Skill_Science" value="0">
-      <input class="Skill_Stealth" type="text" name="attr_Skill_Stealth" value="0">
-      <input class="Skill_Survival" type="text" name="attr_Skill_Survival" value="0">
-      <input class="Skill_Techno" type="text" name="attr_Skill_Techno" value="0">
-      
-      <input class="Talent_0" type="text" name="attr_Talent_0" value="">
-      <input class="Talent_1" type="text" name="attr_Talent_1" value="">
-      <input class="Talent_2" type="text" name="attr_Talent_2" value="">
-      <input class="Talent_3" type="text" name="attr_Talent_3" value="">
-   </div>
+<input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab"  value="character"  />
+<div>
+    <button type="action" name="act_character">Character</button>
+    <button type="action" name="act_backpack">Backpack</button>
 </div>
+
+<div class="sheet-character">
+	<!-- <img src="https://github.com/Roll20/roll20-character-sheets/blob/master/Feast_of_Legends/images/FoLborder.jpg?raw=true"> -->
+	<input class="Character_name" type="text" name="attr_name" value="">
+	<input class="Character_level" type="text" name="attr_level" value="1">
+	
+	<input class="Stats_STR" type="text" name="attr_Stats_STR" value="8">
+	<button type="roll" class="Roll_STR" name="roll_attack" value="/roll 1d20+@{Stats_STR}"></button>
+	
+	<input class="Stats_DEX" type="text" name="attr_Stats_DEX" value="8">
+	<button type="roll" class="Roll_DEX" name="roll_attack" value="/roll 1d20+@{Stats_DEX}"></button>
+	
+	<input class="Stats_CON" type="text" name="attr_Stats_CON" value="8">
+	<button type="roll" class="Roll_CON" name="roll_attack" value="/roll 1d20+@{Stats_CON}"></button>
+	
+	<input class="Stats_WIL" type="text" name="attr_Stats_WIL" value="8">
+	<button type="roll" class="Roll_WIL" name="roll_attack" value="/roll 1d20+@{Stats_WIL}"></button>
+	
+	<input class="Stats_INT" type="text" name="attr_Stats_INT" value="8">
+	<button type="roll" class="Roll_INT" name="roll_attack" value="/roll 1d20+@{Stats_INT}"></button>
+	
+	<input class="Stats_CHA" type="text" name="attr_Stats_CHA" value="8">
+	<button type="roll" class="Roll_CHA" name="roll_attack" value="/roll 1d20+@{Stats_CHA}"></button>
+
+	<input class="Stress_StrLevel" type="text" name="attr_Stress_StrLevel" value="0">
+	<input class="Stress_NervTic" type="text" name="attr_Stress_NervTic" value="">
+	<!-- <textarea class="Stress_ObsNegTrait" name="attr_Stress_ObsNegTrait"></textarea> -->
+	<!-- <input class="Stress_ObsNegTrait" type="text" name="attr_Stress_ObsNegTrait" value=""> -->
+	
+	<input class="Stamina" type="text" name="attr_Stamina" value="0">
+	<input class="Trauma" type="text" name="attr_Trauma" value="0">
+	<input class="Luck" type="text" name="attr_Luck" value="0">
+	<input class="Armor" type="text" name="attr_Armor" value="0">
+	<input class="Rads" type="text" name="attr_Rads" value="0">
+	<input class="Wounds" type="text" name="attr_Wounds" value="0">
+
+	<input class="Skill_ArTech" type="text" name="attr_Skill_ArTech" value="-5">
+	<button type="roll" class="Roll_ArTech" name="roll_attack" value="/roll 1d20+@{Skill_ArTech}"></button>
+
+	<input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
+	<button type="roll" class="Roll_ClComb" name="roll_attack" value="/roll 1d20+@{Skill_ClComb}"></button>
+
+	<input class="Skill_Percept" type="text" name="attr_Skill_Percept" value="0">
+	<button type="roll" class="Roll_Percept" name="roll_attack" value="/roll 1d20+@{Skill_Percept}"></button>
+
+	<input class="Skill_Manipul" type="text" name="attr_Skill_Manipul" value="0">
+	<button type="roll" class="Roll_Manipul" name="roll_attack" value="/roll 1d20+@{Skill_Manipul}"></button>
+
+	<input class="Skill_MedAid" type="text" name="attr_Skill_MedAid" value="0">
+	<button type="roll" class="Roll_MedAid" name="roll_attack" value="/roll 1d20+@{Skill_MedAid}"></button>
+
+	<input class="Skill_Pilot" type="text" name="attr_Skill_Pilot" value="0">
+	<button type="roll" class="Roll_Pilot" name="roll_attack" value="/roll 1d20+@{Skill_Pilot}"></button>
+
+	<input class="Skill_RaComb" type="text" name="attr_Skill_RaComb" value="0">
+	<button type="roll" class="Roll_RaComb" name="roll_attack" value="/roll 1d20+@{Skill_RaComb}"></button>
+
+	<input class="Skill_Resolve" type="text" name="attr_Skill_Resolve" value="0">
+	<button type="roll" class="Roll_Resolve" name="roll_attack" value="/roll 1d20+@{Skill_Resolve}"></button>
+
+	<input class="Skill_Science" type="text" name="attr_Skill_Science" value="0">
+	<button type="roll" class="Roll_Science" name="roll_attack" value="/roll 1d20+@{Skill_Science}"></button>
+
+	<input class="Skill_Stealth" type="text" name="attr_Skill_Stealth" value="0">
+	<button type="roll" class="Roll_Stealth" name="roll_attack" value="/roll 1d20+@{Skill_Stealth}"></button>
+
+	<input class="Skill_Survival" type="text" name="attr_Skill_Survival" value="0">
+	<button type="roll" class="Roll_Survival" name="roll_attack" value="/roll 1d20+@{Skill_Survival}"></button>
+
+	<input class="Skill_Techno" type="text" name="attr_Skill_Techno" value="0">
+	<button type="roll" class="Roll_Techno" name="roll_attack" value="/roll 1d20+@{Skill_Techno}"></button>
+
+
+	<input class="Talent_0" type="text" name="attr_Talent_0" value="">
+	<input class="Talent_1" type="text" name="attr_Talent_1" value="">
+	<input class="Talent_2" type="text" name="attr_Talent_2" value="">
+	<input class="Talent_3" type="text" name="attr_Talent_3" value="">
+	<input class="Talent_4" type="text" name="attr_Talent_4" value="">
+	
+	<!-- <input type="checkbox" name="attr_nope" value="0"> -->
+	
+	<input type="radio" name="Emotional_State" id="Emotional_State_0" class="radio-label_Hopeless" value="0">
+	<label for="Emotional_State_0" class="radio-label_Hopeless"></label>
+	
+	<input type="radio" name="Emotional_State" id="Emotional_State_0_5" class="radio-label_Hopeful" value="0,5">
+	<label for="Emotional_State_0_5" class="radio-label_Mid_0"></label>
+	
+	<input type="radio" name="Emotional_State" id="Emotional_State_1" class="radio-label_Enraged" value="1">
+	<label for="Emotional_State_1" class="radio-label_Enraged"></label>
+	
+	<input type="radio" name="Emotional_State" id="Emotional_State_1_5" class="radio-label_Hopeful" value="1,5">
+	<label for="Emotional_State_1_5" class="radio-label_Mid_1"></label>
+	
+	<input type="radio" name="Emotional_State" id="Emotional_State_2" class="radio-label_Nervous" value="2">
+	<label for="Emotional_State_2" class="radio-label_Nervous"></label>
+	
+	<input type="radio" name="Emotional_State" id="Emotional_State_3" class="radio-label_Composed" value="3">
+	<label for="Emotional_State_3" class="radio-label_Composed"></label>
+	
+	<input type="radio" name="Emotional_State" id="Emotional_State_4" class="radio-label_Calm" value="4">
+	<label for="Emotional_State_4" class="radio-label_Calm"></label>
+	
+	<input type="radio" name="Emotional_State" id="Emotional_State_5" class="radio-label_Hopeful" value="5">
+	<label for="Emotional_State_5" class="radio-label_Hopeful"></label>
+	
+	<input type="radio" name="Emotional_State" id="Emotional_State_6" class="radio-label_Pleased" value="6">
+	<label for="Emotional_State_6" class="radio-label_Pleased"></label>
+</div>
+
+<div class="sheet-backpack">
+<div>
+    <h3>Wound Status</h3>
+    <label>
+        <input type="radio" name="attr_wound_status" value="0">
+        <span>Healthy</span>
+    </label>
+    <label>
+        <input type="radio" name="attr_wound_status" value="1">
+        <span>Bloodied</span>
+    </label>
+    <label>
+        <input type="radio" name="attr_wound_status" value="2">
+        <span>Unconscious</span>
+    </label>
+</div>
+</div>
+
+<script type="text/worker">
+    const buttonlist = ["character","backpack"];
+    buttonlist.forEach(button => {
+        on(`clicked:${button}`, function() {
+            setAttrs({
+                sheetTab: button
+            });
+        });
+    });
+</script>
