@@ -40,7 +40,7 @@
 	<input class="Wounds" type="text" name="attr_Wounds" value="0">
 
 	<input class="Skill_ArTech" type="text" name="attr_Skill_ArTech" value="-5">
-	<button type="roll" class="Roll_ArTech" name="roll_attack" value="/roll 1d20+@{Skill_ArTech}"></button>
+	<button type="roll" class="Roll_ArTech" name="roll_attack" value="/roll 1d20+@{Skill_ArTech}+@{option1Value}"></button>
 
 	<input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
 	<button type="roll" class="Roll_ClComb" name="roll_attack" value="/roll 1d20+@{Skill_ClComb}"></button>
@@ -87,26 +87,38 @@
 	<input type="radio" name="Emotional_State" id="Emotional_State_0" class="radio-label_Hopeless" value="0">
 	<label for="Emotional_State_0" class="radio-label_Hopeless"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_0_5" class="radio-label_Hopeful" value="0,5">
+	<input type="radio" name="Emotional_State" id="Emotional_State_0_5" class="radio-label_Hopeful">
 	<label for="Emotional_State_0_5" class="radio-label_Mid_0"></label>
 	
 	<input type="radio" name="Emotional_State" id="Emotional_State_1" class="radio-label_Enraged" value="1">
 	<label for="Emotional_State_1" class="radio-label_Enraged"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_1_5" class="radio-label_Hopeful" value="1,5">
+	<input type="radio" name="Emotional_State" id="Emotional_State_1_5" class="radio-label_Hopeful"">
 	<label for="Emotional_State_1_5" class="radio-label_Mid_1"></label>
 	
 	<input type="radio" name="Emotional_State" id="Emotional_State_2" class="radio-label_Nervous" value="2">
 	<label for="Emotional_State_2" class="radio-label_Nervous"></label>
 	
+	<input type="radio" name="Emotional_State" id="Emotional_State_2_5" class="radio-label_Nervous">
+	<label for="Emotional_State_2_5" class="radio-label_Mid_2"></label>
+   
 	<input type="radio" name="Emotional_State" id="Emotional_State_3" class="radio-label_Composed" value="3">
 	<label for="Emotional_State_3" class="radio-label_Composed"></label>
+	
+	<input type="radio" name="Emotional_State" id="Emotional_State_3_5" class="radio-label_Nervous">
+	<label for="Emotional_State_3_5" class="radio-label_Mid_3"></label>
 	
 	<input type="radio" name="Emotional_State" id="Emotional_State_4" class="radio-label_Calm" value="4">
 	<label for="Emotional_State_4" class="radio-label_Calm"></label>
 	
+	<input type="radio" name="Emotional_State" id="Emotional_State_4_5" class="radio-label_Nervous">
+	<label for="Emotional_State_4_5" class="radio-label_Mid_4"></label>
+	
 	<input type="radio" name="Emotional_State" id="Emotional_State_5" class="radio-label_Hopeful" value="5">
 	<label for="Emotional_State_5" class="radio-label_Hopeful"></label>
+	
+	<input type="radio" name="Emotional_State" id="Emotional_State_5_5" class="radio-label_Nervous">
+	<label for="Emotional_State_5_5" class="radio-label_Mid_5"></label>
 	
 	<input type="radio" name="Emotional_State" id="Emotional_State_6" class="radio-label_Pleased" value="6">
 	<label for="Emotional_State_6" class="radio-label_Pleased"></label>
@@ -115,6 +127,37 @@
 <div class="sheet-backpack">
 
 </div>
+
+<script type="text/worker">
+  // JavaScript code goes here
+  var option1Value = 10;
+  var option2Value = 20;
+
+   function handleRadioChange(obj) {
+      // Check if the changed object is a radio button
+      if (obj.get('type') === 'radio') {
+         // Get the value of the selected radio button
+         var selectedValue = obj.get('value');
+
+         // Perform actions based on the selected value
+         switch(selectedValue) {
+            case "0":
+               // Action for option 1
+               option1Value = 5;
+               break;
+            case "option2":
+               // Action for option 2
+               sendChat('System', 'Option 2 selected. Value: ' + option2Value);
+               break;
+            // Add cases for additional options as needed
+            default:
+               // Default action
+               sendChat('System', 'Unknown option selected');
+               break;
+         }
+      }
+   }
+</script>
 
 <script type="text/worker">
     const buttonlist = ["character","backpack"];

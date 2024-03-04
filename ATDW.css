@@ -592,14 +592,15 @@ input[type="radio"]:checked + .radio-label_Enraged:before {
 .radio-label_Mid_1:before {
     content: "";
     position: absolute;
-    top: 649px;
-    left: 344px;
+    top: 648px;
+    left: 346px;
     width: 10px; /* Adjust as needed */
     height: 10px; /* Adjust as needed */
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_1:before {
     background-color: #000; /* Black fill */
+}
 
 .radio-label_Nervous {
     position: absolute;
@@ -615,6 +616,23 @@ input[type="radio"]:checked + .radio-label_Mid_1:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Nervous:before {
+    background-color: #000; /* Black fill */
+}
+
+.radio-label_Mid_2 {
+    position: absolute;
+    cursor: pointer;
+}
+.radio-label_Mid_2:before {
+    content: "";
+    position: absolute;
+    top: 648px;
+    left: 423px;
+    width: 10px; /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
+   /*border: 2px solid #000;  Black border */
+}
+input[type="radio"]:checked + .radio-label_Mid_2:before {
     background-color: #000; /* Black fill */
 }
 
@@ -635,6 +653,23 @@ input[type="radio"]:checked + .radio-label_Composed:before {
     background-color: #000; /* Black fill */
 }
 
+.radio-label_Mid_3 {
+    position: absolute;
+    cursor: pointer;
+}
+.radio-label_Mid_3:before {
+    content: "";
+    position: absolute;
+    top: 648px;
+    left: 500px;
+    width: 10px; /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
+   /*border: 2px solid #000;  Black border */
+}
+input[type="radio"]:checked + .radio-label_Mid_3:before {
+    background-color: #000; /* Black fill */
+}
+
 .radio-label_Calm {
     position: absolute;
     cursor: pointer;
@@ -652,6 +687,23 @@ input[type="radio"]:checked + .radio-label_Calm:before {
     background-color: #000; /* Black fill */
 }
 
+.radio-label_Mid_4 {
+    position: absolute;
+    cursor: pointer;
+}
+.radio-label_Mid_4:before {
+    content: "";
+    position: absolute;
+    top: 648px;
+    left: 577px;
+    width: 10px; /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
+   /*border: 2px solid #000;  Black border */
+}
+input[type="radio"]:checked + .radio-label_Mid_4:before {
+    background-color: #000; /* Black fill */
+}
+
 .radio-label_Hopeful {
     position: absolute;
     cursor: pointer;
@@ -666,6 +718,23 @@ input[type="radio"]:checked + .radio-label_Calm:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Hopeful:before {
+    background-color: #000; /* Black fill */
+}
+
+.radio-label_Mid_5 {
+    position: absolute;
+    cursor: pointer;
+}
+.radio-label_Mid_5:before {
+    content: "";
+    position: absolute;
+    top: 648px;
+    left: 654px;
+    width: 10px; /* Adjust as needed */
+    height: 10px; /* Adjust as needed */
+   /*border: 2px solid #000;  Black border */
+}
+input[type="radio"]:checked + .radio-label_Mid_5:before {
     background-color: #000; /* Black fill */
 }
 
