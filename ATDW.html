@@ -5,12 +5,14 @@
 </div>
 
 <div class="sheet-character">
+   <input type="hidden" name="attr_A"  value="0"  />
+   <input type="hidden" name="attr_B"  value="0"  />
 	<!-- <img src="https://github.com/Roll20/roll20-character-sheets/blob/master/Feast_of_Legends/images/FoLborder.jpg?raw=true"> -->
 	<input class="Character_name" type="text" name="attr_name" value="">
 	<input class="Character_level" type="text" name="attr_level" value="1">
 	
 	<input class="Stats_STR" type="text" name="attr_Stats_STR" value="8">
-	<button type="roll" class="Roll_STR" name="roll_attack" value="/roll 1d20+@{Stats_STR}"></button>
+	<button type="roll" class="Roll_STR" name="roll_attack" value="Attack"></button><!--/roll 1d20+@{Stats_STR}"></button>-->
 	
 	<input class="Stats_DEX" type="text" name="attr_Stats_DEX" value="8">
 	<button type="roll" class="Roll_DEX" name="roll_attack" value="/roll 1d20+@{Stats_DEX}"></button>
@@ -40,7 +42,7 @@
 	<input class="Wounds" type="text" name="attr_Wounds" value="0">
 
 	<input class="Skill_ArTech" type="text" name="attr_Skill_ArTech" value="-5">
-	<button type="roll" class="Roll_ArTech" name="roll_attack" value="/roll 1d20+@{Skill_ArTech}+@{option1Value}"></button>
+	<button type="roll" class="Roll_ArTech" name="roll_attack" value="/roll 1d20+@{Skill_ArTech}+@{A}+@{B}"></button>
 
 	<input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
 	<button type="roll" class="Roll_ClComb" name="roll_attack" value="/roll 1d20+@{Skill_ClComb}"></button>
@@ -84,88 +86,73 @@
 	
 	<!-- <input type="checkbox" name="attr_nope" value="0"> -->
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_0" class="radio-label_Hopeless" value="0">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_0" class="radio-label_Hopeless" value="0">
 	<label for="Emotional_State_0" class="radio-label_Hopeless"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_0_5" class="radio-label_Hopeful">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_0_5" class="radio-label_Hopeful">
 	<label for="Emotional_State_0_5" class="radio-label_Mid_0"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_1" class="radio-label_Enraged" value="1">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_1" class="radio-label_Enraged" value="1">
 	<label for="Emotional_State_1" class="radio-label_Enraged"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_1_5" class="radio-label_Hopeful"">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_1_5" class="radio-label_Hopeful"">
 	<label for="Emotional_State_1_5" class="radio-label_Mid_1"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_2" class="radio-label_Nervous" value="2">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_2" class="radio-label_Nervous" value="2">
 	<label for="Emotional_State_2" class="radio-label_Nervous"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_2_5" class="radio-label_Nervous">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_2_5" class="radio-label_Nervous">
 	<label for="Emotional_State_2_5" class="radio-label_Mid_2"></label>
    
-	<input type="radio" name="Emotional_State" id="Emotional_State_3" class="radio-label_Composed" value="3">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_3" class="radio-label_Composed" value="3">
 	<label for="Emotional_State_3" class="radio-label_Composed"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_3_5" class="radio-label_Nervous">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_3_5" class="radio-label_Nervous">
 	<label for="Emotional_State_3_5" class="radio-label_Mid_3"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_4" class="radio-label_Calm" value="4">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_4" class="radio-label_Calm" value="4">
 	<label for="Emotional_State_4" class="radio-label_Calm"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_4_5" class="radio-label_Nervous">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_4_5" class="radio-label_Nervous">
 	<label for="Emotional_State_4_5" class="radio-label_Mid_4"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_5" class="radio-label_Hopeful" value="5">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_5" class="radio-label_Hopeful" value="5">
 	<label for="Emotional_State_5" class="radio-label_Hopeful"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_5_5" class="radio-label_Nervous">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_5_5" class="radio-label_Nervous">
 	<label for="Emotional_State_5_5" class="radio-label_Mid_5"></label>
 	
-	<input type="radio" name="Emotional_State" id="Emotional_State_6" class="radio-label_Pleased" value="6">
+	<input type="radio" name="attr_Emotional_State" id="Emotional_State_6" class="radio-label_Pleased" value="6">
 	<label for="Emotional_State_6" class="radio-label_Pleased"></label>
 </div>
 
 <div class="sheet-backpack">
-
+   <input class="Equip_Head" type="text" name="attr_Equip_Head" value="">
+   <input class="Equip_Torso" type="text" name="attr_Equip_Torso" value="">
+   <input class="Equip_Waist" type="text" name="attr_Equip_Waist" value="">
 </div>
 
 <script type="text/worker">
-  // JavaScript code goes here
-  var option1Value = 10;
-  var option2Value = 20;
-
-   function handleRadioChange(obj) {
-      // Check if the changed object is a radio button
-      if (obj.get('type') === 'radio') {
-         // Get the value of the selected radio button
-         var selectedValue = obj.get('value');
-
-         // Perform actions based on the selected value
-         switch(selectedValue) {
-            case "0":
-               // Action for option 1
-               option1Value = 5;
-               break;
-            case "option2":
-               // Action for option 2
-               sendChat('System', 'Option 2 selected. Value: ' + option2Value);
-               break;
-            // Add cases for additional options as needed
-            default:
-               // Default action
-               sendChat('System', 'Unknown option selected');
-               break;
-         }
+   const buttonlist = ["character","backpack"];
+   buttonlist.forEach(button => {
+       on(`clicked:${button}`, function() {
+           setAttrs({
+               sheetTab: button
+           });
+       });
+   });
+   
+   on("change:attribute:Emotional_State", function() 
+   {
+      const attributeValue = getAttrByName(characterId, "Emotional_State");
+      if (Emotional_State === "1") 
+      {
+         setAttrs({A: "-2"});
+         setAttrs({B: "0"});
       }
-   }
-</script>
-
-<script type="text/worker">
-    const buttonlist = ["character","backpack"];
-    buttonlist.forEach(button => {
-        on(`clicked:${button}`, function() {
-            setAttrs({
-                sheetTab: button
-            });
-        });
-    });
+      else
+      {
+         setAttrs({A: "0"});
+         setAttrs({B: "-1"});
+      }
 </script>

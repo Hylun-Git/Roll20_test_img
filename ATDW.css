@@ -754,3 +754,40 @@ input[type="radio"]:checked + .radio-label_Mid_5:before {
 input[type="radio"]:checked + .radio-label_Pleased:before {
     background-color: #000; /* Black fill */
 }
+
+
+
+
+
+
+/*==============================================================================================================*/
+
+input.Equip_Head
+{
+   position 	: absolute;
+   left     	: 97px;	/*50*/
+   top      	: 167px; /*156*/
+   width    	: 158px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
+input.Equip_Torso
+{
+   position 	: absolute;
+   left     	: 97px;	/*50*/
+   top      	: 257px; /*156*/
+   width    	: 158px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
+input.Equip_Waist
+{
+   position 	: absolute;
+   left     	: 97px;	/*50*/
+   top      	: 347px; /*156*/
+   width    	: 158px;
+	text-align	: center;
+	font-size	: 18px;
+}
