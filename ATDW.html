@@ -38,9 +38,9 @@
 
 	<input class="Stress_StrLevel" type="text" name="attr_Stress_StrLevel" value="0">
 	<input class="Stress_NervTic" type="text" name="attr_Stress_NervTic" value="">
+   
 	<!-- <textarea class="Stress_ObsNegTrait" name="attr_Stress_ObsNegTrait"></textarea> -->
 	<!-- <input class="Stress_ObsNegTrait" type="text" name="attr_Stress_ObsNegTrait" value=""> -->
-	
       
    <input type="hidden" name="attr_Skill_Bonus_ArTech"   value="0"/>
    <input type="hidden" name="attr_Skill_Bonus_ClComb"   value="0"/>
@@ -55,6 +55,9 @@
    <input type="hidden" name="attr_Skill_Bonus_Survival" value="0"/>
    <input type="hidden" name="attr_Skill_Bonus_Techno"   value="0"/>
    
+   <!-- <input type="hidden" name="attr_Bonus_Stamina" value="0"/> -->
+   <!-- <input type="hidden" name="attr_Bonus_Dmg"   value="0"/> -->
+   
 	<input class="Stamina" type="text" name="attr_Stamina" value="0">
 	<input class="Trauma" type="text" name="attr_Trauma" value="0">
 	<input class="Luck" type="text" name="attr_Luck" value="0">
@@ -63,40 +66,40 @@
 	<input class="Wounds" type="text" name="attr_Wounds" value="0">
 
 	<input class="Skill_ArTech" type="text" name="attr_Skill_ArTech" value="-5">
-	<button type="roll" class="Roll_ArTech" name="roll_attack" value="/roll 1d20 + @{Skill_Bonus_ArTech}"></button>
+	<button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:default} {{name=Arsaidh Technology}} {{[[1d20 + @{Skill_Bonus_ArTech}]]}}"></button>
 
 	<input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
 	<button type="roll" class="Roll_ClComb" name="roll_attack" value="/roll 1d20+ @{Skill_Bonus_ClComb}"></button>
 
 	<input class="Skill_Percept" type="text" name="attr_Skill_Percept" value="0">
-	<button type="roll" class="Roll_Percept" name="roll_attack" value="/roll 1d20+@{Skill_Percept}+@{Emo_ASkill}"></button>
+	<button type="roll" class="Roll_Percept" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Percept}"></button>
 
 	<input class="Skill_Manipul" type="text" name="attr_Skill_Manipul" value="0">
-	<button type="roll" class="Roll_Manipul" name="roll_attack" value="/roll 1d20+@{Skill_Manipul}+@{Emo_ASkill}"></button>
+	<button type="roll" class="Roll_Manipul" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Manipul}"></button>
 
 	<input class="Skill_MedAid" type="text" name="attr_Skill_MedAid" value="0">
-	<button type="roll" class="Roll_MedAid" name="roll_attack" value="/roll 1d20+@{Skill_MedAid}+@{Emo_ASkill}"></button>
+	<button type="roll" class="Roll_MedAid" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_MedAid}"></button>
 
 	<input class="Skill_Pilot" type="text" name="attr_Skill_Pilot" value="0">
-	<button type="roll" class="Roll_Pilot" name="roll_attack" value="/roll 1d20+@{Skill_Pilot}+@{Emo_ASkill}"></button>
+	<button type="roll" class="Roll_Pilot" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Pilot}"></button>
 
 	<input class="Skill_RaComb" type="text" name="attr_Skill_RaComb" value="0">
-	<button type="roll" class="Roll_RaComb" name="roll_attack" value="/roll 1d20+@{Skill_RaComb}+@{Emo_ASkill}"></button>
+	<button type="roll" class="Roll_RaComb" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_RaComb}"></button>
 
 	<input class="Skill_Resolve" type="text" name="attr_Skill_Resolve" value="0">
-	<button type="roll" class="Roll_Resolve" name="roll_attack" value="/roll 1d20+@{Skill_Resolve}+@{Emo_ASkill}"></button>
+	<button type="roll" class="Roll_Resolve" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Resolve}"></button>
 
 	<input class="Skill_Science" type="text" name="attr_Skill_Science" value="0">
-	<button type="roll" class="Roll_Science" name="roll_attack" value="/roll 1d20+@{Skill_Science}+@{Emo_ASkill}"></button>
+	<button type="roll" class="Roll_Science" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Science}"></button>
 
 	<input class="Skill_Stealth" type="text" name="attr_Skill_Stealth" value="0">
-	<button type="roll" class="Roll_Stealth" name="roll_attack" value="/roll 1d20+@{Skill_Stealth}+@{Emo_ASkill}"></button>
+	<button type="roll" class="Roll_Stealth" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Stealth}"></button>
 
 	<input class="Skill_Survival" type="text" name="attr_Skill_Survival" value="0">
-	<button type="roll" class="Roll_Survival" name="roll_attack" value="/roll 1d20+@{Skill_Survival}+@{Emo_ASkill}"></button>
+	<button type="roll" class="Roll_Survival" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Survival}"></button>
 
 	<input class="Skill_Techno" type="text" name="attr_Skill_Techno" value="0">
-	<button type="roll" class="Roll_Techno" name="roll_attack" value="/roll 1d20+@{Skill_Techno}+@{Emo_ASkill}"></button>
+	<button type="roll" class="Roll_Techno" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Techno}"></button>
 
 
 	<input class="Talent_0" type="text" name="attr_Talent_0" value="">
@@ -170,16 +173,16 @@
       
          let Emotional_State  = values.Emotional_State;
          
-         let Emo_ASkill       = 0;
-         let Emo_Dmg          = 0;
-         let Emo_Rslv         = 0;
-         let Emo_Stam         = 0;
-         let Emo_CbtSkill     = 0;
-         let Emo_Manip        = 0;
-         let Emo_NonCbtSkill  = 0;
+         <!-- let Emo_ASkill       = 0; -->
+         <!-- let Emo_Dmg          = 0; -->
+         <!-- let Emo_Rslv         = 0; -->
+         <!-- let Emo_Stam         = 0; -->
+         <!-- let Emo_CbtSkill     = 0; -->
+         <!-- let Emo_Manip        = 0; -->
+         <!-- let Emo_NonCbtSkill  = 0; -->
          
          switch (Emotional_State) {
-            case "0" :
+            case "0" :  <!--Hopeless-->
                Emo_ASkill     = -2;
                Emo_Dmg        = "1d4";
                Emo_Rslv       = 0;
@@ -188,16 +191,7 @@
                Emo_Manip      = 0;
                Emo_NonCbtSkill= 0;
                break;
-            case "1" :
-               Emo_ASkill     = 0;
-               Emo_Dmg        = 0;
-               Emo_Rslv       = -1;
-               Emo_Stam       = +1;
-               Emo_CbtSkill   = 0;
-               Emo_Manip      = 0;
-               Emo_NonCbtSkill= 0;
-               break;         
-            case "2" :        
+            case "1" :  <!--Enraged-->
                Emo_ASkill     = 0;
                Emo_Dmg        = 0;
                Emo_Rslv       = 0;
@@ -206,7 +200,16 @@
                Emo_Manip      = -1;
                Emo_NonCbtSkill= 0;
                break;         
-            case "3" :        
+            case "2" :  <!--Nervous-->
+               Emo_ASkill     = 0;
+               Emo_Dmg        = 0;
+               Emo_Rslv       = -1;
+               Emo_Stam       = +1;
+               Emo_CbtSkill   = 0;
+               Emo_Manip      = 0;
+               Emo_NonCbtSkill= 0;
+               break;         
+            case "3" :  <!--Composed-->
                Emo_ASkill     = 0;
                Emo_Dmg        = 0;
                Emo_Rslv       = 0;
@@ -215,7 +218,7 @@
                Emo_Manip      = 0;
                Emo_NonCbtSkill= 0;
                break;         
-            case "4" :        
+            case "4" :  <!--Calm-->
                Emo_ASkill     = 0;
                Emo_Dmg        = 0;
                Emo_Rslv       = 0;
@@ -224,7 +227,7 @@
                Emo_Manip      = +1;
                Emo_NonCbtSkill= 0;
                break;         
-            case "5" :        
+            case "5" :  <!--Hopeful-->
                Emo_ASkill     = 0;
                Emo_Dmg        = 0;
                Emo_Rslv       = 0;
@@ -233,7 +236,7 @@
                Emo_Manip      = 0;
                Emo_NonCbtSkill= +1;
                break;
-            case "6" :
+            case "6" :  <!--Pleased-->
                Emo_ASkill     = +2;
                Emo_Dmg        = 0;
                Emo_Rslv       = 0;
@@ -243,7 +246,6 @@
                Emo_NonCbtSkill= 0;
                break;
          }
-         
          var Bonus_ArTech  = parseInt(values.Skill_ArTech) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
          var Bonus_ClComb  = parseInt(values.Skill_ClComb) + parseInt(Emo_ASkill) + parseInt(Emo_CbtSkill);
          var Bonus_Percept = parseInt(values.Skill_Percept) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
@@ -254,21 +256,25 @@
          var Bonus_Resolve = parseInt(values.Skill_Resolve) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill) + parseInt(Emo_Rslv);
          var Bonus_Science = parseInt(values.Skill_Science) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
          var Bonus_Stealth = parseInt(values.Skill_Stealth) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
-         var Bonus_Survival = parseInt(values.Skill_Survival) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
+         var Bonus_Survival= parseInt(values.Skill_Survival) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
          var Bonus_Techno  = parseInt(values.Skill_Techno) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
-         
-         var Bonus_Stamina = parseInt(values.Stamina) + parseInt(Emo_Stam);
-         
+         <!-- var Bonus_Stamina = parseInt(values.Stamina) + parseInt(Emo_Stam); -->
+         <!-- var Bonus_Dmg     = parseInt(Values.Dmg) + parseInt(Emo_Dmg); -->
          setAttrs({
-            "Skill_Bonus_ArTech": Bonus_Artech,
-            "Emo_ASkill"      : Emo_ASkill,
-            "Emo_Dmg"         : Emo_Dmg,
-            "Emo_Rslv"        : Emo_Rslv,
-            "Emo_Stam"        : Emo_Stam,
-            "Emo_CbtSkill"    : Emo_CbtSkill,
-            "Emo_Manip"       : Emo_Manip,
-            "Emo_NonCbtSkill" : Emo_NonCbtSkill,
-            "Bonus_Dmg"       : Bonus_Dmg
+            "Skill_Bonus_ArTech"    : Bonus_ArTech,
+            "Skill_Bonus_ClComb"    : Bonus_ClComb,
+            "Skill_Bonus_Percept"   : Bonus_Percept,
+            "Skill_Bonus_Manipul"   : Bonus_Manipul,
+            "Skill_Bonus_MedAid"    : Bonus_MedAid,
+            "Skill_Bonus_Pilot"     : Bonus_Pilot,
+            "Skill_Bonus_RaComb"    : Bonus_RaComb,
+            "Skill_Bonus_Resolve"   : Bonus_Resolve,
+            "Skill_Bonus_Science"   : Bonus_Science,
+            "Skill_Bonus_Stealth"   : Bonus_Stealth,
+            "Skill_Bonus_Survival"  : Bonus_Survival,
+            "Skill_Bonus_Techno"    : Bonus_Techno
+            <!-- "Bonus_Stamina"         : Bonus_Stamina, -->
+            <!-- "Bonus_Dmg"             : Bonus_Dmg -->
          });
       });
    });
