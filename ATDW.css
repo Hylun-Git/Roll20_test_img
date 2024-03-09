@@ -843,6 +843,16 @@ input[type="radio"]:checked + .radio-label_Pleased:before {
 
 /*==============================================================================================================*/
 
+input.Weapon_Dmg
+{
+	position		: absolute;
+	Left			: 97px;
+	top			: 480px;
+	width			: 75px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
 input.Equip_Head
 {
    position 	: absolute;
@@ -871,4 +881,493 @@ input.Equip_Waist
    width    	: 158px;
 	text-align	: center;
 	font-size	: 18px;
+}
+
+input.Equip_Back
+{
+   position 	: absolute;
+   left     	: 496px;	/*50*/
+   top      	: 373px; /*156*/
+   width    	: 156px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
+input.Backpack_Qua_00
+{
+   position 	: absolute;
+   left     	: 500px;	/*50*/
+   top      	: 150px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_00
+{
+   position 	: absolute;
+   left     	: 530px;	/*50*/
+   top      	: 150px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_01
+{
+   position 	: absolute;
+   left     	: 500px;	/*50*/
+   top      	: 181px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_01
+{
+   position 	: absolute;
+   left     	: 530px;	/*50*/
+   top      	: 181px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_02
+{
+   position 	: absolute;
+   left     	: 500px;	/*50*/
+   top      	: 211px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_02
+{
+   position 	: absolute;
+   left     	: 530px;	/*50*/
+   top      	: 211px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_03
+{
+   position 	: absolute;
+   left     	: 500px;	/*50*/
+   top      	: 242px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_03
+{
+   position 	: absolute;
+   left     	: 530px;	/*50*/
+   top      	: 242px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_04
+{
+   position 	: absolute;
+   left     	: 500px;	/*50*/
+   top      	: 273px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_04
+{
+   position 	: absolute;
+   left     	: 530px;	/*50*/
+   top      	: 273px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_10
+{
+   position 	: absolute;
+   left     	: 709px;	/*50*/
+   top      	: 150px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_10
+{
+   position 	: absolute;
+   left     	: 739px;	/*50*/
+   top      	: 150px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_11
+{
+   position 	: absolute;
+   left     	: 709px;	/*50*/
+   top      	: 181px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_11
+{
+   position 	: absolute;
+   left     	: 739px;	/*50*/
+   top      	: 181px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_12
+{
+   position 	: absolute;
+   left     	: 709px;	/*50*/
+   top      	: 211px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_12
+{
+   position 	: absolute;
+   left     	: 739px;	/*50*/
+   top      	: 211px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_13
+{
+   position 	: absolute;
+   left     	: 709px;	/*50*/
+   top      	: 242px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_13
+{
+   position 	: absolute;
+   left     	: 739px;	/*50*/
+   top      	: 242px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_14
+{
+   position 	: absolute;
+   left     	: 709px;	/*50*/
+   top      	: 273px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_14
+{
+   position 	: absolute;
+   left     	: 739px;	/*50*/
+   top      	: 273px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_20
+{
+   position 	: absolute;
+   left     	: 918px;	/*50*/
+   top      	: 150px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_20
+{
+   position 	: absolute;
+   left     	: 948px;	/*50*/
+   top      	: 150px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_21
+{
+   position 	: absolute;
+   left     	: 918px;	/*50*/
+   top      	: 181px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_21
+{
+   position 	: absolute;
+   left     	: 948px;	/*50*/
+   top      	: 181px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_22
+{
+   position 	: absolute;
+   left     	: 918px;	/*50*/
+   top      	: 211px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_22
+{
+   position 	: absolute;
+   left     	: 948px;	/*50*/
+   top      	: 211px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_23
+{
+   position 	: absolute;
+   left     	: 918px;	/*50*/
+   top      	: 242px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_23
+{
+   position 	: absolute;
+   left     	: 948px;	/*50*/
+   top      	: 242px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Backpack_Qua_24
+{
+   position 	: absolute;
+   left     	: 918px;	/*50*/
+   top      	: 273px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Backpack_Obj_24
+{
+   position 	: absolute;
+   left     	: 948px;	/*50*/
+   top      	: 273px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+
+
+
+
+input.Pockets_Qua_00
+{
+   position 	: absolute;
+   left     	: 709px;	/*50*/
+   top      	: 336px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Pockets_Obj_00
+{
+   position 	: absolute;
+   left     	: 739px;	/*50*/
+   top      	: 336px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Pockets_Qua_01
+{
+   position 	: absolute;
+   left     	: 709px;	/*50*/
+   top      	: 367px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Pockets_Obj_01
+{
+   position 	: absolute;
+   left     	: 739px;	/*50*/
+   top      	: 367px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Pockets_Qua_02
+{
+   position 	: absolute;
+   left     	: 709px;	/*50*/
+   top      	: 398px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Pockets_Obj_02
+{
+   position 	: absolute;
+   left     	: 739px;	/*50*/
+   top      	: 398px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Pockets_Qua_03
+{
+   position 	: absolute;
+   left     	: 709px;	/*50*/
+   top      	: 429px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Pockets_Obj_03
+{
+   position 	: absolute;
+   left     	: 739px;	/*50*/
+   top      	: 429px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Pockets_Qua_04
+{
+   position 	: absolute;
+   left     	: 709px;	/*50*/
+   top      	: 459px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Pockets_Obj_04
+{
+   position 	: absolute;
+   left     	: 739px;	/*50*/
+   top      	: 459px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Pockets_Qua_10
+{
+   position 	: absolute;
+   left     	: 918px;	/*50*/
+   top      	: 336px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Pockets_Obj_10
+{
+   position 	: absolute;
+   left     	: 948px;	/*50*/
+   top      	: 336px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Pockets_Qua_11
+{
+   position 	: absolute;
+   left     	: 918px;	/*50*/
+   top      	: 367px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Pockets_Obj_11
+{
+   position 	: absolute;
+   left     	: 948px;	/*50*/
+   top      	: 367px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Pockets_Qua_12
+{
+   position 	: absolute;
+   left     	: 918px;	/*50*/
+   top      	: 398px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Pockets_Obj_12
+{
+   position 	: absolute;
+   left     	: 948px;	/*50*/
+   top      	: 398px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Pockets_Qua_13
+{
+   position 	: absolute;
+   left     	: 918px;	/*50*/
+   top      	: 429px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Pockets_Obj_13
+{
+   position 	: absolute;
+   left     	: 948px;	/*50*/
+   top      	: 429px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
+}
+
+input.Pockets_Qua_14
+{
+   position 	: absolute;
+   left     	: 918px;	/*50*/
+   top      	: 459px; /*156*/
+   width    	: 30px;
+	text-align	: center;
+	font-size	: 15px;
+}
+input.Pockets_Obj_14
+{
+   position 	: absolute;
+   left     	: 948px;	/*50*/
+   top      	: 459px; /*156*/
+   width    	: 168px;
+	text-align	: center;
+	font-size	: 15px;
 }
