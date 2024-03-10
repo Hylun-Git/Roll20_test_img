@@ -1,4 +1,20 @@
 <input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab"  value="character"  />
+
+<rolltemplate class="sheet-rolltemplate-stargate">
+  <div class="sheet-container sheet-color-{{color}}">
+    <div class="sheet-header">
+      {{#title}}<div class="sheet-title">{{title}}<img class="sheet-phoenix" src="https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/KSA_Logo.png" alt="Stargate Phoenix logo"> </div>{{/title}}
+      {{#subtitle}}<div class="sheet-subtitle">{{subtitle}}</div>{{/subtitle}}
+    </div>
+    <div class="sheet-content">
+      {{#allprops() title subtitle desc color}}
+      <div class="sheet-key">{{key}}</div>
+      <div class="sheet-value">{{value}}</div>
+      {{/allprops() title subtitle desc color}}
+      {{#desc}}<div class="sheet-desc">{{desc}}</div>{{/desc}}
+    </div>
+  </div>
+</rolltemplate>
    
 <div>
     <button type="action" name="act_character">Character</button>
@@ -66,40 +82,40 @@
 	<input class="Wounds" type="text" name="attr_Wounds" value="0">
 
 	<input class="Skill_ArTech" type="text" name="attr_Skill_ArTech" value="-5">
-	<button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:default} {{name=Arsaidh Technology}} {{[[1d20 + @{Skill_Bonus_ArTech}]]}}"></button>
+	<button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:stargate} {{title=Arsaidh Technology}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20 + @{Skill_Bonus_ArTech}]]}} {{desc= If the left side contain exactly 'desc', then the equal sign is removed and any content is spread to the with of the full template.}}"></button>
 
 	<input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
-	<button type="roll" class="Roll_ClComb" name="roll_attack" value="/roll 1d20+ @{Skill_Bonus_ClComb}"></button>
+	<button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:stargate} {{title=Close Combat}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+ @{Skill_Bonus_ClComb}]]}}"></button>
 
 	<input class="Skill_Percept" type="text" name="attr_Skill_Percept" value="0">
-	<button type="roll" class="Roll_Percept" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Percept}"></button>
+	<button type="roll" class="Roll_Percept" name="roll_attack" value="&{template:stargate} {{title=Perception}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+@{Skill_Bonus_Percept}]]}}"></button>
 
 	<input class="Skill_Manipul" type="text" name="attr_Skill_Manipul" value="0">
-	<button type="roll" class="Roll_Manipul" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Manipul}"></button>
+	<button type="roll" class="Roll_Manipul" name="roll_attack" value="&{template:stargate} {{title=Manipulation}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+@{Skill_Bonus_Manipul}]]}}"></button>
 
 	<input class="Skill_MedAid" type="text" name="attr_Skill_MedAid" value="0">
-	<button type="roll" class="Roll_MedAid" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_MedAid}"></button>
+	<button type="roll" class="Roll_MedAid" name="roll_attack" value="&{template:stargate} {{title=Medical Aid}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+@{Skill_Bonus_MedAid}]]}}"></button>
 
 	<input class="Skill_Pilot" type="text" name="attr_Skill_Pilot" value="0">
-	<button type="roll" class="Roll_Pilot" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Pilot}"></button>
+	<button type="roll" class="Roll_Pilot" name="roll_attack" value="&{template:stargate} {{title=Pilot}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+@{Skill_Bonus_Pilot}]]}}"></button>
 
 	<input class="Skill_RaComb" type="text" name="attr_Skill_RaComb" value="0">
-	<button type="roll" class="Roll_RaComb" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_RaComb}"></button>
+	<button type="roll" class="Roll_RaComb" name="roll_attack" value="&{template:stargate} {{title=Ranged Combat}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+@{Skill_Bonus_RaComb}]]}}"></button>
 
 	<input class="Skill_Resolve" type="text" name="attr_Skill_Resolve" value="0">
-	<button type="roll" class="Roll_Resolve" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Resolve}"></button>
+	<button type="roll" class="Roll_Resolve" name="roll_attack" value="&{template:stargate} {{title=Resolve}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+@{Skill_Bonus_Resolve}]]}}"></button>
 
 	<input class="Skill_Science" type="text" name="attr_Skill_Science" value="0">
-	<button type="roll" class="Roll_Science" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Science}"></button>
+	<button type="roll" class="Roll_Science" name="roll_attack" value="&{template:stargate} {{title=Science}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+@{Skill_Bonus_Science}]]}}"></button>
 
 	<input class="Skill_Stealth" type="text" name="attr_Skill_Stealth" value="0">
-	<button type="roll" class="Roll_Stealth" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Stealth}"></button>
+	<button type="roll" class="Roll_Stealth" name="roll_attack" value="&{template:stargate} {{title=Stealth}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+@{Skill_Bonus_Stealth}]]}}"></button>
 
 	<input class="Skill_Survival" type="text" name="attr_Skill_Survival" value="0">
-	<button type="roll" class="Roll_Survival" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Survival}"></button>
+	<button type="roll" class="Roll_Survival" name="roll_attack" value="&{template:stargate} {{title=Survival}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+@{Skill_Bonus_Survival}]]}}"></button>
 
 	<input class="Skill_Techno" type="text" name="attr_Skill_Techno" value="0">
-	<button type="roll" class="Roll_Techno" name="roll_attack" value="/roll 1d20+@{Skill_Bonus_Techno}"></button>
+	<button type="roll" class="Roll_Techno" name="roll_attack" value="&{template:stargate} {{title=Technology}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+@{Skill_Bonus_Techno}]]}}"></button>
 
 
 	<input class="Talent_0" type="text" name="attr_Talent_0" value="">
