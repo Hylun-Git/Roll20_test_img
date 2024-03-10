@@ -70,6 +70,8 @@
    <input type="hidden" name="attr_Skill_Bonus_Stealth"  value="0"/>
    <input type="hidden" name="attr_Skill_Bonus_Survival" value="0"/>
    <input type="hidden" name="attr_Skill_Bonus_Techno"   value="0"/>
+	
+   <button hidden="true" type="roll" name="roll_Cl_Dgm" value="&{template:stargate} {{[[@{ClComb_Dmg}+@{Bonus_Dmg}]]}}"
    
    <!-- <input type="hidden" name="attr_Bonus_Stamina" value="0"/> -->
    <!-- <input type="hidden" name="attr_Bonus_Dmg"   value="0"/> -->
@@ -85,7 +87,7 @@
 	<button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:stargate} {{title=Arsaidh Technology}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20 + @{Skill_Bonus_ArTech}]]}} {{desc= If the left side contain exactly 'desc', then the equal sign is removed and any content is spread to the with of the full template.}}"></button>
 
 	<input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
-	<button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:stargate} {{title=Close Combat}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+ @{Skill_Bonus_ClComb}]]}}"></button>
+	<button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:stargate} {{rollname=@{ClComb}}} {{title=Close Combat}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+ @{Skill_Bonus_ClComb}]]}} {{[Damage](~roll_Cl_Dgm)}}"></button>
 
 	<input class="Skill_Percept" type="text" name="attr_Skill_Percept" value="0">
 	<button type="roll" class="Roll_Percept" name="roll_attack" value="&{template:stargate} {{title=Perception}} {{subtitle=Subtitle which is optional }} {{color=}} {{[[1d20+@{Skill_Bonus_Percept}]]}}"></button>
@@ -167,7 +169,7 @@
 </div>
 
 <div class="sheet-backpack">
-	<input class="Weapon_Dmg" type="text" name="attr_Weapong_Dmg" value="">
+	<input class="ClComb_Dmg" type="text" name="attr_ClComb_Dmg" value="">
 
    <input class="Equip_Head" type="text" name="attr_Equip_Head" value="">
    <input class="Equip_Torso" type="text" name="attr_Equip_Torso" value="">

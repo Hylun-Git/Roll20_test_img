@@ -883,7 +883,7 @@ input.Equip_Back
 	font-size	: 18px;
 }
 
-input.Weapon_Dmg
+input.ClComb_Dmg
 {
 	position		: absolute;
 	Left			: 97px;
