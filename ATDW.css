@@ -29,7 +29,6 @@
 .sheet-rolltemplate-stargate .sheet-container {
   border: 3px solid black;
   border-radius: 3px;
-  height: 85px;
 }
 
 .sheet-rolltemplate-stargate .sheet-header {
@@ -886,11 +885,35 @@ input.Equip_Back
 input.ClComb_Dmg
 {
 	position		: absolute;
-	Left			: 97px;
+	Left			: 96px;
 	top			: 430px;
 	width			: 112px;
 	text-align	: center;
 	font-size	: 18px;
+}
+
+button.Roll_ClComb_Dmg
+{
+	position		: absolute;
+	left			: 70px;
+   top      	: 432px;
+}
+
+input.RaComb_Dmg
+{
+	position		: absolute;
+	Left			: 509px;
+	top			: 436px;
+	width			: 112px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
+button.Roll_RaComb_Dmg
+{
+	position		: absolute;
+	left			: 481px;
+   top      	: 438px;
 }
 
 input.Backpack_Qua_00
