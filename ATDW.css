@@ -117,7 +117,7 @@ button.backpack_btn
 
 div.sheet-character
 {
-   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Character_sheet_0_invNervEnr.png');
+   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Character_sheet_0.png');
    background-repeat			: no-repeat;
    background-attachment	: absolute;
 	background-size			: 1135px 804px;
@@ -551,6 +551,57 @@ button.Roll_Techno
    top      	: 583px;
 }
 
+.radio-label_Disadvantage {
+    position: absolute;
+    cursor: pointer;
+}
+.radio-label_Disadvantage:before {
+    content: "";
+    position: absolute;
+    top: 66px;
+    left: 1018px;
+    width: 14px; /* Adjust as needed */
+    height: 15px; /* Adjust as needed */
+   /*border: 2px solid #000;  Black border */
+}
+input[type="radio"]:checked + .radio-label_Disadvantage:before {
+    background-color: #000; /* Black fill */
+}
+
+.radio-label_Standard {
+    position: absolute;
+    cursor: pointer;
+}
+.radio-label_Standard:before {
+    content: "";
+    position: absolute;
+    top: 104px;
+    left: 1018px;
+    width: 14px; /* Adjust as needed */
+    height: 15px; /* Adjust as needed */
+   /*border: 2px solid #000;  Black border */
+}
+input[type="radio"]:checked + .radio-label_Standard:before {
+    background-color: #000; /* Black fill */
+}
+
+.radio-label_Advantage {
+    position: absolute;
+    cursor: pointer;
+}
+.radio-label_Advantage:before {
+    content: "";
+    position: absolute;
+    top: 142px;
+    left: 1018px;
+    width: 14px; /* Adjust as needed */
+    height: 15px; /* Adjust as needed */
+   /*border: 2px solid #000;  Black border */
+}
+input[type="radio"]:checked + .radio-label_Advantage:before {
+    background-color: #000; /* Black fill */
+}
+
 input.Talent_0
 {
    position : absolute;
@@ -878,6 +929,66 @@ input.Equip_Back
    left     	: 496px;	/*50*/
    top      	: 373px; /*156*/
    width    	: 156px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
+input.Equip_RHand
+{
+   position 	: absolute;
+   left     	: 98px;	/*50*/
+   top      	: 525px; /*156*/
+   width    	: 156px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
+input.Equip_LHand
+{
+   position 	: absolute;
+   left     	: 460px;	/*50*/
+   top      	: 525px; /*156*/
+   width    	: 156px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
+input.Equip_Legs
+{
+   position 	: absolute;
+   left     	: 98px;	/*50*/
+   top      	: 650px; /*156*/
+   width    	: 156px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
+input.Equip_Feet
+{
+   position 	: absolute;
+   left     	: 460px;	/*50*/
+   top      	: 647px; /*156*/
+   width    	: 156px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
+input.Equip_Body_Suit
+{
+   position 	: absolute;
+   left     	: 658px;	/*50*/
+   top      	: 532px; /*156*/
+   width    	: 255px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
+input.Drake_Coins
+{
+   position 	: absolute;
+   left     	: 944px;	/*50*/
+   top      	: 532px; /*156*/
+   width    	: 177px;
 	text-align	: center;
 	font-size	: 18px;
 }

@@ -30,12 +30,11 @@
    <input type="hidden" name="attr_Emo_Manip"         value="0"/>
    <input type="hidden" name="attr_Emo_NonCbtSkill"   value="0"/>
    
-	<!-- <img src="https://github.com/Roll20/roll20-character-sheets/blob/master/Feast_of_Legends/images/FoLborder.jpg?raw=true"> -->
 	<input class="Character_name" type="text" name="attr_name" value="">
 	<input class="Character_level" type="text" name="attr_level" value="1">
 	
 	<input class="Stats_STR" type="text" name="attr_Stats_STR" value="8">
-	<button type="roll" class="Roll_STR" name="roll_attack" value="&{template:stargate} {{title=Strength Check}} {{subtitle=}} {{color=}} {{[[1d20+@{Stats_STR}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_STR" name="roll_attack" value="&{template:stargate} {{title=Strength Check}} {{subtitle=}} {{color=}} {{[[@{AdvQuant}{1d20+@{Stats_STR}}@{AdvSelc}]]}} {{desc=}}"></button>
 	
 	<input class="Stats_DEX" type="text" name="attr_Stats_DEX" value="8">
 	<button type="roll" class="Roll_DEX" name="roll_attack" value="&{template:stargate} {{title=Dexterity Check}} {{subtitle=}} {{color=}} {{[[1d20+@{Stats_DEX}]]}} {{desc=}}"></button>
@@ -73,7 +72,7 @@
 	
    
    <!-- <input type="hidden" name="attr_Bonus_Stamina" value="0"/> -->
-   <!-- <input type="hidden" name="attr_Bonus_Dmg"   value="0"/> -->
+   <input type="hidden" name="attr_Bonus_Dmg"   value="0"/>
    
 	<input class="Stamina" type="text" name="attr_Stamina" value="0">
 	<input class="Trauma" type="text" name="attr_Trauma" value="0">
@@ -118,6 +117,14 @@
 	<input class="Skill_Techno" type="text" name="attr_Skill_Techno" value="0">
 	<button type="roll" class="Roll_Techno" name="roll_attack" value="&{template:stargate} {{title=Technology}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_Techno}+@{Skill_Bonus_Techno}]]}} {{desc=}}"></button>
 
+   <input type="radio" name="attr_Advantage" id="Advantage_0" class="radio-label_Disadvantage" value="0">
+	<label for="Advantage_0" class="radio-label_Disadvantage"></label>
+	
+	<input type="radio" name="attr_Advantage" id="Advantage_1" class="radio-label_Standard" value="1">
+	<label for="Advantage_1" class="radio-label_Standard"></label>
+	
+	<input type="radio" name="attr_Advantage" id="Advantage_2" class="radio-label_Advantage" value="2">
+	<label for="Advantage_2" class="radio-label_Advantage"></label>
 
 	<input class="Talent_0" type="text" name="attr_Talent_0" value="">
 	<input class="Talent_1" type="text" name="attr_Talent_1" value="">
@@ -169,14 +176,21 @@
 
 <div class="sheet-backpack">
 	<input class="ClComb_Dmg" type="text" name="attr_ClComb_Dmg" value="">
-	<button type="roll" class="Roll_ClComb_Dmg" name="roll_ClDamage" value="&{template:stargate} {{title=Close Combat DMG}} {{subtitle=}} {{color=}} {{[[@{ClComb_Dmg}+@{Skill_Bonus_ClComb}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_ClComb_Dmg" name="roll_ClDamage" value="&{template:stargate} {{title=Close Combat DMG}} {{subtitle=}} {{color=}} {{[[1d10+@{ClComb_Dmg}+@{Bonus_Dmg}]]}} {{desc=}}"></button>
 	<input class="RaComb_Dmg" type="text" name="attr_RaComb_Dmg" value="">
-	<button type="roll" class="Roll_RaComb_Dmg" name="roll_RaDamage" value="&{template:stargate} {{title=Range Combat DMG}} {{subtitle=}} {{color=}} {{[[@{RaComb_Dmg}+@{Skill_Bonus_RaComb}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_RaComb_Dmg" name="roll_RaDamage" value="&{template:stargate} {{title=Range Combat DMG}} {{subtitle=}} {{color=}} {{[[1d10+@{RaComb_Dmg}+@{Bonus_Dmg}]]}} {{desc=}}"></button>
 
    <input class="Equip_Head" type="text" name="attr_Equip_Head" value="">
    <input class="Equip_Torso" type="text" name="attr_Equip_Torso" value="">
    <input class="Equip_Waist" type="text" name="attr_Equip_Waist" value="">
    <input class="Equip_Back" type="text" name="attr_Equip_Back" value="">
+   <input class="Equip_RHand" type="text" name="attr_Equip_RHand" value="">
+   <input class="Equip_LHand" type="text" name="attr_Equip_LHand" value="">
+   <input class="Equip_Legs" type="text" name="attr_Equip_Legs" value="">
+   <input class="Equip_Feet" type="text" name="attr_Equip_Feet" value="">
+   
+   <input class="Equip_Body_Suit" type="text" name="attr_Equip_Body_Suit" value="">
+   <input class="Drake_Coins" type="text" name="attr_Drake_Coins" value="">
 	
    <input class="Backpack_Qua_00" type="text" name="attr_Backpack_Qua_00" value="">
    <input class="Backpack_Obj_00" type="text" name="attr_Backpack_Obj_00" value="">
@@ -344,20 +358,20 @@
                Emo_NonCbtSkill= 0;
                break;
          }
-         var Bonus_ArTech  = parseInt(values.Skill_ArTech) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
-         var Bonus_ClComb  = parseInt(values.Skill_ClComb) + parseInt(Emo_ASkill) + parseInt(Emo_CbtSkill);
-         var Bonus_Percept = parseInt(values.Skill_Percept) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
-         var Bonus_Manipul = parseInt(values.Skill_Manipul) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill) + parseInt(Emo_Manip);
-         var Bonus_MedAid  = parseInt(values.Skill_MedAid) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
-         var Bonus_Pilot   = parseInt(values.Skill_Pilot) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
-         var Bonus_RaComb  = parseInt(values.Skill_RaComb) + parseInt(Emo_ASkill) + parseInt(Emo_CbtSkill);
-         var Bonus_Resolve = parseInt(values.Skill_Resolve) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill) + parseInt(Emo_Rslv);
-         var Bonus_Science = parseInt(values.Skill_Science) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
-         var Bonus_Stealth = parseInt(values.Skill_Stealth) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
-         var Bonus_Survival= parseInt(values.Skill_Survival) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
-         var Bonus_Techno  = parseInt(values.Skill_Techno) + parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
+         var Bonus_ArTech  = parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
+         var Bonus_ClComb  = parseInt(Emo_ASkill) + parseInt(Emo_CbtSkill);
+         var Bonus_Percept = parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
+         var Bonus_Manipul = parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill) + parseInt(Emo_Manip);
+         var Bonus_MedAid  = parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
+         var Bonus_Pilot   = parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
+         var Bonus_RaComb  = parseInt(Emo_ASkill) + parseInt(Emo_CbtSkill);
+         var Bonus_Resolve = parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill) + parseInt(Emo_Rslv);
+         var Bonus_Science = parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
+         var Bonus_Stealth = parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
+         var Bonus_Survival= parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
+         var Bonus_Techno  = parseInt(Emo_ASkill) + parseInt(Emo_NonCbtSkill);
          <!-- var Bonus_Stamina = parseInt(values.Stamina) + parseInt(Emo_Stam); -->
-         <!-- var Bonus_Dmg     = parseInt(Values.Dmg) + parseInt(Emo_Dmg); -->
+         var Bonus_Dmg     = Emo_Dmg;
          setAttrs({
             "Skill_Bonus_ArTech"    : Bonus_ArTech,
             "Skill_Bonus_ClComb"    : Bonus_ClComb,
@@ -370,9 +384,37 @@
             "Skill_Bonus_Science"   : Bonus_Science,
             "Skill_Bonus_Stealth"   : Bonus_Stealth,
             "Skill_Bonus_Survival"  : Bonus_Survival,
-            "Skill_Bonus_Techno"    : Bonus_Techno
+            "Skill_Bonus_Techno"    : Bonus_Techno,
             <!-- "Bonus_Stamina"         : Bonus_Stamina, -->
-            <!-- "Bonus_Dmg"             : Bonus_Dmg -->
+            "Bonus_Dmg"             : Bonus_Dmg
+         });
+      });
+   });
+</script>
+
+<script type="text/worker">
+   on("sheet:opened change:Advantage", function () {
+      getAttrs(["Advantage"], function (values) {
+      
+         let Advantage  = values.Advantage;
+         
+         switch (Advantage) {
+            case "0" :  <!--Hopeless-->
+               AdvQuant = 2;
+               AdvSelc  = "kl1";
+               break;
+            case "1" :  <!--Enraged-->
+               AdvQuant = 1;
+               AdvSelc  = "";
+               break;
+            case "2" :  <!--Nervous-->
+               AdvQuant = 2;
+               AdvSelc  = "kh1";
+               break;
+         }
+         setAttrs({
+            "AdvQuant"  : AdvQuant,
+            "AdvSelc"   : AdvSelc,
          });
       });
    });
