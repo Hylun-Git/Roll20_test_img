@@ -34,7 +34,7 @@
 	<input class="Character_level" type="text" name="attr_level" value="1">
 	
 	<input class="Stats_STR" type="text" name="attr_Stats_STR" value="8">
-	<button type="roll" class="Roll_STR" name="roll_attack" value="&{template:stargate} {{title=Strength Check}} {{subtitle=}} {{color=}} {{[[@{AdvQuant}{1d20+@{Stats_STR}}@{AdvSelc}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_STR" name="roll_attack" value="&{template:stargate} {{title=Strength Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_STR}}@{AdvSelc}]]}} {{desc=}}"></button>
 	
 	<input class="Stats_DEX" type="text" name="attr_Stats_DEX" value="8">
 	<button type="roll" class="Roll_DEX" name="roll_attack" value="&{template:stargate} {{title=Dexterity Check}} {{subtitle=}} {{color=}} {{[[1d20+@{Stats_DEX}]]}} {{desc=}}"></button>
@@ -85,7 +85,7 @@
 	<button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:stargate} {{title=Arsaidh Technology}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_ArTech}+@{Skill_Bonus_ArTech}]]}} {{desc=}}"></button>
 
 	<input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
-	<button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:stargate} {{title=Close Combat}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_ClComb}+@{Skill_Bonus_ArTech}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:stargate} {{title=Close Combat}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_ClComb}+@{Skill_Bonus_ArTech}]]}} {{Close Combat Damage=[@{ClCombWeap}](~ClCombDMG&[[0]])}} {{desc=}}"></button>
 
 	<input class="Skill_Percept" type="text" name="attr_Skill_Percept" value="0">
 	<button type="roll" class="Roll_Percept" name="roll_attack" value="&{template:stargate} {{title=Perception}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_Percept}+@{Skill_Bonus_Percept}]]}} {{desc=}}"></button>
@@ -179,6 +179,8 @@
 	<button type="roll" class="Roll_ClComb_Dmg" name="roll_ClDamage" value="&{template:stargate} {{title=Close Combat DMG}} {{subtitle=}} {{color=}} {{[[1d10+@{ClComb_Dmg}+@{Bonus_Dmg}]]}} {{desc=}}"></button>
 	<input class="RaComb_Dmg" type="text" name="attr_RaComb_Dmg" value="">
 	<button type="roll" class="Roll_RaComb_Dmg" name="roll_RaDamage" value="&{template:stargate} {{title=Range Combat DMG}} {{subtitle=}} {{color=}} {{[[1d10+@{RaComb_Dmg}+@{Bonus_Dmg}]]}} {{desc=}}"></button>
+
+   <input class="ClCombWeap" type="text" name="attr_ClCombWeap" value="Knife">
 
    <input class="Equip_Head" type="text" name="attr_Equip_Head" value="">
    <input class="Equip_Torso" type="text" name="attr_Equip_Torso" value="">
@@ -399,17 +401,17 @@
          let Advantage  = values.Advantage;
          
          switch (Advantage) {
-            case "0" :  <!--Hopeless-->
+            case "0" :  <!--Disadvantage-->
                AdvQuant = 2;
-               AdvSelc  = "kl1";
+               AdvSelc  = "kl1";    <!--Keep Low quantity : 1-->
                break;
-            case "1" :  <!--Enraged-->
+            case "1" :  <!--Standard-->
                AdvQuant = 1;
                AdvSelc  = "";
                break;
-            case "2" :  <!--Nervous-->
+            case "2" :  <!--Advantage-->
                AdvQuant = 2;
-               AdvSelc  = "kh1";
+               AdvSelc  = "kh1";    <!--Keep High quantity : 1-->
                break;
          }
          setAttrs({
