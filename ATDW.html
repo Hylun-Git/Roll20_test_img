@@ -37,19 +37,19 @@
 	<button type="roll" class="Roll_STR" name="roll_attack" value="&{template:stargate} {{title=Strength Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_STR}}@{AdvSelc}]]}} {{desc=}}"></button>
 	
 	<input class="Stats_DEX" type="text" name="attr_Stats_DEX" value="8">
-	<button type="roll" class="Roll_DEX" name="roll_attack" value="&{template:stargate} {{title=Dexterity Check}} {{subtitle=}} {{color=}} {{[[1d20+@{Stats_DEX}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_DEX" name="roll_attack" value="&{template:stargate} {{title=Dexterity Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_DEX}}@{AdvSelc}]]}} {{desc=}}"></button>
 	
 	<input class="Stats_CON" type="text" name="attr_Stats_CON" value="8">
-	<button type="roll" class="Roll_CON" name="roll_attack" value="&{template:stargate} {{title=Constitution Check}} {{subtitle=}} {{color=}} {{[[1d20+@{Stats_CON}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_CON" name="roll_attack" value="&{template:stargate} {{title=Constitution Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_CON}}@{AdvSelc}]]}} {{desc=}}"></button>
 	
 	<input class="Stats_WIL" type="text" name="attr_Stats_WIL" value="8">
-	<button type="roll" class="Roll_WIL" name="roll_attack" value="&{template:stargate} {{title=Will Check}} {{subtitle=}} {{color=}} {{[[1d20+@{Stats_WIL}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_WIL" name="roll_attack" value="&{template:stargate} {{title=Will Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_WIL}}@{AdvSelc}]]}} {{desc=}}"></button>
 	
 	<input class="Stats_INT" type="text" name="attr_Stats_INT" value="8">
-	<button type="roll" class="Roll_INT" name="roll_attack" value="&{template:stargate} {{title=Intelligence Check}} {{subtitle=}} {{color=}} {{[[1d20+@{Stats_INT}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_INT" name="roll_attack" value="&{template:stargate} {{title=Intelligence Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_INT}}@{AdvSelc}]]}} {{desc=}}"></button>
 	
 	<input class="Stats_CHA" type="text" name="attr_Stats_CHA" value="8">
-	<button type="roll" class="Roll_CHA" name="roll_attack" value="&{template:stargate} {{title=Charisme Check}} {{subtitle=}} {{color=}} {{[[1d20+@{Stats_CHA}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_CHA" name="roll_attack" value="&{template:stargate} {{title=Charisme Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_CHA}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Stress_StrLevel" type="text" name="attr_Stress_StrLevel" value="0">
 	<input class="Stress_NervTic" type="text" name="attr_Stress_NervTic" value="">
@@ -82,40 +82,40 @@
 	<input class="Wounds" type="text" name="attr_Wounds" value="0">
 
 	<input class="Skill_ArTech" type="text" name="attr_Skill_ArTech" value="-5">
-	<button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:stargate} {{title=Arsaidh Technology}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_ArTech}+@{Skill_Bonus_ArTech}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:stargate} {{title=Arsaidh Technology}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_ArTech}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
-	<button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:stargate} {{title=Close Combat}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_ClComb}+@{Skill_Bonus_ArTech}]]}} {{Close Combat Damage=[@{ClCombWeap}](~ClCombDMG&[[0]])}} {{desc=}}"></button>
+	<button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:stargate} {{title=Close Combat}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_ClComb}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{Close Combat Damage=[@{ClCombWeap}](~ClCombDMG)}} {{desc=}}"></button>
 
 	<input class="Skill_Percept" type="text" name="attr_Skill_Percept" value="0">
-	<button type="roll" class="Roll_Percept" name="roll_attack" value="&{template:stargate} {{title=Perception}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_Percept}+@{Skill_Bonus_Percept}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_Percept" name="roll_attack" value="&{template:stargate} {{title=Perception}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Percept}+@{Skill_Bonus_Percept}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_Manipul" type="text" name="attr_Skill_Manipul" value="0">
-	<button type="roll" class="Roll_Manipul" name="roll_attack" value="&{template:stargate} {{title=Manipulation}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_Manipul}+@{Skill_Bonus_Manipul}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_Manipul" name="roll_attack" value="&{template:stargate} {{title=Manipulation}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Manipul}+@{Skill_Bonus_Manipul}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_MedAid" type="text" name="attr_Skill_MedAid" value="0">
-	<button type="roll" class="Roll_MedAid" name="roll_attack" value="&{template:stargate} {{title=Medical Aid}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_MedAid}+@{Skill_Bonus_MedAid}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_MedAid" name="roll_attack" value="&{template:stargate} {{title=Medical Aid}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_MedAid}+@{Skill_Bonus_MedAid}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_Pilot" type="text" name="attr_Skill_Pilot" value="0">
-	<button type="roll" class="Roll_Pilot" name="roll_attack" value="&{template:stargate} {{title=Pilot}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_Pilot}+@{Skill_Bonus_Pilot}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_Pilot" name="roll_attack" value="&{template:stargate} {{title=Pilot}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Pilot}+@{Skill_Bonus_Pilot}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_RaComb" type="text" name="attr_Skill_RaComb" value="0">
-	<button type="roll" class="Roll_RaComb" name="roll_attack" value="&{template:stargate} {{title=Ranged Combat}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_RaComb}+@{Skill_Bonus_RaComb}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_RaComb" name="roll_attack" value="&{template:stargate} {{title=Ranged Combat}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_RaComb}+@{Skill_Bonus_RaComb}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_Resolve" type="text" name="attr_Skill_Resolve" value="0">
-	<button type="roll" class="Roll_Resolve" name="roll_attack" value="&{template:stargate} {{title=Resolve}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_Resolve}+@{Skill_Bonus_Resolve}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_Resolve" name="roll_attack" value="&{template:stargate} {{title=Resolve}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Resolve}+@{Skill_Bonus_Resolve}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_Science" type="text" name="attr_Skill_Science" value="0">
-	<button type="roll" class="Roll_Science" name="roll_attack" value="&{template:stargate} {{title=Science}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_Science}+@{Skill_Bonus_Science}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_Science" name="roll_attack" value="&{template:stargate} {{title=Science}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Science}+@{Skill_Bonus_Science}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_Stealth" type="text" name="attr_Skill_Stealth" value="0">
-	<button type="roll" class="Roll_Stealth" name="roll_attack" value="&{template:stargate} {{title=Stealth}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_Stealth}+@{Skill_Bonus_Stealth}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_Stealth" name="roll_attack" value="&{template:stargate} {{title=Stealth}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Stealth}+@{Skill_Bonus_Stealth}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_Survival" type="text" name="attr_Skill_Survival" value="0">
-	<button type="roll" class="Roll_Survival" name="roll_attack" value="&{template:stargate} {{title=Survival}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_Survival}+@{Skill_Bonus_Survival}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_Survival" name="roll_attack" value="&{template:stargate} {{title=Survival}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Survival}+@{Skill_Bonus_Survival}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_Techno" type="text" name="attr_Skill_Techno" value="0">
-	<button type="roll" class="Roll_Techno" name="roll_attack" value="&{template:stargate} {{title=Technology}} {{subtitle=}} {{color=}} {{[[1d20+@{Skill_Techno}+@{Skill_Bonus_Techno}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_Techno" name="roll_attack" value="&{template:stargate} {{title=Technology}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Techno}+@{Skill_Bonus_Techno}}@{AdvSelc}]]}} {{desc=}}"></button>
 
    <input type="radio" name="attr_Advantage" id="Advantage_0" class="radio-label_Disadvantage" value="0">
 	<label for="Advantage_0" class="radio-label_Disadvantage"></label>
