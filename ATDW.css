@@ -579,8 +579,8 @@ button.Roll_Techno
 .radio-label_Disadvantage:before {
     content: "";
     position: absolute;
-    top: 66px;
-    left: 1018px;
+    top: 73px;
+    left: 870px;
     width: 14px; /* Adjust as needed */
     height: 15px; /* Adjust as needed */
    /*border: 2px solid #000;  Black border */
@@ -596,8 +596,8 @@ input[type="radio"]:checked + .radio-label_Disadvantage:before {
 .radio-label_Standard:before {
     content: "";
     position: absolute;
-    top: 104px;
-    left: 1018px;
+    top: 97px;
+    left: 870px;
     width: 14px; /* Adjust as needed */
     height: 15px; /* Adjust as needed */
    /*border: 2px solid #000;  Black border */
@@ -613,8 +613,8 @@ input[type="radio"]:checked + .radio-label_Standard:before {
 .radio-label_Advantage:before {
     content: "";
     position: absolute;
-    top: 142px;
-    left: 1018px;
+    top: 121px;
+    left: 870px;
     width: 14px; /* Adjust as needed */
     height: 15px; /* Adjust as needed */
    /*border: 2px solid #000;  Black border */
@@ -957,8 +957,28 @@ input.Equip_Back
 input.Equip_RHand
 {
    position 	: absolute;
-   left     	: 98px;	/*50*/
-   top      	: 525px; /*156*/
+   left     	: 99px;	/*50*/
+   top      	: 510px; /*156*/
+   width    	: 156px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
+input.ClCombWeap
+{
+   position 	: absolute;
+   left     	: 99px;	/*50*/
+   top      	: 590px; /*156*/
+   width    	: 156px;
+	text-align	: center;
+	font-size	: 18px;
+}
+
+input.RaCombWeap
+{
+   position 	: absolute;
+   left     	: 460px;	/*50*/
+   top      	: 590px; /*156*/
    width    	: 156px;
 	text-align	: center;
 	font-size	: 18px;
@@ -968,7 +988,7 @@ input.Equip_LHand
 {
    position 	: absolute;
    left     	: 460px;	/*50*/
-   top      	: 525px; /*156*/
+   top      	: 510px; /*156*/
    width    	: 156px;
 	text-align	: center;
 	font-size	: 18px;
@@ -978,7 +998,7 @@ input.Equip_Legs
 {
    position 	: absolute;
    left     	: 98px;	/*50*/
-   top      	: 650px; /*156*/
+   top      	: 670px; /*156*/
    width    	: 156px;
 	text-align	: center;
 	font-size	: 18px;
@@ -988,7 +1008,7 @@ input.Equip_Feet
 {
    position 	: absolute;
    left     	: 460px;	/*50*/
-   top      	: 647px; /*156*/
+   top      	: 665px; /*156*/
    width    	: 156px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1017,8 +1037,8 @@ input.Drake_Coins
 input.ClComb_Dmg
 {
 	position		: absolute;
-	Left			: 96px;
-	top			: 430px;
+	Left			: 97px;
+	top			: 431px;
 	width			: 112px;
 	text-align	: center;
 	font-size	: 18px;
