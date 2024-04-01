@@ -20,90 +20,143 @@
     display: block;
 }
 
-.sheet-rolltemplate-stargate {
+.sheet-rolltemplate-ATDW,
+.sheet-rolltemplate-ATDW_closecombat,
+.sheet-rolltemplate-ATDW_shooting {
   margin-left: -37px;
 }
-.withoutavatars .sheet-rolltemplate-stargate {
+.withoutavatars .sheet-rolltemplate-ATDW, 
+.withoutavatars .sheet-rolltemplate-ATDW_closecombat, 
+.withoutavatars .sheet-rolltemplate-ATDW_shooting {
   margin-left: -7px;
 }
-.sheet-rolltemplate-stargate .sheet-container {
+.sheet-rolltemplate-ATDW .sheet-container, 
+.sheet-rolltemplate-ATDW_closecombat .sheet-container, 
+.sheet-rolltemplate-ATDW_shooting .sheet-container {
   border: 3px solid black;
   border-radius: 3px;
+  width: 280px;
 }
 
-.sheet-rolltemplate-stargate .sheet-header {
+.sheet-rolltemplate-ATDW .sheet-header, 
+.sheet-rolltemplate-ATDW_closecombat .sheet-header, 
+.sheet-rolltemplate-ATDW_shooting .sheet-header {
   background-color: var(--header-bg-color);
   color: var(--header-text-color);
   text-align: left;
   text-transform: capitalize;
-  padding: 5px;
+  /*padding: 5px;*/
   border-bottom: 2px solid black;
   height: 50px;
   width: 280px;
 }
 
-.sheet-rolltemplate-stargate .sheet-title {
+.sheet-rolltemplate-ATDW .sheet-title,
+.sheet-rolltemplate-ATDW_closecombat .sheet-title,
+.sheet-rolltemplate-ATDW_shooting .sheet-title {
   font-size: 1.6em;
   font-weight: bold;
+  width	: 280px;
+  height : 50px;
 }
 
-.sheet-rolltemplate-stargate .sheet-title img.sheet-phoenix {
+.sheet-rolltemplate-ATDW .sheet-header img.sheet-phoenix, 
+.sheet-rolltemplate-ATDW_closecombat .sheet-header img.sheet-phoenix, 
+.sheet-rolltemplate-ATDW_shooting .sheet-header img.sheet-phoenix {
+  float : right;
   width: 50px;
   height: 50px;
-  float: right;
 }
 
-.sheet-rolltemplate-stargate .sheet-subtitle {
+.sheet-rolltemplate-ATDW .sheet-subtitle, 
+.sheet-rolltemplate-ATDW_closecombat .sheet-subtitle, 
+.sheet-rolltemplate-ATDW_shooting .sheet-subtitle {
   font-size: 0.9em;
 }
 
-.sheet-rolltemplate-stargate .sheet-container {
+.sheet-rolltemplate-ATDW .sheet-container, 
+.sheet-rolltemplate-ATDW_closecombat .sheet-container, 
+.sheet-rolltemplate-ATDW_shooting .sheet-container {
   --header-bg-color: #000d10;
   --header-text-color: #FFF;
 }
-.sheet-rolltemplate-stargate .sheet-container.sheet-color-green {
+.sheet-rolltemplate-ATDW .sheet-container.sheet-color-green, 
+.sheet-rolltemplate-ATDW_closecombat .sheet-container.sheet-color-green, 
+.sheet-rolltemplate-ATDW_shooting .sheet-container.sheet-color-green {
   --header-bg-color: #008000;
 }
-.sheet-rolltemplate-stargate .sheet-container.sheet-color-black {
+.sheet-rolltemplate-ATDW .sheet-container.sheet-color-black, 
+.sheet-rolltemplate-ATDW_closecombat .sheet-container.sheet-color-black, 
+.sheet-rolltemplate-ATDW_shooting .sheet-container.sheet-color-black {
   --header-bg-color: #000;
 }
-.sheet-rolltemplate-stargate .sheet-container.sheet-color-white {
+.sheet-rolltemplate-ATDW .sheet-container.sheet-color-white, 
+.sheet-rolltemplate-ATDW_closecombat .sheet-container.sheet-color-white, 
+.sheet-rolltemplate-ATDW_shooting .sheet-container.sheet-color-white {
   --header-bg-color: #FFF;
   --header-text-color: #000;
 }
 
-.sheet-rolltemplate-stargate .sheet-content {
+.sheet-rolltemplate-ATDW .sheet-content, 
+.sheet-rolltemplate-ATDW_closecombat .sheet-content, 
+.sheet-rolltemplate-ATDW_shooting .sheet-content {
   display: grid;
   background: #0d282f;
   grid-template-columns: auto auto;
   line-height: 2em;
+  height	: 100px;
+  width: 280px;
 }
 
-.sheet-rolltemplate-stargate .sheet-content > div {
-  padding: 5px;
+.sheet-rolltemplate-ATDW_shooting .sheet-content img.sheet-ATDW_shooting {
+	background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Header.png');
+  float: right;
+  width: 280px;
+  height: 50px;
 }
 
-.sheet-rolltemplate-stargate .sheet-content .sheet-key {
+.sheet-rolltemplate-ATDW_closecombat .sheet-content img.sheet-ATDW_shooting{
+	background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Knife.png');
+  float: right;
+  width: 280px;
+  height: 50px;
+}
+
+.sheet-rolltemplate-ATDW .sheet-content .sheet-key,
+.sheet-rolltemplate-ATDW_closecombat .sheet-content .sheet-key, 
+.sheet-rolltemplate-ATDW_shooting .sheet-content .sheet-key {
   font-weight: bold;
   padding-right: 10px;
   text-align: right;
 }
 
-.sheet-rolltemplate-stargate .sheet-content :nth-child(4n+3),
-.sheet-rolltemplate-stargate .sheet-content :nth-child(4n) {
+.sheet-rolltemplate-ATDW .sheet-content :nth-child(4n+3),
+.sheet-rolltemplate-ATDW .sheet-content :nth-child(4n) ,
+.sheet-rolltemplate-ATDW_closecombat .sheet-content :nth-child(4n+3),
+.sheet-rolltemplate-ATDW_closecombat .sheet-content :nth-child(4n) ,
+.sheet-rolltemplate-ATDW_shooting .sheet-content :nth-child(4n+3),
+.sheet-rolltemplate-ATDW_shooting .sheet-content :nth-child(4n) {
   background: #192326;
 }
 
-.sheet-rolltemplate-stargate .sheet-desc {
+.sheet-rolltemplate-ATDW .sheet-desc,
+.sheet-rolltemplate-ATDW_shooting .sheet-desc,
+.sheet-rolltemplate-ATDW_closecombat .sheet-desc {
   grid-column: span 2;
   padding: 5px;
   text-align: center;
 }
 
 /* Roll Buttons */
-.sheet-rolltemplate-stargate a[href^='!'],
-.sheet-rolltemplate-stargate a[href^='~'],
-.sheet-rolltemplate-stargate a[href^='`']{
+.sheet-rolltemplate-ATDW a[href^='!'],
+.sheet-rolltemplate-ATDW a[href^='~'],
+.sheet-rolltemplate-ATDW a[href^='`'],
+.sheet-rolltemplate-ATDW_closecombat a[href^='!'],
+.sheet-rolltemplate-ATDW_closecombat a[href^='~'],
+.sheet-rolltemplate-ATDW_closecombat a[href^='`'],
+.sheet-rolltemplate-ATDW_shooting a[href^='!'],
+.sheet-rolltemplate-ATDW_shooting a[href^='~'],
+.sheet-rolltemplate-ATDW_shooting a[href^='`']{
     border-radius: 5px;
     color: white;
     display: inline-block;
@@ -115,9 +168,16 @@
     transition: top ease 0.2s;
     padding: 2px 5px;
 }
-.sheet-rolltemplate-stargate a[href^='!']:hover,
-.sheet-rolltemplate-stargate a[href^='~']:hover,
-.sheet-rolltemplate-stargate a[href^='`']:hover{
+
+.sheet-rolltemplate-ATDW a[href^='!']:hover,
+.sheet-rolltemplate-ATDW a[href^='~']:hover,
+.sheet-rolltemplate-ATDW a[href^='`']:hover,
+.sheet-rolltemplate-ATDW_closecombat a[href^='!']:hover,
+.sheet-rolltemplate-ATDW_closecombat a[href^='~']:hover,
+.sheet-rolltemplate-ATDW_closecombat a[href^='`']:hover,
+.sheet-rolltemplate-ATDW_shooting a[href^='!']:hover,
+.sheet-rolltemplate-ATDW_shooting a[href^='~']:hover,
+.sheet-rolltemplate-ATDW_shooting a[href^='`']:hover{
   top : -3px;
 }
 
