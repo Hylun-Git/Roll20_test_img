@@ -54,6 +54,7 @@
 .sheet-rolltemplate-ATDW .sheet-title,
 .sheet-rolltemplate-ATDW_closecombat .sheet-title,
 .sheet-rolltemplate-ATDW_shooting .sheet-title {
+  background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Knife.png');
   font-size: 1.6em;
   font-weight: bold;
   width	: 280px;
@@ -97,6 +98,15 @@
   --header-text-color: #000;
 }
 
+.sheet-rolltemplate-ATDW_closecombat .sheet-roll_container {
+   background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Knife.png');
+  display: grid;
+  grid-template-columns: auto;
+  line-height: 2em;
+  height	: 50px;
+  width: 280px;
+}
+
 .sheet-rolltemplate-ATDW .sheet-content, 
 .sheet-rolltemplate-ATDW_closecombat .sheet-content, 
 .sheet-rolltemplate-ATDW_shooting .sheet-content {
@@ -104,19 +114,12 @@
   background: #0d282f;
   grid-template-columns: auto auto;
   line-height: 2em;
-  height	: 100px;
+  height	: 50px;
   width: 280px;
 }
 
 .sheet-rolltemplate-ATDW_shooting .sheet-content img.sheet-ATDW_shooting {
 	background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Header.png');
-  float: right;
-  width: 280px;
-  height: 50px;
-}
-
-.sheet-rolltemplate-ATDW_closecombat .sheet-content img.sheet-ATDW_shooting{
-	background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Knife.png');
   float: right;
   width: 280px;
   height: 50px;
