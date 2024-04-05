@@ -46,8 +46,10 @@
       {{#roll}}<div class="sheet-roll">{{roll}}</div>{{/roll}}
     </div>
     <div class="sheet-content">
+      {{#allprops() title subtitle desc color}}
       <div class="sheet-key">{{key}}</div>
       <div class="sheet-value">{{value}}</div>
+      {{/allprops() title subtitle desc color}}
       {{#desc}}<div class="sheet-desc">DEATH{{desc}}</div>{{/desc}}
     </div>
   </div>
@@ -122,7 +124,7 @@
 	<button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:ATDW} {{title=Arsaidh Technology}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_ArTech}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
-	<button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:ATDW_closecombat} {{title=Close Combat}} {{subtitle=}} {{color=}} {{roll=[[{@{AdvQuant}d20+@{Skill_ClComb}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{Close Combat Damage=[@{ClCombWeap}](~ClCombDMG)}} {{desc=}}"></button>
+	<button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:ATDW_closecombat} {{title=Close Combat}} {{subtitle=}} {{[[{@{AdvQuant}d20+@{Skill_ClComb}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{Close Combat Damage=[@{ClCombWeap}](~ClCombDMG)}} {{desc=}}"></button>
 
 	<input class="Skill_Percept" type="text" name="attr_Skill_Percept" value="0">
 	<button type="roll" class="Roll_Percept" name="roll_attack" value="&{template:ATDW} {{title=Perception}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Percept}+@{Skill_Bonus_Percept}}@{AdvSelc}]]}} {{desc=}}"></button>

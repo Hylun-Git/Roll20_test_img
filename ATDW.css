@@ -54,7 +54,6 @@
 .sheet-rolltemplate-ATDW .sheet-title,
 .sheet-rolltemplate-ATDW_closecombat .sheet-title,
 .sheet-rolltemplate-ATDW_shooting .sheet-title {
-  background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Knife.png');
   font-size: 1.6em;
   font-weight: bold;
   width	: 280px;
@@ -100,11 +99,13 @@
 
 .sheet-rolltemplate-ATDW_closecombat .sheet-roll_container {
    background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Knife.png');
-  display: grid;
-  grid-template-columns: auto;
   line-height: 2em;
   height	: 50px;
   width: 280px;
+}
+
+.sheet-rolltemplate-ATDW_closecombat .sheet-roll {
+   padding-left : 15
 }
 
 .sheet-rolltemplate-ATDW .sheet-content, 
