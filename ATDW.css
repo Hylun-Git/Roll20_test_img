@@ -97,15 +97,26 @@
   --header-text-color: #000;
 }
 
-.sheet-rolltemplate-ATDW_closecombat .sheet-roll_container {
-   background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Knife.png');
+.sheet-rolltemplate-ATDW .sheet-roll {
+   line-height: 4em;
+   display: grid;
+   grid-template-columns: auto auto;
+  height	: 50px;
+  width: 280px;
+}
+
+.sheet-rolltemplate-ATDW .sheet-Normal_roll_s {
   line-height: 2em;
   height	: 50px;
   width: 280px;
 }
 
-.sheet-rolltemplate-ATDW_closecombat .sheet-roll {
-   padding-left : 15
+.sheet-rolltemplate-ATDW .sheet-CLC_roll_s {
+   background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Knife.png');
+   vertical-align: middle;
+  line-height: 4em;
+  height	: 50px;
+  width: 280px;
 }
 
 .sheet-rolltemplate-ATDW .sheet-content, 
@@ -114,8 +125,7 @@
   display: grid;
   background: #0d282f;
   grid-template-columns: auto auto;
-  line-height: 2em;
-  height	: 50px;
+  line-height: 4em;
   width: 280px;
 }
 
@@ -132,6 +142,7 @@
   font-weight: bold;
   padding-right: 10px;
   text-align: right;
+  height	: 50px;
 }
 
 .sheet-rolltemplate-ATDW .sheet-content :nth-child(4n+3),

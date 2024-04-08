@@ -1,7 +1,7 @@
 
 <input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab"  value="character"  />
 
-<rolltemplate class="sheet-rolltemplate-ATDW">
+<!-- <rolltemplate class="sheet-rolltemplate-ATDW">
   <div class="sheet-container sheet-color-{{color}}">
     <div class="sheet-header">
 		<img class="sheet-phoenix" src="https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/KSA_Logo_square.png" alt="ATDW Phoenix logo"> 
@@ -16,7 +16,7 @@
       {{#desc}}<div class="sheet-desc">{{desc}}</div>{{/desc}}
     </div>
   </div>
-</rolltemplate>
+</rolltemplate> -->
    
 <rolltemplate class="sheet-rolltemplate-ATDW_shooting">
   <div class="sheet-container sheet-color-{{color}}">
@@ -35,22 +35,23 @@
   </div>
 </rolltemplate>	
    
-<rolltemplate class="sheet-rolltemplate-ATDW_closecombat">
+<rolltemplate class="sheet-rolltemplate-ATDW">
   <div class="sheet-container sheet-color-{{color}}">
     <div class="sheet-header">
 		<img class="sheet-phoenix" src="https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/KSA_Logo_square.png" alt="ATDW Phoenix logo"> 
       {{#title}}<div class="sheet-title">{{title}}</div>{{/title}}
       {{#subtitle}}<div class="sheet-subtitle">{{subtitle}} </div>{{/subtitle}}
     </div>
-    <div class="sheet-roll_container">
-      {{#roll}}<div class="sheet-roll">{{roll}}</div>{{/roll}}
+    <div class="sheet-roll">
+      {{#CLC_roll}}<div class="CLC_roll_s">{{CLC_roll}}</div>{{/CLC_roll}}
+      {{#Normal_roll}}<div class="Normal_roll">{{Normal_roll}}</div>{{/Normal_roll}}
     </div>
     <div class="sheet-content">
-      {{#allprops() title subtitle desc color}}
+      {{#allprops() title subtitle Normal_roll CLC_roll desc}}
       <div class="sheet-key">{{key}}</div>
       <div class="sheet-value">{{value}}</div>
-      {{/allprops() title subtitle desc color}}
-      {{#desc}}<div class="sheet-desc">DEATH{{desc}}</div>{{/desc}}
+      {{/allprops() title subtitle Normal_roll CLC_roll desc}}
+      {{#desc}}<div class="sheet-desc">{{desc}}</div>{{/desc}}
     </div>
   </div>
 </rolltemplate>
@@ -73,22 +74,22 @@
 	<input class="Character_level" type="text" name="attr_level" value="1">
 	
 	<input class="Stats_STR" type="text" name="attr_Stats_STR" value="8">
-	<button type="roll" class="Roll_STR" name="roll_attack" value="&{template:ATDW} {{title=Strength Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_STR}}@{AdvSelc}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_STR" name="roll_attack" value="&{template:ATDW} {{title=Strength Check}} {{Normal_roll={pompp} ; [[{@{AdvQuant}d20+@{Stats_STR}}@{AdvSelc}]]}}"></button>
 	
 	<input class="Stats_DEX" type="text" name="attr_Stats_DEX" value="8">
-	<button type="roll" class="Roll_DEX" name="roll_attack" value="&{template:ATDW} {{title=Dexterity Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_DEX}}@{AdvSelc}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_DEX" name="roll_attack" value="&{template:ATDW} {{title=Dexterity Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_DEX}}@{AdvSelc}]]}} {{desc=}}"></button>
 	
 	<input class="Stats_CON" type="text" name="attr_Stats_CON" value="8">
-	<button type="roll" class="Roll_CON" name="roll_attack" value="&{template:ATDW} {{title=Constitution Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_CON}}@{AdvSelc}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_CON" name="roll_attack" value="&{template:ATDW} {{title=Constitution Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_CON}}@{AdvSelc}]]}} {{desc=}}"></button>
 	
 	<input class="Stats_WIL" type="text" name="attr_Stats_WIL" value="8">
-	<button type="roll" class="Roll_WIL" name="roll_attack" value="&{template:ATDW} {{title=Will Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_WIL}}@{AdvSelc}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_WIL" name="roll_attack" value="&{template:ATDW} {{title=Will Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_WIL}}@{AdvSelc}]]}} {{desc=}}"></button>
 	
 	<input class="Stats_INT" type="text" name="attr_Stats_INT" value="8">
-	<button type="roll" class="Roll_INT" name="roll_attack" value="&{template:ATDW} {{title=Intelligence Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_INT}}@{AdvSelc}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_INT" name="roll_attack" value="&{template:ATDW} {{title=Intelligence Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_INT}}@{AdvSelc}]]}} {{desc=}}"></button>
 	
 	<input class="Stats_CHA" type="text" name="attr_Stats_CHA" value="8">
-	<button type="roll" class="Roll_CHA" name="roll_attack" value="&{template:ATDW} {{title=Charisme Check}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Stats_CHA}}@{AdvSelc}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_CHA" name="roll_attack" value="&{template:ATDW} {{title=Charisme Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_CHA}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Stress_StrLevel" type="text" name="attr_Stress_StrLevel" value="0">
 	<input class="Stress_NervTic" type="text" name="attr_Stress_NervTic" value="">
@@ -124,7 +125,7 @@
 	<button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:ATDW} {{title=Arsaidh Technology}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_ArTech}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
-	<button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:ATDW_closecombat} {{title=Close Combat}} {{subtitle=}} {{[[{@{AdvQuant}d20+@{Skill_ClComb}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{Close Combat Damage=[@{ClCombWeap}](~ClCombDMG)}} {{desc=}}"></button>
+	<button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:ATDW} {{title=Close Combat}} {{subtitle=}} {{CLC_roll=[[{@{AdvQuant}d20+@{Skill_ClComb}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{Close Combat Damage=[@{ClCombWeap}](~ClCombDMG)}} {{desc=}}"></button>
 
 	<input class="Skill_Percept" type="text" name="attr_Skill_Percept" value="0">
 	<button type="roll" class="Roll_Percept" name="roll_attack" value="&{template:ATDW} {{title=Perception}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Percept}+@{Skill_Bonus_Percept}}@{AdvSelc}]]}} {{desc=}}"></button>
