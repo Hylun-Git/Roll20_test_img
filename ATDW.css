@@ -99,24 +99,32 @@
 
 .sheet-rolltemplate-ATDW .sheet-roll {
    line-height: 4em;
-   display: grid;
-   grid-template-columns: auto auto;
-  height	: 50px;
-  width: 280px;
+   height	: 50px;
+   width: 280px;
 }
 
 .sheet-rolltemplate-ATDW .sheet-Normal_roll_s {
-  line-height: 2em;
-  height	: 50px;
-  width: 280px;
+   line-height: 2em;
+   height	: 50px;
+   width: 280px;
 }
 
 .sheet-rolltemplate-ATDW .sheet-CLC_roll_s {
    background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Knife.png');
-   vertical-align: middle;
-  line-height: 4em;
-  height	: 50px;
-  width: 280px;
+   position : float;
+   left : 140px;
+   line-height: 4em;
+   height	: 50px;
+   /*width: 280px;*/
+}
+
+.sheet-rolltemplate-ATDW .sheet-RAC_roll_s {
+   background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Header.png');
+   position : float;
+   left : 140px;
+   line-height: 4em;
+   height	: 50px;
+   /*width: 280px;*/
 }
 
 .sheet-rolltemplate-ATDW .sheet-content, 
@@ -127,13 +135,6 @@
   grid-template-columns: auto auto;
   line-height: 4em;
   width: 280px;
-}
-
-.sheet-rolltemplate-ATDW_shooting .sheet-content img.sheet-ATDW_shooting {
-	background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Weapon_Header.png');
-  float: right;
-  width: 280px;
-  height: 50px;
 }
 
 .sheet-rolltemplate-ATDW .sheet-content .sheet-key,

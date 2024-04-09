@@ -44,13 +44,14 @@
     </div>
     <div class="sheet-roll">
       {{#CLC_roll}}<div class="CLC_roll_s">{{CLC_roll}}</div>{{/CLC_roll}}
+      {{#RAC_roll}}<div class="RAC_roll_s">{{RAC_roll}}</div>{{/RAC_roll}}
       {{#Normal_roll}}<div class="Normal_roll">{{Normal_roll}}</div>{{/Normal_roll}}
     </div>
     <div class="sheet-content">
-      {{#allprops() title subtitle Normal_roll CLC_roll desc}}
+      {{#allprops() title subtitle Normal_roll CLC_roll RAC_roll desc}}
       <div class="sheet-key">{{key}}</div>
       <div class="sheet-value">{{value}}</div>
-      {{/allprops() title subtitle Normal_roll CLC_roll desc}}
+      {{/allprops() title subtitle Normal_roll CLC_roll RAC_roll desc}}
       {{#desc}}<div class="sheet-desc">{{desc}}</div>{{/desc}}
     </div>
   </div>
@@ -74,7 +75,7 @@
 	<input class="Character_level" type="text" name="attr_level" value="1">
 	
 	<input class="Stats_STR" type="text" name="attr_Stats_STR" value="8">
-	<button type="roll" class="Roll_STR" name="roll_attack" value="&{template:ATDW} {{title=Strength Check}} {{Normal_roll={pompp} ; [[{@{AdvQuant}d20+@{Stats_STR}}@{AdvSelc}]]}}"></button>
+	<button type="roll" class="Roll_STR" name="roll_attack" value="&{template:ATDW} {{title=Strength Check}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_STR}}@{AdvSelc}]]}}"></button>
 	
 	<input class="Stats_DEX" type="text" name="attr_Stats_DEX" value="8">
 	<button type="roll" class="Roll_DEX" name="roll_attack" value="&{template:ATDW} {{title=Dexterity Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_DEX}}@{AdvSelc}]]}} {{desc=}}"></button>
@@ -140,7 +141,7 @@
 	<button type="roll" class="Roll_Pilot" name="roll_attack" value="&{template:ATDW} {{title=Pilot}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Pilot}+@{Skill_Bonus_Pilot}}@{AdvSelc}]]}} {{desc=}}"></button>
 
 	<input class="Skill_RaComb" type="text" name="attr_Skill_RaComb" value="0">
-	<button type="roll" class="Roll_RaComb" name="roll_attack" value="&{template:ATDW_shooting} {{title=Ranged Combat}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_RaComb}+@{Skill_Bonus_RaComb}}@{AdvSelc}]]}} {{Range Combat Damage=[@{RaCombWeap}](~RaCombDMG)}} {{desc=}}"></button>
+	<button type="roll" class="Roll_RaComb" name="roll_attack" value="&{template:ATDW} {{title=Ranged Combat}} {{subtitle=}} {{RAC_roll=[[{@{AdvQuant}d20+@{Skill_RaComb}+@{Skill_Bonus_RaComb}}@{AdvSelc}]]}} {{Range Combat Damage=[@{RaCombWeap}](~RaCombDMG)}} {{desc=}}"></button>
 
 	<input class="Skill_Resolve" type="text" name="attr_Skill_Resolve" value="0">
 	<button type="roll" class="Roll_Resolve" name="roll_attack" value="&{template:ATDW} {{title=Resolve}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Resolve}+@{Skill_Bonus_Resolve}}@{AdvSelc}]]}} {{desc=}}"></button>
@@ -216,9 +217,9 @@
 
 <div class="sheet-backpack">
 	<input class="ClComb_Dmg" type="text" name="attr_ClComb_Dmg" value="">
-	<button type="roll" class="Roll_ClComb_Dmg" name="roll_ClDamage" value="&{template:ATDW} {{title=Close Combat DMG}} {{subtitle=}} {{color=}} {{[[1d10+@{ClComb_Dmg}+@{Bonus_Dmg}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_ClComb_Dmg" name="roll_ClDamage" value="&{template:ATDW} {{title=Close Combat DMG}} {{subtitle=}} {{CLC_roll=[[1d10+@{ClComb_Dmg}+@{Bonus_Dmg}]]}} {{desc=}}"></button>
 	<input class="RaComb_Dmg" type="text" name="attr_RaComb_Dmg" value="">
-	<button type="roll" class="Roll_RaComb_Dmg" name="roll_RaDamage" value="&{template:ATDW} {{title=Range Combat DMG}} {{subtitle=}} {{color=}} {{[[1d10+@{RaComb_Dmg}+@{Bonus_Dmg}]]}} {{desc=}}"></button>
+	<button type="roll" class="Roll_RaComb_Dmg" name="roll_RaDamage" value="&{template:ATDW} {{title=Range Combat DMG}} {{subtitle=}} {{RAC_roll=[[1d10+@{RaComb_Dmg}+@{Bonus_Dmg}]]}} {{desc=}}"></button>
 
    <input class="ClCombWeap" type="text" name="attr_ClCombWeap" value="Knife">
    <input class="RaCombWeap" type="text" name="attr_RaCombWeap" value="Knife">
