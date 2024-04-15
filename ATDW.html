@@ -1,40 +1,3 @@
-
-<input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab"  value="character"  />
-
-<!-- <rolltemplate class="sheet-rolltemplate-ATDW">
-  <div class="sheet-container sheet-color-{{color}}">
-    <div class="sheet-header">
-		<img class="sheet-phoenix" src="https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/KSA_Logo_square.png" alt="ATDW Phoenix logo"> 
-      {{#title}}<div class="sheet-title">{{title}}</div>{{/title}}
-      {{#subtitle}}<div class="sheet-subtitle">{{subtitle}} </div>{{/subtitle}}
-    </div>
-    <div class="sheet-content">
-      {{#allprops() title subtitle desc color}}
-      <div class="sheet-key">{{key}}</div>
-      <div class="sheet-value">{{value}}</div>
-      {{/allprops() title subtitle desc color}}
-      {{#desc}}<div class="sheet-desc">{{desc}}</div>{{/desc}}
-    </div>
-  </div>
-</rolltemplate> -->
-   
-<rolltemplate class="sheet-rolltemplate-ATDW_shooting">
-  <div class="sheet-container sheet-color-{{color}}">
-    <div class="sheet-header">
-		<img class="sheet-phoenix" src="https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/KSA_Logo_square.png" alt="ATDW Phoenix logo"> 
-      {{#title}}<div class="sheet-title">{{title}}</div>{{/title}}
-      {{#subtitle}}<div class="sheet-subtitle">{{subtitle}} </div>{{/subtitle}}
-    </div>
-    <div class="sheet-content">
-      {{#allprops() title subtitle desc color}}
-      <div class="sheet-key">{{key}}</div>
-      <div class="sheet-value">{{value}}</div>
-      {{/allprops() title subtitle desc color}}
-      {{#desc}}<div class="sheet-desc">{{desc}}</div>{{/desc}}
-    </div>
-  </div>
-</rolltemplate>	
-   
 <rolltemplate class="sheet-rolltemplate-ATDW">
   <div class="sheet-container sheet-color-{{color}}">
     <div class="sheet-header">
@@ -56,262 +19,472 @@
     </div>
   </div>
 </rolltemplate>
-	
-<div>
-    <button type="action" name="act_character">Character</button>
-    <button type="action" name="act_backpack">Backpack</button>
+
+<input type="hidden" class="sheet-toggle" name="attr_sheet"  value="PC_s"/>
+
+<div class="Sheet_btn">
+   <button class="PC_s_btn" type="action" name="act_PC_s"></button>
+   <button class="CR_s_btn" type="action" name="act_CR_s"></button>
+   <button class="SHP_s_btn" type="action" name="act_SHP_s"></button>
 </div>
 
-<div class="sheet-character">
-   <input type="hidden" name="attr_Emo_ASkill"        value="0"/>
-   <input type="hidden" name="attr_Emo_Dmg"           value="0"/>
-   <input type="hidden" name="attr_Emo_Rslv"          value="0"/>
-   <input type="hidden" name="attr_Emo_Stam"          value="0"/>
-   <input type="hidden" name="attr_Emo_CbtSkill"      value="0"/>
-   <input type="hidden" name="attr_Emo_Manip"         value="0"/>
-   <input type="hidden" name="attr_Emo_NonCbtSkill"   value="0"/>
+<div class="sheet-SHP_s">
+   <input type="hidden" class="cargo-toggle" name="attr_cargo"  value="Ship"/>
+   <div class="Ship_Designation"></div>
+   <div>
+      <button type="action" name="act_Ship">Ship</button>
+      <button type="action" name="act_C0">CARGO 0</button>
+      <button type="action" name="act_C1">CARGO 1</button>
+      <button type="action" name="act_C2">CARGO 2</button>
+   </div>
    
-	<input class="Character_name" type="text" name="attr_name" value="">
-	<input class="Character_level" type="text" name="attr_level" value="1">
-	
-	<input class="Stats_STR" type="text" name="attr_Stats_STR" value="8">
-	<button type="roll" class="Roll_STR" name="roll_attack" value="&{template:ATDW} {{title=Strength Check}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_STR}}@{AdvSelc}]]}}"></button>
-	
-	<input class="Stats_DEX" type="text" name="attr_Stats_DEX" value="8">
-	<button type="roll" class="Roll_DEX" name="roll_attack" value="&{template:ATDW} {{title=Dexterity Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_DEX}}@{AdvSelc}]]}} {{desc=}}"></button>
-	
-	<input class="Stats_CON" type="text" name="attr_Stats_CON" value="8">
-	<button type="roll" class="Roll_CON" name="roll_attack" value="&{template:ATDW} {{title=Constitution Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_CON}}@{AdvSelc}]]}} {{desc=}}"></button>
-	
-	<input class="Stats_WIL" type="text" name="attr_Stats_WIL" value="8">
-	<button type="roll" class="Roll_WIL" name="roll_attack" value="&{template:ATDW} {{title=Will Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_WIL}}@{AdvSelc}]]}} {{desc=}}"></button>
-	
-	<input class="Stats_INT" type="text" name="attr_Stats_INT" value="8">
-	<button type="roll" class="Roll_INT" name="roll_attack" value="&{template:ATDW} {{title=Intelligence Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_INT}}@{AdvSelc}]]}} {{desc=}}"></button>
-	
-	<input class="Stats_CHA" type="text" name="attr_Stats_CHA" value="8">
-	<button type="roll" class="Roll_CHA" name="roll_attack" value="&{template:ATDW} {{title=Charisme Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_CHA}}@{AdvSelc}]]}} {{desc=}}"></button>
+   <div class="Ship">
+   </div>
+   
+   <div class="C0">
+      <input class="C0I0" type="text" name="attr_C0I0">
+      <input class="C0I1" type="text" name="attr_C0I1">
+      <input class="C0I2" type="text" name="attr_C0I2">
+      <input class="C0I3" type="text" name="attr_C0I3">
+      <input class="C0I4" type="text" name="attr_C0I4">
+      <input class="C0I5" type="text" name="attr_C0I5">
+      <input class="C0I6" type="text" name="attr_C0I6">
+      <input class="C0I7" type="text" name="attr_C0I7">
+      <input class="C0I8" type="text" name="attr_C0I8">
+      <input class="C0I9" type="text" name="attr_C0I9">
+      <input class="C0I10" type="text" name="attr_C0I10">
+      <input class="C0I11" type="text" name="attr_C0I11">
+      <input class="C0I12" type="text" name="attr_C0I12">
+      <input class="C0I13" type="text" name="attr_C0I13">
+      <input class="C0I14" type="text" name="attr_C0I14">
+      <input class="C0I15" type="text" name="attr_C0I15">
+      <input class="C0I16" type="text" name="attr_C0I16">
+      <input class="C0I17" type="text" name="attr_C0I17">
+      <input class="C0I18" type="text" name="attr_C0I18">
+      <input class="C0I19" type="text" name="attr_C0I19">
+      <input class="C0I20" type="text" name="attr_C0I20">
+      <input class="C0I21" type="text" name="attr_C0I21">
+      <input class="C0I22" type="text" name="attr_C0I22">
+      <input class="C0I23" type="text" name="attr_C0I23">
+      <input class="C0I24" type="text" name="attr_C0I24">
+      <input class="C0I25" type="text" name="attr_C0I25">
+      <input class="C0I26" type="text" name="attr_C0I26">
+      <input class="C0I27" type="text" name="attr_C0I27">
+      <input class="C0I28" type="text" name="attr_C0I28">
+      <input class="C0I29" type="text" name="attr_C0I29">
+      <input class="C0I30" type="text" name="attr_C0I30">
+      <input class="C0I31" type="text" name="attr_C0I31">
+      <input class="C0I32" type="text" name="attr_C0I32">
+      <input class="C0I33" type="text" name="attr_C0I33">
+      <input class="C0I34" type="text" name="attr_C0I34">
+      <input class="C0I35" type="text" name="attr_C0I35">
+      <input class="C0I36" type="text" name="attr_C0I36">
+      <input class="C0I37" type="text" name="attr_C0I37">
+      <input class="C0I38" type="text" name="attr_C0I38">
+      <input class="C0I39" type="text" name="attr_C0I39">
+      <input class="C0I40" type="text" name="attr_C0I40">
+      <input class="C0I41" type="text" name="attr_C0I41">
+      <input class="C0I42" type="text" name="attr_C0I42">
+      <input class="C0I43" type="text" name="attr_C0I43">
+      <input class="C0I44" type="text" name="attr_C0I44">
+      <input class="C0I45" type="text" name="attr_C0I45">
+      <input class="C0I46" type="text" name="attr_C0I46">
+      <input class="C0I47" type="text" name="attr_C0I47">
+      <input class="C0I48" type="text" name="attr_C0I48">
+      <input class="C0I49" type="text" name="attr_C0I49">
+   </div>
+   
+   <div class="C1">
+      <input class="C1I0" type="text" name="attr_C1I0">
+      <input class="C1I1" type="text" name="attr_C1I1">
+      <input class="C1I2" type="text" name="attr_C1I2">
+      <input class="C1I3" type="text" name="attr_C1I3">
+      <input class="C1I4" type="text" name="attr_C1I4">
+      <input class="C1I5" type="text" name="attr_C1I5">
+      <input class="C1I6" type="text" name="attr_C1I6">
+      <input class="C1I7" type="text" name="attr_C1I7">
+      <input class="C1I8" type="text" name="attr_C1I8">
+      <input class="C1I9" type="text" name="attr_C1I9">
+      <input class="C1I10" type="text" name="attr_C1I10">
+      <input class="C1I11" type="text" name="attr_C1I11">
+      <input class="C1I12" type="text" name="attr_C1I12">
+      <input class="C1I13" type="text" name="attr_C1I13">
+      <input class="C1I14" type="text" name="attr_C1I14">
+      <input class="C1I15" type="text" name="attr_C1I15">
+      <input class="C1I16" type="text" name="attr_C1I16">
+      <input class="C1I17" type="text" name="attr_C1I17">
+      <input class="C1I18" type="text" name="attr_C1I18">
+      <input class="C1I19" type="text" name="attr_C1I19">
+      <input class="C1I20" type="text" name="attr_C1I20">
+      <input class="C1I21" type="text" name="attr_C1I21">
+      <input class="C1I22" type="text" name="attr_C1I22">
+      <input class="C1I23" type="text" name="attr_C1I23">
+      <input class="C1I24" type="text" name="attr_C1I24">
+      <input class="C1I25" type="text" name="attr_C1I25">
+      <input class="C1I26" type="text" name="attr_C1I26">
+      <input class="C1I27" type="text" name="attr_C1I27">
+      <input class="C1I28" type="text" name="attr_C1I28">
+      <input class="C1I29" type="text" name="attr_C1I29">
+      <input class="C1I30" type="text" name="attr_C1I30">
+      <input class="C1I31" type="text" name="attr_C1I31">
+      <input class="C1I32" type="text" name="attr_C1I32">
+      <input class="C1I33" type="text" name="attr_C1I33">
+      <input class="C1I34" type="text" name="attr_C1I34">
+      <input class="C1I35" type="text" name="attr_C1I35">
+      <input class="C1I36" type="text" name="attr_C1I36">
+      <input class="C1I37" type="text" name="attr_C1I37">
+      <input class="C1I38" type="text" name="attr_C1I38">
+      <input class="C1I39" type="text" name="attr_C1I39">
+      <input class="C1I40" type="text" name="attr_C1I40">
+      <input class="C1I41" type="text" name="attr_C1I41">
+      <input class="C1I42" type="text" name="attr_C1I42">
+      <input class="C1I43" type="text" name="attr_C1I43">
+      <input class="C1I44" type="text" name="attr_C1I44">
+      <input class="C1I45" type="text" name="attr_C1I45">
+      <input class="C1I46" type="text" name="attr_C1I46">
+      <input class="C1I47" type="text" name="attr_C1I47">
+      <input class="C1I48" type="text" name="attr_C1I48">
+      <input class="C1I49" type="text" name="attr_C1I49">
+   </div>
+   
+   <div class="C2">
+      <input class="C2I0" type="text" name="attr_C2I0">
+      <input class="C2I1" type="text" name="attr_C2I1">
+      <input class="C2I2" type="text" name="attr_C2I2">
+      <input class="C2I3" type="text" name="attr_C2I3">
+      <input class="C2I4" type="text" name="attr_C2I4">
+      <input class="C2I5" type="text" name="attr_C2I5">
+      <input class="C2I6" type="text" name="attr_C2I6">
+      <input class="C2I7" type="text" name="attr_C2I7">
+      <input class="C2I8" type="text" name="attr_C2I8">
+      <input class="C2I9" type="text" name="attr_C2I9">
+      <input class="C2I10" type="text" name="attr_C2I10">
+      <input class="C2I11" type="text" name="attr_C2I11">
+      <input class="C2I12" type="text" name="attr_C2I12">
+      <input class="C2I13" type="text" name="attr_C2I13">
+      <input class="C2I14" type="text" name="attr_C2I14">
+      <input class="C2I15" type="text" name="attr_C2I15">
+      <input class="C2I16" type="text" name="attr_C2I16">
+      <input class="C2I17" type="text" name="attr_C2I17">
+      <input class="C2I18" type="text" name="attr_C2I18">
+      <input class="C2I19" type="text" name="attr_C2I19">
+      <input class="C2I20" type="text" name="attr_C2I20">
+      <input class="C2I21" type="text" name="attr_C2I21">
+      <input class="C2I22" type="text" name="attr_C2I22">
+      <input class="C2I23" type="text" name="attr_C2I23">
+      <input class="C2I24" type="text" name="attr_C2I24">
+      <input class="C2I25" type="text" name="attr_C2I25">
+      <input class="C2I26" type="text" name="attr_C2I26">
+      <input class="C2I27" type="text" name="attr_C2I27">
+      <input class="C2I28" type="text" name="attr_C2I28">
+      <input class="C2I29" type="text" name="attr_C2I29">
+      <input class="C2I30" type="text" name="attr_C2I30">
+      <input class="C2I31" type="text" name="attr_C2I31">
+      <input class="C2I32" type="text" name="attr_C2I32">
+      <input class="C2I33" type="text" name="attr_C2I33">
+      <input class="C2I34" type="text" name="attr_C2I34">
+      <input class="C2I35" type="text" name="attr_C2I35">
+      <input class="C2I36" type="text" name="attr_C2I36">
+      <input class="C2I37" type="text" name="attr_C2I37">
+      <input class="C2I38" type="text" name="attr_C2I38">
+      <input class="C2I39" type="text" name="attr_C2I39">
+      <input class="C2I40" type="text" name="attr_C2I40">
+      <input class="C2I41" type="text" name="attr_C2I41">
+      <input class="C2I42" type="text" name="attr_C2I42">
+      <input class="C2I43" type="text" name="attr_C2I43">
+      <input class="C2I44" type="text" name="attr_C2I44">
+      <input class="C2I45" type="text" name="attr_C2I45">
+      <input class="C2I46" type="text" name="attr_C2I46">
+      <input class="C2I47" type="text" name="attr_C2I47">
+      <input class="C2I48" type="text" name="attr_C2I48">
+      <input class="C2I49" type="text" name="attr_C2I49">
+   </div>
+</div>
 
-	<input class="Stress_StrLevel" type="text" name="attr_Stress_StrLevel" value="0">
-	<input class="Stress_NervTic" type="text" name="attr_Stress_NervTic" value="">
+<div class="sheet-CR_s">
+</div>
+
+<div class="sheet-PC_s">
    
-	<!-- <textarea class="Stress_ObsNegTrait" name="attr_Stress_ObsNegTrait"></textarea> -->
-	<!-- <input class="Stress_ObsNegTrait" type="text" name="attr_Stress_ObsNegTrait" value=""> -->
+   <input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab"  value="character"/> <!-- NEEDS TO BE LOCAL TO THE BUTTON -->
+   <div>
+       <button type="action" name="act_character">Character</button>
+       <button type="action" name="act_backpack">Backpack</button>
+   </div>
+
+   <div class="sheet-character">
+      <input type="hidden" name="attr_Emo_ASkill"        value="0"/>
+      <input type="hidden" name="attr_Emo_Dmg"           value="0"/>
+      <input type="hidden" name="attr_Emo_Rslv"          value="0"/>
+      <input type="hidden" name="attr_Emo_Stam"          value="0"/>
+      <input type="hidden" name="attr_Emo_CbtSkill"      value="0"/>
+      <input type="hidden" name="attr_Emo_Manip"         value="0"/>
+      <input type="hidden" name="attr_Emo_NonCbtSkill"   value="0"/>
       
-   <input type="hidden" name="attr_Skill_Bonus_ArTech"   value="0"/>
-   <input type="hidden" name="attr_Skill_Bonus_ClComb"   value="0"/>
-   <input type="hidden" name="attr_Skill_Bonus_Percept"  value="0"/>
-   <input type="hidden" name="attr_Skill_Bonus_Manipul"  value="0"/>
-   <input type="hidden" name="attr_Skill_Bonus_MedAid"   value="0"/>
-   <input type="hidden" name="attr_Skill_Bonus_Pilot"    value="0"/>
-   <input type="hidden" name="attr_Skill_Bonus_RaComb"   value="0"/>
-   <input type="hidden" name="attr_Skill_Bonus_Resolve"  value="0"/>
-   <input type="hidden" name="attr_Skill_Bonus_Science"  value="0"/>
-   <input type="hidden" name="attr_Skill_Bonus_Stealth"  value="0"/>
-   <input type="hidden" name="attr_Skill_Bonus_Survival" value="0"/>
-   <input type="hidden" name="attr_Skill_Bonus_Techno"   value="0"/>
-	
-   
-   <!-- <input type="hidden" name="attr_Bonus_Stamina" value="0"/> -->
-   <input type="hidden" name="attr_Bonus_Dmg"   value="0"/>
-   
-	<input class="Stamina" type="text" name="attr_Stamina" value="0">
-	<input class="Trauma" type="text" name="attr_Trauma" value="0">
-	<input class="Luck" type="text" name="attr_Luck" value="0">
-	<input class="Armor" type="text" name="attr_Armor" value="0">
-	<input class="Rads" type="text" name="attr_Rads" value="0">
-	<input class="Wounds" type="text" name="attr_Wounds" value="0">
+      <input class="Character_name" type="text" name="attr_name" value="">
+      <input class="Character_level" type="text" name="attr_level" value="1">
+      
+      <input class="Stats_STR" type="text" name="attr_Stats_STR" value="8">
+      <button type="roll" class="Roll_STR" name="roll_attack" value="&{template:ATDW} {{title=Strength Check}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_STR}}@{AdvSelc}]]}}"></button>
+      
+      <input class="Stats_DEX" type="text" name="attr_Stats_DEX" value="8">
+      <button type="roll" class="Roll_DEX" name="roll_attack" value="&{template:ATDW} {{title=Dexterity Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_DEX}}@{AdvSelc}]]}} {{desc=}}"></button>
+      
+      <input class="Stats_CON" type="text" name="attr_Stats_CON" value="8">
+      <button type="roll" class="Roll_CON" name="roll_attack" value="&{template:ATDW} {{title=Constitution Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_CON}}@{AdvSelc}]]}} {{desc=}}"></button>
+      
+      <input class="Stats_WIL" type="text" name="attr_Stats_WIL" value="8">
+      <button type="roll" class="Roll_WIL" name="roll_attack" value="&{template:ATDW} {{title=Will Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_WIL}}@{AdvSelc}]]}} {{desc=}}"></button>
+      
+      <input class="Stats_INT" type="text" name="attr_Stats_INT" value="8">
+      <button type="roll" class="Roll_INT" name="roll_attack" value="&{template:ATDW} {{title=Intelligence Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_INT}}@{AdvSelc}]]}} {{desc=}}"></button>
+      
+      <input class="Stats_CHA" type="text" name="attr_Stats_CHA" value="8">
+      <button type="roll" class="Roll_CHA" name="roll_attack" value="&{template:ATDW} {{title=Charisme Check}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Stats_CHA}}@{AdvSelc}]]}} {{desc=}}"></button>
 
-	<input class="Skill_ArTech" type="text" name="attr_Skill_ArTech" value="-5">
-	<button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:ATDW} {{title=Arsaidh Technology}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_ArTech}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <input class="Stress_StrLevel" type="text" name="attr_Stress_StrLevel" value="0">
+      <input class="Stress_NervTic" type="text" name="attr_Stress_NervTic" value="">
+      
+      <!-- <textarea class="Stress_ObsNegTrait" name="attr_Stress_ObsNegTrait"></textarea> -->
+      <!-- <input class="Stress_ObsNegTrait" type="text" name="attr_Stress_ObsNegTrait" value=""> -->
+         
+      <input type="hidden" name="attr_Skill_Bonus_ArTech"   value="0"/>
+      <input type="hidden" name="attr_Skill_Bonus_ClComb"   value="0"/>
+      <input type="hidden" name="attr_Skill_Bonus_Percept"  value="0"/>
+      <input type="hidden" name="attr_Skill_Bonus_Manipul"  value="0"/>
+      <input type="hidden" name="attr_Skill_Bonus_MedAid"   value="0"/>
+      <input type="hidden" name="attr_Skill_Bonus_Pilot"    value="0"/>
+      <input type="hidden" name="attr_Skill_Bonus_RaComb"   value="0"/>
+      <input type="hidden" name="attr_Skill_Bonus_Resolve"  value="0"/>
+      <input type="hidden" name="attr_Skill_Bonus_Science"  value="0"/>
+      <input type="hidden" name="attr_Skill_Bonus_Stealth"  value="0"/>
+      <input type="hidden" name="attr_Skill_Bonus_Survival" value="0"/>
+      <input type="hidden" name="attr_Skill_Bonus_Techno"   value="0"/>
+      
+      
+      <!-- <input type="hidden" name="attr_Bonus_Stamina" value="0"/> -->
+      <input type="hidden" name="attr_Bonus_Dmg"   value="0"/>
+      
+      <input class="Stamina" type="text" name="attr_Stamina" value="0">
+      <input class="Trauma" type="text" name="attr_Trauma" value="0">
+      <input class="Luck" type="text" name="attr_Luck" value="0">
+      <input class="Armor" type="text" name="attr_Armor" value="0">
+      <input class="Rads" type="text" name="attr_Rads" value="0">
+      <input class="Wounds" type="text" name="attr_Wounds" value="0">
 
-	<input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
-	<button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:ATDW} {{title=Close Combat}} {{subtitle=}} {{CLC_roll=[[{@{AdvQuant}d20+@{Skill_ClComb}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{Close Combat Damage=[@{ClCombWeap}](~ClCombDMG)}} {{desc=}}"></button>
+      <input class="Skill_ArTech" type="text" name="attr_Skill_ArTech" value="-5">
+      <button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:ATDW} {{title=Arsaidh Technology}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_ArTech}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{desc=}}"></button>
 
-	<input class="Skill_Percept" type="text" name="attr_Skill_Percept" value="0">
-	<button type="roll" class="Roll_Percept" name="roll_attack" value="&{template:ATDW} {{title=Perception}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Percept}+@{Skill_Bonus_Percept}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
+      <button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:ATDW} {{title=Close Combat}} {{subtitle=}} {{CLC_roll=[[{@{AdvQuant}d20+@{Skill_ClComb}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{Close Combat Damage=[@{ClCombWeap}](~ClCombDMG)}} {{desc=}}"></button>
 
-	<input class="Skill_Manipul" type="text" name="attr_Skill_Manipul" value="0">
-	<button type="roll" class="Roll_Manipul" name="roll_attack" value="&{template:ATDW} {{title=Manipulation}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Manipul}+@{Skill_Bonus_Manipul}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <input class="Skill_Percept" type="text" name="attr_Skill_Percept" value="0">
+      <button type="roll" class="Roll_Percept" name="roll_attack" value="&{template:ATDW} {{title=Perception}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Percept}+@{Skill_Bonus_Percept}}@{AdvSelc}]]}} {{desc=}}"></button>
 
-	<input class="Skill_MedAid" type="text" name="attr_Skill_MedAid" value="0">
-	<button type="roll" class="Roll_MedAid" name="roll_attack" value="&{template:ATDW} {{title=Medical Aid}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_MedAid}+@{Skill_Bonus_MedAid}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <input class="Skill_Manipul" type="text" name="attr_Skill_Manipul" value="0">
+      <button type="roll" class="Roll_Manipul" name="roll_attack" value="&{template:ATDW} {{title=Manipulation}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Manipul}+@{Skill_Bonus_Manipul}}@{AdvSelc}]]}} {{desc=}}"></button>
 
-	<input class="Skill_Pilot" type="text" name="attr_Skill_Pilot" value="0">
-	<button type="roll" class="Roll_Pilot" name="roll_attack" value="&{template:ATDW} {{title=Pilot}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Pilot}+@{Skill_Bonus_Pilot}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <input class="Skill_MedAid" type="text" name="attr_Skill_MedAid" value="0">
+      <button type="roll" class="Roll_MedAid" name="roll_attack" value="&{template:ATDW} {{title=Medical Aid}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_MedAid}+@{Skill_Bonus_MedAid}}@{AdvSelc}]]}} {{desc=}}"></button>
 
-	<input class="Skill_RaComb" type="text" name="attr_Skill_RaComb" value="0">
-	<button type="roll" class="Roll_RaComb" name="roll_attack" value="&{template:ATDW} {{title=Ranged Combat}} {{subtitle=}} {{RAC_roll=[[{@{AdvQuant}d20+@{Skill_RaComb}+@{Skill_Bonus_RaComb}}@{AdvSelc}]]}} {{Range Combat Damage=[@{RaCombWeap}](~RaCombDMG)}} {{desc=}}"></button>
+      <input class="Skill_Pilot" type="text" name="attr_Skill_Pilot" value="0">
+      <button type="roll" class="Roll_Pilot" name="roll_attack" value="&{template:ATDW} {{title=Pilot}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Pilot}+@{Skill_Bonus_Pilot}}@{AdvSelc}]]}} {{desc=}}"></button>
 
-	<input class="Skill_Resolve" type="text" name="attr_Skill_Resolve" value="0">
-	<button type="roll" class="Roll_Resolve" name="roll_attack" value="&{template:ATDW} {{title=Resolve}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Resolve}+@{Skill_Bonus_Resolve}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <input class="Skill_RaComb" type="text" name="attr_Skill_RaComb" value="0">
+      <button type="roll" class="Roll_RaComb" name="roll_attack" value="&{template:ATDW} {{title=Ranged Combat}} {{subtitle=}} {{RAC_roll=[[{@{AdvQuant}d20+@{Skill_RaComb}+@{Skill_Bonus_RaComb}}@{AdvSelc}]]}} {{Range Combat Damage=[@{RaCombWeap}](~RaCombDMG)}} {{desc=}}"></button>
 
-	<input class="Skill_Science" type="text" name="attr_Skill_Science" value="0">
-	<button type="roll" class="Roll_Science" name="roll_attack" value="&{template:ATDW} {{title=Science}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Science}+@{Skill_Bonus_Science}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <input class="Skill_Resolve" type="text" name="attr_Skill_Resolve" value="0">
+      <button type="roll" class="Roll_Resolve" name="roll_attack" value="&{template:ATDW} {{title=Resolve}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Resolve}+@{Skill_Bonus_Resolve}}@{AdvSelc}]]}} {{desc=}}"></button>
 
-	<input class="Skill_Stealth" type="text" name="attr_Skill_Stealth" value="0">
-	<button type="roll" class="Roll_Stealth" name="roll_attack" value="&{template:ATDW} {{title=Stealth}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Stealth}+@{Skill_Bonus_Stealth}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <input class="Skill_Science" type="text" name="attr_Skill_Science" value="0">
+      <button type="roll" class="Roll_Science" name="roll_attack" value="&{template:ATDW} {{title=Science}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Science}+@{Skill_Bonus_Science}}@{AdvSelc}]]}} {{desc=}}"></button>
 
-	<input class="Skill_Survival" type="text" name="attr_Skill_Survival" value="0">
-	<button type="roll" class="Roll_Survival" name="roll_attack" value="&{template:ATDW} {{title=Survival}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Survival}+@{Skill_Bonus_Survival}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <input class="Skill_Stealth" type="text" name="attr_Skill_Stealth" value="0">
+      <button type="roll" class="Roll_Stealth" name="roll_attack" value="&{template:ATDW} {{title=Stealth}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Stealth}+@{Skill_Bonus_Stealth}}@{AdvSelc}]]}} {{desc=}}"></button>
 
-	<input class="Skill_Techno" type="text" name="attr_Skill_Techno" value="0">
-	<button type="roll" class="Roll_Techno" name="roll_attack" value="&{template:ATDW} {{title=Technology}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Techno}+@{Skill_Bonus_Techno}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <input class="Skill_Survival" type="text" name="attr_Skill_Survival" value="0">
+      <button type="roll" class="Roll_Survival" name="roll_attack" value="&{template:ATDW} {{title=Survival}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Survival}+@{Skill_Bonus_Survival}}@{AdvSelc}]]}} {{desc=}}"></button>
 
-   <input type="radio" name="attr_Advantage" id="Advantage_0" class="radio-label_Disadvantage" value="0">
-	<label for="Advantage_0" class="radio-label_Disadvantage"></label>
-	
-	<input type="radio" name="attr_Advantage" id="Advantage_1" class="radio-label_Standard" value="1">
-	<label for="Advantage_1" class="radio-label_Standard"></label>
-	
-	<input type="radio" name="attr_Advantage" id="Advantage_2" class="radio-label_Advantage" value="2">
-	<label for="Advantage_2" class="radio-label_Advantage"></label>
+      <input class="Skill_Techno" type="text" name="attr_Skill_Techno" value="0">
+      <button type="roll" class="Roll_Techno" name="roll_attack" value="&{template:ATDW} {{title=Technology}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Techno}+@{Skill_Bonus_Techno}}@{AdvSelc}]]}} {{desc=}}"></button>
 
-	<input class="Talent_0" type="text" name="attr_Talent_0" value="">
-	<input class="Talent_1" type="text" name="attr_Talent_1" value="">
-	<input class="Talent_2" type="text" name="attr_Talent_2" value="">
-	<input class="Talent_3" type="text" name="attr_Talent_3" value="">
-	<input class="Talent_4" type="text" name="attr_Talent_4" value="">
-	
-	<!-- <input type="checkbox" name="attr_nope" value="0"> -->
-	
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_0" class="radio-label_Hopeless" value="0">
-	<label for="Emotional_State_0" class="radio-label_Hopeless"></label>
-	
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_0_5" class="radio-label_Mid_0" value="0.5">
-	<label for="Emotional_State_0_5" class="radio-label_Mid_0"></label>
-	
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_1" class="radio-label_Enraged" value="1">
-	<label for="Emotional_State_1" class="radio-label_Enraged"></label>
-	
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_1_5" class="radio-label_Mid_1" value="1.5">
-	<label for="Emotional_State_1_5" class="radio-label_Mid_1"></label>
-	
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_2" class="radio-label_Nervous" value="2">
-	<label for="Emotional_State_2" class="radio-label_Nervous"></label>
-	
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_2_5" class="radio-label_Mid_2" value="2.5">
-	<label for="Emotional_State_2_5" class="radio-label_Mid_2"></label>
-   
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_3" class="radio-label_Composed" value="3">
-	<label for="Emotional_State_3" class="radio-label_Composed"></label>
-	
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_3_5" class="radio-label_Mid_3" value="3.5">
-	<label for="Emotional_State_3_5" class="radio-label_Mid_3"></label>
-	
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_4" class="radio-label_Calm" value="4">
-	<label for="Emotional_State_4" class="radio-label_Calm"></label>
-	
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_4_5" class="radio-label_Mid_4" value="4.5">
-	<label for="Emotional_State_4_5" class="radio-label_Mid_4"></label>
-	
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_5" class="radio-label_Hopeful" value="5">
-	<label for="Emotional_State_5" class="radio-label_Hopeful"></label>
-	
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_5_5" class="radio-label_Mid_5" value="5.5">
-	<label for="Emotional_State_5_5" class="radio-label_Mid_5"></label>
-	
-	<input type="radio" name="attr_Emotional_State" id="Emotional_State_6" class="radio-label_Pleased" value="6">
-	<label for="Emotional_State_6" class="radio-label_Pleased"></label>
+      <input type="radio" name="attr_Advantage" id="Advantage_0" class="radio-label_Disadvantage" value="0">
+      <label for="Advantage_0" class="radio-label_Disadvantage"></label>
+      
+      <input type="radio" name="attr_Advantage" id="Advantage_1" class="radio-label_Standard" value="1">
+      <label for="Advantage_1" class="radio-label_Standard"></label>
+      
+      <input type="radio" name="attr_Advantage" id="Advantage_2" class="radio-label_Advantage" value="2">
+      <label for="Advantage_2" class="radio-label_Advantage"></label>
+
+      <input class="Talent_0" type="text" name="attr_Talent_0" value="">
+      <input class="Talent_1" type="text" name="attr_Talent_1" value="">
+      <input class="Talent_2" type="text" name="attr_Talent_2" value="">
+      <input class="Talent_3" type="text" name="attr_Talent_3" value="">
+      <input class="Talent_4" type="text" name="attr_Talent_4" value="">
+      
+      <!-- <input type="checkbox" name="attr_nope" value="0"> -->
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_0" class="radio-label_Hopeless" value="0">
+      <label for="Emotional_State_0" class="radio-label_Hopeless"></label>
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_0_5" class="radio-label_Mid_0" value="0.5">
+      <label for="Emotional_State_0_5" class="radio-label_Mid_0"></label>
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_1" class="radio-label_Enraged" value="1">
+      <label for="Emotional_State_1" class="radio-label_Enraged"></label>
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_1_5" class="radio-label_Mid_1" value="1.5">
+      <label for="Emotional_State_1_5" class="radio-label_Mid_1"></label>
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_2" class="radio-label_Nervous" value="2">
+      <label for="Emotional_State_2" class="radio-label_Nervous"></label>
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_2_5" class="radio-label_Mid_2" value="2.5">
+      <label for="Emotional_State_2_5" class="radio-label_Mid_2"></label>
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_3" class="radio-label_Composed" value="3">
+      <label for="Emotional_State_3" class="radio-label_Composed"></label>
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_3_5" class="radio-label_Mid_3" value="3.5">
+      <label for="Emotional_State_3_5" class="radio-label_Mid_3"></label>
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_4" class="radio-label_Calm" value="4">
+      <label for="Emotional_State_4" class="radio-label_Calm"></label>
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_4_5" class="radio-label_Mid_4" value="4.5">
+      <label for="Emotional_State_4_5" class="radio-label_Mid_4"></label>
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_5" class="radio-label_Hopeful" value="5">
+      <label for="Emotional_State_5" class="radio-label_Hopeful"></label>
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_5_5" class="radio-label_Mid_5" value="5.5">
+      <label for="Emotional_State_5_5" class="radio-label_Mid_5"></label>
+      
+      <input type="radio" name="attr_Emotional_State" id="Emotional_State_6" class="radio-label_Pleased" value="6">
+      <label for="Emotional_State_6" class="radio-label_Pleased"></label>
+   </div>
+
+   <div class="sheet-backpack">
+      <input class="ClComb_Dmg" type="text" name="attr_ClComb_Dmg" value="">
+      <button type="roll" class="Roll_ClComb_Dmg" name="roll_ClDamage" value="&{template:ATDW} {{title=Close Combat DMG}} {{subtitle=}} {{CLC_roll=[[1d10+@{ClComb_Dmg}+@{Bonus_Dmg}]]}} {{desc=}}"></button>
+      <input class="RaComb_Dmg" type="text" name="attr_RaComb_Dmg" value="">
+      <button type="roll" class="Roll_RaComb_Dmg" name="roll_RaDamage" value="&{template:ATDW} {{title=Range Combat DMG}} {{subtitle=}} {{RAC_roll=[[1d10+@{RaComb_Dmg}+@{Bonus_Dmg}]]}} {{desc=}}"></button>
+
+      <input class="ClCombWeap" type="text" name="attr_ClCombWeap" value="Knife">
+      <input class="RaCombWeap" type="text" name="attr_RaCombWeap" value="Knife">
+
+      <input class="Equip_Head" type="text" name="attr_Equip_Head" value="">
+      <input class="Equip_Torso" type="text" name="attr_Equip_Torso" value="">
+      <input class="Equip_Waist" type="text" name="attr_Equip_Waist" value="">
+      <input class="Equip_Back" type="text" name="attr_Equip_Back" value="">
+      <input class="Equip_RHand" type="text" name="attr_Equip_RHand" value="">
+      <input class="Equip_LHand" type="text" name="attr_Equip_LHand" value="">
+      <input class="Equip_Legs" type="text" name="attr_Equip_Legs" value="">
+      <input class="Equip_Feet" type="text" name="attr_Equip_Feet" value="">
+      
+      <input class="Equip_Body_Suit" type="text" name="attr_Equip_Body_Suit" value="">
+      <input class="Drake_Coins" type="text" name="attr_Drake_Coins" value="">
+      
+      <input class="Backpack_Qua_00" type="text" name="attr_Backpack_Qua_00" value="">
+      <input class="Backpack_Obj_00" type="text" name="attr_Backpack_Obj_00" value="">
+      
+      <input class="Backpack_Qua_01" type="text" name="attr_Backpack_Qua_01" value="">
+      <input class="Backpack_Obj_01" type="text" name="attr_Backpack_Obj_01" value="">
+      
+      <input class="Backpack_Qua_02" type="text" name="attr_Backpack_Qua_02" value="">
+      <input class="Backpack_Obj_02" type="text" name="attr_Backpack_Obj_02" value="">
+      
+      <input class="Backpack_Qua_03" type="text" name="attr_Backpack_Qua_03" value="">
+      <input class="Backpack_Obj_03" type="text" name="attr_Backpack_Obj_03" value="">
+      
+      <input class="Backpack_Qua_04" type="text" name="attr_Backpack_Qua_04" value="">
+      <input class="Backpack_Obj_04" type="text" name="attr_Backpack_Obj_04" value="">
+      
+      <input class="Backpack_Qua_10" type="text" name="attr_Backpack_Qua_10" value="">
+      <input class="Backpack_Obj_10" type="text" name="attr_Backpack_Obj_10" value="">
+      
+      <input class="Backpack_Qua_11" type="text" name="attr_Backpack_Qua_11" value="">
+      <input class="Backpack_Obj_11" type="text" name="attr_Backpack_Obj_11" value="">
+      
+      <input class="Backpack_Qua_12" type="text" name="attr_Backpack_Qua_12" value="">
+      <input class="Backpack_Obj_12" type="text" name="attr_Backpack_Obj_12" value="">
+      
+      <input class="Backpack_Qua_13" type="text" name="attr_Backpack_Qua_13" value="">
+      <input class="Backpack_Obj_13" type="text" name="attr_Backpack_Obj_13" value="">
+      
+      <input class="Backpack_Qua_14" type="text" name="attr_Backpack_Qua_14" value="">
+      <input class="Backpack_Obj_14" type="text" name="attr_Backpack_Obj_14" value="">
+      
+      <input class="Backpack_Qua_20" type="text" name="attr_Backpack_Qua_20" value="">
+      <input class="Backpack_Obj_20" type="text" name="attr_Backpack_Obj_20" value="">
+      
+      <input class="Backpack_Qua_21" type="text" name="attr_Backpack_Qua_21" value="">
+      <input class="Backpack_Obj_21" type="text" name="attr_Backpack_Obj_21" value="">
+      
+      <input class="Backpack_Qua_22" type="text" name="attr_Backpack_Qua_22" value="">
+      <input class="Backpack_Obj_22" type="text" name="attr_Backpack_Obj_22" value="">
+      
+      <input class="Backpack_Qua_23" type="text" name="attr_Backpack_Qua_23" value="">
+      <input class="Backpack_Obj_23" type="text" name="attr_Backpack_Obj_23" value="">
+      
+      <input class="Backpack_Qua_24" type="text" name="attr_Backpack_Qua_24" value="">
+      <input class="Backpack_Obj_24" type="text" name="attr_Backpack_Obj_24" value="">
+      
+      <input class="Pockets_Qua_00" type="text" name="attr_Pockets_Qua_00" value="">
+      <input class="Pockets_Obj_00" type="text" name="attr_Pockets_Obj_00" value="">
+      
+      <input class="Pockets_Qua_01" type="text" name="attr_Pockets_Qua_01" value="">
+      <input class="Pockets_Obj_01" type="text" name="attr_Pockets_Obj_01" value="">
+      
+      <input class="Pockets_Qua_02" type="text" name="attr_Pockets_Qua_02" value="">
+      <input class="Pockets_Obj_02" type="text" name="attr_Pockets_Obj_02" value="">
+      
+      <input class="Pockets_Qua_03" type="text" name="attr_Pockets_Qua_03" value="">
+      <input class="Pockets_Obj_03" type="text" name="attr_Pockets_Obj_03" value="">
+      
+      <input class="Pockets_Qua_04" type="text" name="attr_Pockets_Qua_04" value="">
+      <input class="Pockets_Obj_04" type="text" name="attr_Pockets_Obj_04" value="">
+      
+      <input class="Pockets_Qua_10" type="text" name="attr_Pockets_Qua_10" value="">
+      <input class="Pockets_Obj_10" type="text" name="attr_Pockets_Obj_10" value="">
+      
+      <input class="Pockets_Qua_11" type="text" name="attr_Pockets_Qua_11" value="">
+      <input class="Pockets_Obj_11" type="text" name="attr_Pockets_Obj_11" value="">
+      
+      <input class="Pockets_Qua_12" type="text" name="attr_Pockets_Qua_12" value="">
+      <input class="Pockets_Obj_12" type="text" name="attr_Pockets_Obj_12" value="">
+      
+      <input class="Pockets_Qua_13" type="text" name="attr_Pockets_Qua_13" value="">
+      <input class="Pockets_Obj_13" type="text" name="attr_Pockets_Obj_13" value="">
+      
+      <input class="Pockets_Qua_14" type="text" name="attr_Pockets_Qua_14" value="">
+      <input class="Pockets_Obj_14" type="text" name="attr_Pockets_Obj_14" value="">
+   </div>
 </div>
 
-<div class="sheet-backpack">
-	<input class="ClComb_Dmg" type="text" name="attr_ClComb_Dmg" value="">
-	<button type="roll" class="Roll_ClComb_Dmg" name="roll_ClDamage" value="&{template:ATDW} {{title=Close Combat DMG}} {{subtitle=}} {{CLC_roll=[[1d10+@{ClComb_Dmg}+@{Bonus_Dmg}]]}} {{desc=}}"></button>
-	<input class="RaComb_Dmg" type="text" name="attr_RaComb_Dmg" value="">
-	<button type="roll" class="Roll_RaComb_Dmg" name="roll_RaDamage" value="&{template:ATDW} {{title=Range Combat DMG}} {{subtitle=}} {{RAC_roll=[[1d10+@{RaComb_Dmg}+@{Bonus_Dmg}]]}} {{desc=}}"></button>
-
-   <input class="ClCombWeap" type="text" name="attr_ClCombWeap" value="Knife">
-   <input class="RaCombWeap" type="text" name="attr_RaCombWeap" value="Knife">
-
-   <input class="Equip_Head" type="text" name="attr_Equip_Head" value="">
-   <input class="Equip_Torso" type="text" name="attr_Equip_Torso" value="">
-   <input class="Equip_Waist" type="text" name="attr_Equip_Waist" value="">
-   <input class="Equip_Back" type="text" name="attr_Equip_Back" value="">
-   <input class="Equip_RHand" type="text" name="attr_Equip_RHand" value="">
-   <input class="Equip_LHand" type="text" name="attr_Equip_LHand" value="">
-   <input class="Equip_Legs" type="text" name="attr_Equip_Legs" value="">
-   <input class="Equip_Feet" type="text" name="attr_Equip_Feet" value="">
+<script type="text/worker">
+   const buttonlist_0 = ["PC_s","CR_s","SHP_s"];
+   buttonlist_0.forEach(button => {
+       on(`clicked:${button}`, function() {
+           setAttrs({
+               sheet: button
+           });
+       });
+   });
+</script>
    
-   <input class="Equip_Body_Suit" type="text" name="attr_Equip_Body_Suit" value="">
-   <input class="Drake_Coins" type="text" name="attr_Drake_Coins" value="">
-	
-   <input class="Backpack_Qua_00" type="text" name="attr_Backpack_Qua_00" value="">
-   <input class="Backpack_Obj_00" type="text" name="attr_Backpack_Obj_00" value="">
-	
-   <input class="Backpack_Qua_01" type="text" name="attr_Backpack_Qua_01" value="">
-   <input class="Backpack_Obj_01" type="text" name="attr_Backpack_Obj_01" value="">
-	
-   <input class="Backpack_Qua_02" type="text" name="attr_Backpack_Qua_02" value="">
-   <input class="Backpack_Obj_02" type="text" name="attr_Backpack_Obj_02" value="">
-	
-   <input class="Backpack_Qua_03" type="text" name="attr_Backpack_Qua_03" value="">
-   <input class="Backpack_Obj_03" type="text" name="attr_Backpack_Obj_03" value="">
-	
-   <input class="Backpack_Qua_04" type="text" name="attr_Backpack_Qua_04" value="">
-   <input class="Backpack_Obj_04" type="text" name="attr_Backpack_Obj_04" value="">
-	
-   <input class="Backpack_Qua_10" type="text" name="attr_Backpack_Qua_10" value="">
-   <input class="Backpack_Obj_10" type="text" name="attr_Backpack_Obj_10" value="">
-	
-   <input class="Backpack_Qua_11" type="text" name="attr_Backpack_Qua_11" value="">
-   <input class="Backpack_Obj_11" type="text" name="attr_Backpack_Obj_11" value="">
-	
-   <input class="Backpack_Qua_12" type="text" name="attr_Backpack_Qua_12" value="">
-   <input class="Backpack_Obj_12" type="text" name="attr_Backpack_Obj_12" value="">
-	
-   <input class="Backpack_Qua_13" type="text" name="attr_Backpack_Qua_13" value="">
-   <input class="Backpack_Obj_13" type="text" name="attr_Backpack_Obj_13" value="">
-	
-   <input class="Backpack_Qua_14" type="text" name="attr_Backpack_Qua_14" value="">
-   <input class="Backpack_Obj_14" type="text" name="attr_Backpack_Obj_14" value="">
-	
-   <input class="Backpack_Qua_20" type="text" name="attr_Backpack_Qua_20" value="">
-   <input class="Backpack_Obj_20" type="text" name="attr_Backpack_Obj_20" value="">
-	
-   <input class="Backpack_Qua_21" type="text" name="attr_Backpack_Qua_21" value="">
-   <input class="Backpack_Obj_21" type="text" name="attr_Backpack_Obj_21" value="">
-	
-   <input class="Backpack_Qua_22" type="text" name="attr_Backpack_Qua_22" value="">
-   <input class="Backpack_Obj_22" type="text" name="attr_Backpack_Obj_22" value="">
-	
-   <input class="Backpack_Qua_23" type="text" name="attr_Backpack_Qua_23" value="">
-   <input class="Backpack_Obj_23" type="text" name="attr_Backpack_Obj_23" value="">
-	
-   <input class="Backpack_Qua_24" type="text" name="attr_Backpack_Qua_24" value="">
-   <input class="Backpack_Obj_24" type="text" name="attr_Backpack_Obj_24" value="">
-	
-   <input class="Pockets_Qua_00" type="text" name="attr_Pockets_Qua_00" value="">
-   <input class="Pockets_Obj_00" type="text" name="attr_Pockets_Obj_00" value="">
-	
-   <input class="Pockets_Qua_01" type="text" name="attr_Pockets_Qua_01" value="">
-   <input class="Pockets_Obj_01" type="text" name="attr_Pockets_Obj_01" value="">
-	
-   <input class="Pockets_Qua_02" type="text" name="attr_Pockets_Qua_02" value="">
-   <input class="Pockets_Obj_02" type="text" name="attr_Pockets_Obj_02" value="">
-	
-   <input class="Pockets_Qua_03" type="text" name="attr_Pockets_Qua_03" value="">
-   <input class="Pockets_Obj_03" type="text" name="attr_Pockets_Obj_03" value="">
-	
-   <input class="Pockets_Qua_04" type="text" name="attr_Pockets_Qua_04" value="">
-   <input class="Pockets_Obj_04" type="text" name="attr_Pockets_Obj_04" value="">
-	
-   <input class="Pockets_Qua_10" type="text" name="attr_Pockets_Qua_10" value="">
-   <input class="Pockets_Obj_10" type="text" name="attr_Pockets_Obj_10" value="">
-	
-   <input class="Pockets_Qua_11" type="text" name="attr_Pockets_Qua_11" value="">
-   <input class="Pockets_Obj_11" type="text" name="attr_Pockets_Obj_11" value="">
-	
-   <input class="Pockets_Qua_12" type="text" name="attr_Pockets_Qua_12" value="">
-   <input class="Pockets_Obj_12" type="text" name="attr_Pockets_Obj_12" value="">
-	
-   <input class="Pockets_Qua_13" type="text" name="attr_Pockets_Qua_13" value="">
-   <input class="Pockets_Obj_13" type="text" name="attr_Pockets_Obj_13" value="">
-	
-   <input class="Pockets_Qua_14" type="text" name="attr_Pockets_Qua_14" value="">
-   <input class="Pockets_Obj_14" type="text" name="attr_Pockets_Obj_14" value="">
-</div>
-
+<script type="text/worker">
+   const buttonlist = ["Ship","C0","C1","C2"];
+   buttonlist.forEach(button => {
+       on(`clicked:${button}`, function() {
+           setAttrs({
+               cargo: button
+           });
+       });
+   });
+</script>
+   
 <script type="text/worker">
    const buttonlist = ["character","backpack"];
    buttonlist.forEach(button => {
