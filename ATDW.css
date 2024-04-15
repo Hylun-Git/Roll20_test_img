@@ -128,23 +128,36 @@ div.Ship
    background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/G01-D0R.png');
    background-repeat			: no-repeat;
    background-attachment	: absolute;
-	background-size			: 768px 768px;
-	height						: 768px;
-	width							: 768px;
+	background-size			: 1000px 1000px;
+	height						: 1000px;
+	width							: 1000px;
 	top							: 0px;
 	left							: 0px;
+}
+
+div.Ship_desi
+{
+   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/SHIP_DESIGNATION.png');
+   background-repeat			: no-repeat;
+   background-attachment	: absolute;
+	background-size			: 225px 80px;
+	height						: 80px;
+	width							: 225px;
+	padding-left    			: 75px;
+	padding-top					: 75px;
+	opacity						: 0.85;
 }
 
 div.C0,
 div.C1,
 div.C2
 {
-   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Cargo_room_ftm.png');
+   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Cargo_Background.png');
    background-repeat			: no-repeat;
    background-attachment	: absolute;
-	background-size			: 1136px 649px;
-	height						: 649px;
-	width							: 1136px;
+	background-size			: 980px 990px;
+	height						: 990px;
+	width							: 980px;
 	top							: 0px;
 	left							: 0px;
 }
