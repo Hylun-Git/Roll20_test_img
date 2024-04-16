@@ -42,7 +42,7 @@ div.sheet-PC_s
 
 div.sheet-CR_s
 {
-   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/ATDW_Background_Display.png');
+   background-image			: url('https://github.com/Hylun-Git/Roll20_test_img/blob/main/Creature_back.png?raw=true');
    background-repeat			: no-repeat;
    background-attachment	: absolute;
 	background-size			: 1360px 1006px;
@@ -65,6 +65,18 @@ div.sheet-SHP_s
    display : none;
 }
 
+button.Ship_btn,
+button.C0_btn,
+button.C1_btn,
+button.C2_btn
+{
+   border-radius: 5px;
+   color: white;
+   display: inline-block;
+   border: 1px solid #FECB00;
+   background-color: #272727;
+}
+
 /* show the selected tab */
 .charsheet .cargo-toggle[value="Ship"] ~ div.Ship,
 .charsheet .cargo-toggle[value="C0"] ~ div.C0,
@@ -84,24 +96,20 @@ div.sheet-SHP_s
     display: block;
 }
 
-button.character_btn
+button.Char_btn,
+button.Back_btn
 {
-	position						: absolute;
-	top							: 60px;
-	left							: 0px;
-	width							: 100px;
-}
-button.backpack_btn
-{
-	position						: absolute;
-	top							: 60px;
-	left							: 155px;
-	width							: 100px;
+   border-radius: 5px;
+   color: white;
+   display: inline-block;
+   border: 1px solid #5EBDC1;
+   background-color: #272727;
+   padding-top : -2px;
 }
 
 div.sheet-character
 {
-   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Character_sheet_0.png');
+   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Character_sheet_0_darkMode.png');
    background-repeat			: no-repeat;
    background-attachment	: absolute;
 	background-size			: 1135px 804px;
@@ -113,7 +121,7 @@ div.sheet-character
 
 div.sheet-backpack
 {
-   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Character_sheet_1.png');
+   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Character_sheet_1_darkMode.png');
    background-repeat			: no-repeat;
    background-attachment	: absolute;
 	background-size			: 1135px 804px;
@@ -145,7 +153,6 @@ div.Ship_desi
 	width							: 225px;
 	padding-left    			: 75px;
 	padding-top					: 75px;
-	opacity						: 0.85;
 }
 
 div.C0,
@@ -155,9 +162,9 @@ div.C2
    background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Cargo_Background.png');
    background-repeat			: no-repeat;
    background-attachment	: absolute;
-	background-size			: 980px 990px;
-	height						: 990px;
-	width							: 980px;
+	background-size			: 750px 758px;
+	height						: 758px;
+	width							: 750px;
 	top							: 0px;
 	left							: 0px;
 }
@@ -248,7 +255,7 @@ div.C2
 }
 
 .sheet-rolltemplate-ATDW .sheet-Normal_roll_s {
-   line-height: 2em;
+   line-height: 4em;
    height	: 50px;
    width: 280px;
 }
@@ -343,1247 +350,529 @@ div.C2
 
 /*    SHIP CSS     */
 
-input.C0I0
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 150px;
-   width    : 130px;
-}
-input.C0I1
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 179px;
-   width    : 130px;
-}
-input.C0I2
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 208px;
-   width    : 130px;
-}
-input.C0I3
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 237px;
-   width    : 130px;
-}
-input.C0I4
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 266px;
-   width    : 130px;
-}
-input.C0I5
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 295px;
-   width    : 130px;
-}
-input.C0I6
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 324px;
-   width    : 130px;
-}
-input.C0I7
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 353px;
-   width    : 130px;
-}
-input.C0I8
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 382px;
-   width    : 130px;
-}
-input.C0I9
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 411px;
-   width    : 130px;
-}
-
-input.C0I10
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 150px;
-   width    : 130px;
-}
-input.C0I11
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 179px;
-   width    : 130px;
-}
-input.C0I12
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 208px;
-   width    : 130px;
-}
-input.C0I13
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 237px;
-   width    : 130px;
-}
-input.C0I14
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 266px;
-   width    : 130px;
-}
-input.C0I15
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 295px;
-   width    : 130px;
-}
-input.C0I16
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 324px;
-   width    : 130px;
-}
-input.C0I17
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 353px;
-   width    : 130px;
-}
-input.C0I18
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 382px;
-   width    : 130px;
-}
-input.C0I19
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 411px;
-   width    : 130px;
-}
-
-input.C0I20
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 150px;
-   width    : 130px;
-}
-input.C0I21
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 179px;
-   width    : 130px;
-}
-input.C0I22
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 208px;
-   width    : 130px;
-}
-input.C0I23
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 237px;
-   width    : 130px;
-}
-input.C0I24
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 266px;
-   width    : 130px;
-}
-input.C0I25
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 295px;
-   width    : 130px;
-}
-input.C0I26
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 324px;
-   width    : 130px;
-}
-input.C0I27
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 353px;
-   width    : 130px;
-}
-input.C0I28
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 382px;
-   width    : 130px;
-}
-input.C0I29
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 411px;
-   width    : 130px;
-}
-
-input.C0I30
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 150px;
-   width    : 130px;
-}
-input.C0I31
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 179px;
-   width    : 130px;
-}
-input.C0I32
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 208px;
-   width    : 130px;
-}
-
-
-input.C0I33
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 266px;
-   width    : 130px;
-}
-input.C0I34
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 295px;
-   width    : 130px;
-}
-input.C0I35
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 324px;
-   width    : 130px;
-}
-input.C0I36
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 353px;
-   width    : 130px;
-}
-input.C0I37
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 382px;
-   width    : 130px;
-}
-
-input.C0I38
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 874px;
-   top      : 266px;
-   width    : 130px;
-}
-input.C0I39
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 874px;
-   top      : 295px;
-   width    : 130px;
-}
-input.C0I40
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 874px;
-   top      : 324px;
-   width    : 130px;
-}
-input.C0I41
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 874px;
-   top      : 353px;
-   width    : 130px;
-}
-input.C0I42
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 874px;
-   top      : 382px;
-   width    : 130px;
-}
-
-input.C0I43
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 742px;
-   top      : 266px;
-   width    : 130px;
-}
-input.C0I44
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 742px;
-   top      : 295px;
-   width    : 130px;
-}
-input.C0I45
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 742px;
-   top      : 324px;
-   width    : 130px;
-}
-input.C0I46
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 742px;
-   top      : 353px;
-   width    : 130px;
-}
-input.C0I47
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 742px;
-   top      : 382px;
-   width    : 130px;
-}
-
-input.C0I48
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 440px;
-   width    : 130px;
-}
-input.C0I49
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 469px;
-   width    : 130px;
-}
-
-
-
-input.C1I0
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 150px;
-   width    : 130px;
-}
-input.C1I1
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 179px;
-   width    : 130px;
-}
-input.C1I2
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 208px;
-   width    : 130px;
-}
-input.C1I3
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 237px;
-   width    : 130px;
-}
-input.C1I4
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 266px;
-   width    : 130px;
-}
-input.C1I5
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 295px;
-   width    : 130px;
-}
-input.C1I6
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 324px;
-   width    : 130px;
-}
-input.C1I7
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 353px;
-   width    : 130px;
-}
-input.C1I8
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 382px;
-   width    : 130px;
-}
-input.C1I9
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 0px;
-   top      : 411px;
-   width    : 130px;
-}
-
-input.C1I10
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 150px;
-   width    : 130px;
-}
-input.C1I11
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 179px;
-   width    : 130px;
-}
-input.C1I12
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 208px;
-   width    : 130px;
-}
-input.C1I13
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 237px;
-   width    : 130px;
-}
-input.C1I14
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 266px;
-   width    : 130px;
-}
-input.C1I15
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 295px;
-   width    : 130px;
-}
-input.C1I16
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 324px;
-   width    : 130px;
-}
-input.C1I17
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 353px;
-   width    : 130px;
-}
-input.C1I18
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 382px;
-   width    : 130px;
-}
-input.C1I19
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 132px;
-   top      : 411px;
-   width    : 130px;
-}
-
-input.C1I20
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 150px;
-   width    : 130px;
-}
-input.C1I21
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 179px;
-   width    : 130px;
-}
-input.C1I22
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 208px;
-   width    : 130px;
-}
-input.C1I23
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 237px;
-   width    : 130px;
-}
-input.C1I24
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 266px;
-   width    : 130px;
-}
-input.C1I25
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 295px;
-   width    : 130px;
-}
-input.C1I26
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 324px;
-   width    : 130px;
-}
-input.C1I27
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 353px;
-   width    : 130px;
-}
-input.C1I28
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 382px;
-   width    : 130px;
-}
-input.C1I29
-{
-   position : absolute;
-   opacity  : 0.5;
-   Left     : 264px;
-   top      : 411px;
-   width    : 130px;
-}
-
-input.C1I30
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 150px;
-   width    : 130px;
-}
-input.C1I31
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 179px;
-   width    : 130px;
-}
-input.C1I32
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 208px;
-   width    : 130px;
-}
-
-
-input.C1I33
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 266px;
-   width    : 130px;
-}
-input.C1I34
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 295px;
-   width    : 130px;
-}
-input.C1I35
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 324px;
-   width    : 130px;
-}
-input.C1I36
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 353px;
-   width    : 130px;
-}
-input.C1I37
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 382px;
-   width    : 130px;
-}
-
-input.C1I38
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 874px;
-   top      : 266px;
-   width    : 130px;
-}
-input.C1I39
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 874px;
-   top      : 295px;
-   width    : 130px;
-}
-input.C1I40
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 874px;
-   top      : 324px;
-   width    : 130px;
-}
-input.C1I41
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 874px;
-   top      : 353px;
-   width    : 130px;
-}
-input.C1I42
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 874px;
-   top      : 382px;
-   width    : 130px;
-}
-
-input.C1I43
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 742px;
-   top      : 266px;
-   width    : 130px;
-}
-input.C1I44
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 742px;
-   top      : 295px;
-   width    : 130px;
-}
-input.C1I45
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 742px;
-   top      : 324px;
-   width    : 130px;
-}
-input.C1I46
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 742px;
-   top      : 353px;
-   width    : 130px;
-}
-input.C1I47
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 742px;
-   top      : 382px;
-   width    : 130px;
-}
-
-input.C1I48
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 440px;
-   width    : 130px;
-}
-input.C1I49
-{
-   position : absolute;
-   opacity  : 0.5;
-   left     : 1006px;
-   top      : 469px;
-   width    : 130px;
-}
-
-
+input.C0I0,
+input.C1I0,
 input.C2I0
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 0px;
+   Left     : 70px;
    top      : 150px;
    width    : 130px;
 }
+input.C0I1,
+input.C1I1,
 input.C2I1
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 0px;
+   Left     : 70px;
    top      : 179px;
    width    : 130px;
 }
+input.C0I2,
+input.C1I2,
 input.C2I2
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 0px;
+   Left     : 70px;
    top      : 208px;
    width    : 130px;
 }
+input.C0I3,
+input.C1I3,
 input.C2I3
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 0px;
+   Left     : 70px;
    top      : 237px;
    width    : 130px;
 }
+input.C0I4,
+input.C1I4,
 input.C2I4
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 0px;
+   Left     : 70px;
    top      : 266px;
    width    : 130px;
 }
+input.C0I5,
+input.C1I5,
 input.C2I5
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 0px;
+   Left     : 70px;
    top      : 295px;
    width    : 130px;
 }
+input.C0I6,
+input.C1I6,
 input.C2I6
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 0px;
+   Left     : 70px;
    top      : 324px;
    width    : 130px;
 }
+input.C0I7,
+input.C1I7,
 input.C2I7
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 0px;
+   Left     : 70px;
    top      : 353px;
    width    : 130px;
 }
+input.C0I8,
+input.C1I8,
 input.C2I8
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 0px;
+   Left     : 70px;
    top      : 382px;
    width    : 130px;
 }
+input.C0I9,
+input.C1I9,
 input.C2I9
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 0px;
+   Left     : 70px;
    top      : 411px;
    width    : 130px;
 }
 
+input.C0I10,
+input.C1I10,
 input.C2I10
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 132px;
+   Left     : 202px;
    top      : 150px;
    width    : 130px;
 }
+input.C0I11,
+input.C1I11,
 input.C2I11
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 132px;
+   Left     : 202px;
    top      : 179px;
    width    : 130px;
 }
+input.C0I12,
+input.C1I12,
 input.C2I12
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 132px;
+   Left     : 202px;
    top      : 208px;
    width    : 130px;
 }
+input.C0I13,
+input.C1I13,
 input.C2I13
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 132px;
+   Left     : 202px;
    top      : 237px;
    width    : 130px;
 }
+input.C0I14,
+input.C1I14,
 input.C2I14
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 132px;
+   Left     : 202px;
    top      : 266px;
    width    : 130px;
 }
+input.C0I15,
+input.C1I15,
 input.C2I15
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 132px;
+   Left     : 202px;
    top      : 295px;
    width    : 130px;
 }
+input.C0I16,
+input.C1I16,
 input.C2I16
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 132px;
+   Left     : 202px;
    top      : 324px;
    width    : 130px;
 }
+input.C0I17,
+input.C1I17,
 input.C2I17
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 132px;
+   Left     : 202px;
    top      : 353px;
    width    : 130px;
 }
+input.C0I18,
+input.C1I18,
 input.C2I18
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 132px;
+   Left     : 202px;
    top      : 382px;
    width    : 130px;
 }
+input.C0I19,
+input.C1I19,
 input.C2I19
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 132px;
+   Left     : 202px;
    top      : 411px;
    width    : 130px;
 }
 
+input.C0I20,
+input.C1I20,
 input.C2I20
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 264px;
+   Left     : 334px;
    top      : 150px;
    width    : 130px;
 }
+input.C0I21,
+input.C1I21,
 input.C2I21
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 264px;
+   Left     : 334px;
    top      : 179px;
    width    : 130px;
 }
+input.C0I22,
+input.C1I22,
 input.C2I22
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 264px;
+   Left     : 334px;
    top      : 208px;
    width    : 130px;
 }
+input.C0I23,
+input.C1I23,
 input.C2I23
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 264px;
+   Left     : 334px;
    top      : 237px;
    width    : 130px;
 }
+input.C0I24,
+input.C1I24,
 input.C2I24
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 264px;
+   Left     : 334px;
    top      : 266px;
    width    : 130px;
 }
+input.C0I25,
+input.C1I25,
 input.C2I25
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 264px;
+   Left     : 334px;
    top      : 295px;
    width    : 130px;
 }
+input.C0I26,
+input.C1I26,
 input.C2I26
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 264px;
+   Left     : 334px;
    top      : 324px;
    width    : 130px;
 }
+input.C0I27,
+input.C1I27,
 input.C2I27
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 264px;
+   Left     : 334px;
    top      : 353px;
    width    : 130px;
 }
+input.C0I28,
+input.C1I28,
 input.C2I28
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 264px;
+   Left     : 334px;
    top      : 382px;
    width    : 130px;
 }
+input.C0I29,
+input.C1I29,
 input.C2I29
 {
    position : absolute;
    opacity  : 0.5;
-   Left     : 264px;
+   Left     : 334px;
    top      : 411px;
    width    : 130px;
 }
 
+input.C0I30,
+input.C1I30,
 input.C2I30
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 1006px;
+   left     : 620px;
    top      : 150px;
    width    : 130px;
 }
+input.C0I31,
+input.C1I31,
 input.C2I31
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 1006px;
+   left     : 620px;
    top      : 179px;
    width    : 130px;
 }
+input.C0I32,
+input.C1I32,
 input.C2I32
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 1006px;
+   left     : 620px;
    top      : 208px;
    width    : 130px;
 }
-
-
+input.C0I33,
+input.C1I33,
 input.C2I33
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 1006px;
-   top      : 266px;
+   left     : 620px;
+   top      : 237px;
    width    : 130px;
 }
+input.C0I34,
+input.C1I34,
 input.C2I34
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 1006px;
-   top      : 295px;
+   left     : 620px;
+   top      : 266px;
    width    : 130px;
 }
+
+
+input.C0I35,
+input.C1I35,
 input.C2I35
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 1006px;
-   top      : 324px;
+   left     : 620px;
+   top      : 653px;
    width    : 130px;
 }
+input.C0I36,
+input.C1I36,
 input.C2I36
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 1006px;
-   top      : 353px;
+   left     : 620px;
+   top      : 682px;
    width    : 130px;
 }
+input.C0I37,
+input.C1I37,
 input.C2I37
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 1006px;
-   top      : 382px;
+   left     : 620px;
+   top      : 711px;
    width    : 130px;
 }
-
+input.C0I38,
+input.C1I38,
 input.C2I38
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 874px;
-   top      : 266px;
+   left     : 620px;
+   top      : 740px;
    width    : 130px;
 }
+input.C0I39,
+input.C1I39,
 input.C2I39
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 874px;
-   top      : 295px;
+   left     : 620px;
+   top      : 769px;
    width    : 130px;
 }
+
+input.C0I40,
+input.C1I40,
 input.C2I40
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 874px;
-   top      : 324px;
+   left     : 488px;
+   top      : 653px;
    width    : 130px;
 }
+input.C0I41,
+input.C1I41,
 input.C2I41
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 874px;
-   top      : 353px;
+   left     : 488px;
+   top      : 682px;
    width    : 130px;
 }
+input.C0I42,
+input.C1I42,
 input.C2I42
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 874px;
-   top      : 382px;
+   left     : 488px;
+   top      : 711px;
    width    : 130px;
 }
-
+input.C0I43,
+input.C1I43,
 input.C2I43
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 742px;
-   top      : 266px;
+   left     : 488px;
+   top      : 740px;
    width    : 130px;
 }
+input.C0I44,
+input.C1I44,
 input.C2I44
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 742px;
-   top      : 295px;
+   left     : 488px;
+   top      : 769px;
    width    : 130px;
 }
+
+input.C0I45,
+input.C1I45,
 input.C2I45
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 742px;
-   top      : 324px;
+   left     : 356px;
+   top      : 653px;
    width    : 130px;
 }
+input.C0I46,
+input.C1I46,
 input.C2I46
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 742px;
-   top      : 353px;
+   left     : 356px;
+   top      : 682px;
    width    : 130px;
 }
+input.C0I47,
+input.C1I47,
 input.C2I47
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 742px;
-   top      : 382px;
+   left     : 356px;
+   top      : 711px;
    width    : 130px;
 }
-
+input.C0I48,
+input.C1I48,
 input.C2I48
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 1006px;
-   top      : 440px;
+   left     : 356px;
+   top      : 740px;
    width    : 130px;
 }
+input.C0I49,
+input.C1I49,
 input.C2I49
 {
    position : absolute;
    opacity  : 0.5;
-   left     : 1006px;
-   top      : 469px;
+   left     : 356px;
+   top      : 769px;
    width    : 130px;
 }
-
-
 
 /*======================*/
 
 /*    CHARACTER CSS     */
 
+input[type=text]
+{
+   background-color : black;
+   color       : white;
+}
+
 input.Character_name
 {
    position 	: absolute;
    left     	: 80px;	/*50*/
-   top      	: 252px; /*156*/
+   top      	: 250px; /*156*/
    width    	: 233px;
 	text-align	: center;
 	font-size	: 23px;
@@ -1593,7 +882,7 @@ input.Character_level
 {
    position 	: absolute;
    left     	: 330px;
-   top      	: 252px;
+   top      	: 250px;
    width    	: 57px;
 	text-align	: center;
 }
@@ -1601,9 +890,9 @@ input.Character_level
 input.Character_XP
 {
    position : absolute;
-   left     : ;
-   top      : ;
-   width    : ;
+   left     : 450px;
+   top      : 266px;
+   width    : 150px;
 }
 
 /*    STATS CSS         */
@@ -1612,7 +901,7 @@ input.Stats_STR
 {
    position 	: absolute;
    left     	: 92px;
-   top      	: 358px;
+   top      	: 356px;
    width    	: 40px;
 	text-align	: center;
 	font-size	: 23px;
@@ -1621,14 +910,14 @@ button.Roll_STR
 {
 	position		: absolute;
 	left			: 97px;
-	top			: 395px;
+	top			: 393px;
 }
 
 input.Stats_DEX
 {
    position 	: absolute;
    left     	: 167px;
-   top      	: 358px;
+   top      	: 356px;
    width    	: 40px;
 	text-align	: center;
 	font-size	: 23px;
@@ -1637,14 +926,14 @@ button.Roll_DEX
 {
 	position		: absolute;
 	left			: 172px;
-	top			: 395px;
+	top			: 393px;
 }
 
 input.Stats_CON
 {
    position 	: absolute;
    left     	: 242px;
-   top      	: 358px;
+   top      	: 356px;
    width    	: 40px;
 	text-align	: center;
 	font-size	: 23px;
@@ -1653,14 +942,14 @@ button.Roll_CON
 {
 	position		: absolute;
 	left			: 247px;
-	top			: 395px;
+	top			: 393px;
 }
 
 input.Stats_WIL
 {
    position 	: absolute;
    left     	: 317px;
-   top      	: 358px;
+   top      	: 356px;
    width    	: 40px;
 	text-align	: center;
 	font-size	: 23px;
@@ -1669,14 +958,14 @@ button.Roll_WIL
 {
 	position		: absolute;
 	left			: 322px;
-	top			: 395px;
+	top			: 393px;
 }
 
 input.Stats_INT
 {
    position 	: absolute;
    left     	: 393px;
-   top      	: 358px;
+   top      	: 356px;
    width    	: 40px;
 	text-align	: center;
 	font-size	: 23px;
@@ -1685,14 +974,14 @@ button.Roll_INT
 {
 	position		: absolute;
 	left			: 397px;
-	top			: 395px;
+	top			: 393px;
 }
 
 input.Stats_CHA
 {
    position 	: absolute;
    left     	: 468px;
-   top      	: 358px;
+   top      	: 356px;
    width    	: 40px;
 	text-align	: center;
 	font-size	: 23px;
@@ -1701,7 +990,7 @@ button.Roll_CHA
 {
 	position		: absolute;
 	left			: 472px;
-	top			: 395px;
+	top			: 393px;
 }
 
 /*    STRESS CSS        */
@@ -1710,7 +999,7 @@ input.Stress_StrLevel
 {
    position 	: absolute;
    left     	: 87px;
-   top      	: 443px;
+   top      	: 441px;
    width    	: 40px;
 	text-align	: center;
 	font-size	: 21px;
@@ -1720,7 +1009,7 @@ input.Stress_NervTic
 {
    position : absolute;
    left     : 145px;
-   top      : 456px;
+   top      : 454px;
    width    : 189px;
 }
 
@@ -1728,7 +1017,7 @@ input.Stress_ObsNegTrait
 {
    position : absolute;
    left     : 87px;
-   top      : 500px;
+   top      : 498px;
    width    : 246px;
    height   : 100px;
 }
@@ -1739,7 +1028,7 @@ input.Stamina
 {
 	position		: absolute;
 	left			: 504px;
-	top			: 439px;
+	top			: 437px;
 	width			: 28px;
 	height		: 28px;
 	text-align	: center;
@@ -1749,7 +1038,7 @@ input.Trauma
 {
 	position		: absolute;
 	left			: 504px;
-	top			: 481px;
+	top			: 479px;
 	width			: 28px;
 	height		: 28px;
 	text-align	: center;
@@ -1759,7 +1048,7 @@ input.Luck
 {
 	position		: absolute;
 	left			: 504px;
-	top			: 523px;
+	top			: 521px;
 	width			: 28px;
 	height		: 28px;
 	text-align	: center;
@@ -1769,7 +1058,7 @@ input.Armor
 {
 	position		: absolute;
 	left			: 362px;
-	top			: 609px;
+	top			: 607px;
 	width			: 47px;
 	height		: 29px;
 	text-align	: center;
@@ -1779,7 +1068,7 @@ input.Rads
 {
 	position		: absolute;
 	left			: 443px;
-	top			: 609px;
+	top			: 607px;
 	width			: 33px;
 	height		: 29px;
 	text-align	: center;
@@ -1789,7 +1078,7 @@ input.Wounds
 {
 	position		: absolute;
 	left			: 188px;
-	top			: 681px;
+	top			: 679px;
 	width			: 27px;
 	height		: 15px;
 	text-align	: center;
@@ -1801,7 +1090,7 @@ input.Skill_ArTech
 {
    position 	: absolute;
    left     	: 578px;
-   top      	: 198px;
+   top      	: 196px;
    width    	: 25px;
    height   	: 24px;
 	text-align	: center;
@@ -1810,14 +1099,14 @@ button.Roll_ArTech
 {
 	position		: absolute;
 	left			: 550px;
-	top			: 198px;
+	top			: 196px;
 }
 
 input.Skill_ClComb
 {
    position 	: absolute;
    left     	: 578px;
-   top      	: 233px;
+   top      	: 231px;
    width    	: 25px;
    height   	: 24px;
 	text-align	: center;
@@ -1826,14 +1115,14 @@ button.Roll_ClComb
 {
 	position		: absolute;
 	left			: 550px;
-	top			: 233px;
+	top			: 231px;
 }
 
 input.Skill_Percept
 {
    position 	: absolute;
    left     	: 578px;
-   top      	: 268px;
+   top      	: 266px;
    width    	: 25px;
    height   	: 24px;
 	text-align	: center;
@@ -1842,14 +1131,14 @@ button.Roll_Percept
 {
 	position		: absolute;
 	left			: 550px;
-   top      	: 268px;
+   top      	: 266px;
 }
 
 input.Skill_Manipul
 {
    position 	: absolute;
    left     	: 578px;
-   top      	: 303px;
+   top      	: 301px;
    width    	: 25px;
    height   	: 24px;
 	text-align	: center;
@@ -1858,14 +1147,14 @@ button.Roll_Manipul
 {
 	position		: absolute;
 	left			: 550px;
-   top      	: 303px;
+   top      	: 301px;
 }
 
 input.Skill_MedAid
 {
    position 	: absolute;
    left     	: 578px;
-   top      	: 338px;
+   top      	: 336px;
    width    	: 25px;
    height   	: 24px;
 	text-align	: center;
@@ -1874,14 +1163,14 @@ button.Roll_MedAid
 {
 	position		: absolute;
 	left			: 550px;
-   top      	: 338px;
+   top      	: 336px;
 }
 
 input.Skill_Pilot
 {
    position 	: absolute;
    left     	: 578px;
-   top      	: 373px;
+   top      	: 371px;
    width    	: 25px;
    height   	: 24px;
 	text-align	: center;
@@ -1890,14 +1179,14 @@ button.Roll_Pilot
 {
 	position		: absolute;
 	left			: 550px;
-   top      	: 373px;
+   top      	: 371px;
 }
 
 input.Skill_RaComb
 {
    position 	: absolute;
    left     	: 578px;
-   top      	: 408px;
+   top      	: 406px;
    width    	: 25px;
    height   	: 24px;
 	text-align	: center;
@@ -1906,14 +1195,14 @@ button.Roll_RaComb
 {
 	position		: absolute;
 	left			: 550px;
-   top      	: 408px;
+   top      	: 406px;
 }
 
 input.Skill_Resolve
 {
    position 	: absolute;
    left     	: 578px;
-   top      	: 443px;
+   top      	: 441px;
    width    	: 25px;
    height   	: 24px;
 	text-align	: center;
@@ -1922,14 +1211,14 @@ button.Roll_Resolve
 {
 	position		: absolute;
 	left			: 550px;
-   top      	: 443px;
+   top      	: 441px;
 }
 
 input.Skill_Science
 {
    position 	: absolute;
    left     	: 578px;
-   top      	: 478px;
+   top      	: 476px;
    width    	: 25px;
    height   	: 24px;
 	text-align	: center;
@@ -1938,14 +1227,14 @@ button.Roll_Science
 {
 	position		: absolute;
 	left			: 550px;
-   top      	: 478px;
+   top      	: 476px;
 }
 
 input.Skill_Stealth
 {
    position 	: absolute;
    left     	: 578px;
-   top      	: 513px;
+   top      	: 511px;
    width    	: 25px;
    height   	: 24px;
 	text-align	: center;
@@ -1954,14 +1243,14 @@ button.Roll_Stealth
 {
 	position		: absolute;
 	left			: 550px;
-   top      	: 513px;
+   top      	: 511px;
 }
 
 input.Skill_Survival
 {
    position 	: absolute;
    left     	: 578px;
-   top      	: 548px;
+   top      	: 546px;
    width    	: 25px;
    height   	: 24px;
 	text-align	: center;
@@ -1970,14 +1259,14 @@ button.Roll_Survival
 {
 	position		: absolute;
 	left			: 550px;
-   top      	: 548px;
+   top      	: 546px;
 }
 
 input.Skill_Techno
 {
    position 	: absolute;
    left     	: 578px;
-   top      	: 583px;
+   top      	: 581px;
    width    	: 25px;
    height   	: 24px;
 	text-align	: center;
@@ -1986,7 +1275,7 @@ button.Roll_Techno
 {
 	position		: absolute;
 	left			: 550px;
-   top      	: 583px;
+   top      	: 581px;
 }
 
 .radio-label_Disadvantage {
@@ -2003,7 +1292,7 @@ button.Roll_Techno
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Disadvantage:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Standard {
@@ -2020,7 +1309,7 @@ input[type="radio"]:checked + .radio-label_Disadvantage:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Standard:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Advantage {
@@ -2037,14 +1326,14 @@ input[type="radio"]:checked + .radio-label_Standard:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Advantage:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 input.Talent_0
 {
    position : absolute;
    left     : 878px;
-   top      : 309px;
+   top      : 307px;
    width    : 202px;
    height   : 25px;
 }
@@ -2053,7 +1342,7 @@ input.Talent_1
 {
    position : absolute;
    left     : 878px;
-   top      : 345px;
+   top      : 343px;
    width    : 202px;
    height   : 25px;
 }
@@ -2062,7 +1351,7 @@ input.Talent_2
 {
    position : absolute;
    left     : 878px;
-   top      : 381px;
+   top      : 379px;
    width    : 202px;
    height   : 25px;
 }
@@ -2071,7 +1360,7 @@ input.Talent_3
 {
    position : absolute;
    left     : 878px;
-   top      : 417px;
+   top      : 415px;
    width    : 202px;
    height   : 25px;
 }
@@ -2080,7 +1369,7 @@ input.Talent_4
 {
    position : absolute;
    left     : 878px;
-   top      : 453px;
+   top      : 451px;
    width    : 202px;
    height   : 25px;
 }
@@ -2117,7 +1406,7 @@ input[type="radio"] {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Hopeless:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Mid_0 {
@@ -2134,7 +1423,7 @@ input[type="radio"]:checked + .radio-label_Hopeless:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_0:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Enraged {
@@ -2151,7 +1440,7 @@ input[type="radio"]:checked + .radio-label_Mid_0:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Enraged:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Mid_1 {
@@ -2168,7 +1457,7 @@ input[type="radio"]:checked + .radio-label_Enraged:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_1:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Nervous {
@@ -2185,7 +1474,7 @@ input[type="radio"]:checked + .radio-label_Mid_1:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Nervous:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Mid_2 {
@@ -2202,7 +1491,7 @@ input[type="radio"]:checked + .radio-label_Nervous:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_2:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Composed {
@@ -2219,7 +1508,7 @@ input[type="radio"]:checked + .radio-label_Mid_2:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Composed:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Mid_3 {
@@ -2236,7 +1525,7 @@ input[type="radio"]:checked + .radio-label_Composed:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_3:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Calm {
@@ -2253,7 +1542,7 @@ input[type="radio"]:checked + .radio-label_Mid_3:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Calm:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Mid_4 {
@@ -2270,7 +1559,7 @@ input[type="radio"]:checked + .radio-label_Calm:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_4:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Hopeful {
@@ -2287,7 +1576,7 @@ input[type="radio"]:checked + .radio-label_Mid_4:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Hopeful:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Mid_5 {
@@ -2304,7 +1593,7 @@ input[type="radio"]:checked + .radio-label_Hopeful:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_5:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 .radio-label_Pleased {
@@ -2321,7 +1610,7 @@ input[type="radio"]:checked + .radio-label_Mid_5:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Pleased:before {
-    background-color: #000; /* Black fill */
+    background-color: #FFFFFF; /* Black fill */
 }
 
 

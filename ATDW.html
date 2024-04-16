@@ -32,10 +32,10 @@
    <input type="hidden" class="cargo-toggle" name="attr_cargo"  value="Ship"/>
    <div class="Ship_Designation"></div>
    <div>
-      <button type="action" name="act_Ship">Ship</button>
-      <button type="action" name="act_C0">CARGO 0</button>
-      <button type="action" name="act_C1">CARGO 1</button>
-      <button type="action" name="act_C2">CARGO 2</button>
+      <button type="action" class="Ship_btn" name="act_Ship">SHIP</button>
+      <button type="action" class="C0_btn" name="act_C0">CARGO 0</button>
+      <button type="action" class="C1_btn" name="act_C1">CARGO 1</button>
+      <button type="action" class="C2_btn" name="act_C2">CARGO 2</button>
    </div>
    
    <div class="Ship">
@@ -209,8 +209,8 @@
    
    <input type="hidden" class="sheet-tabstoggle" name="attr_sheetTab"  value="character"/> <!-- NEEDS TO BE LOCAL TO THE BUTTON -->
    <div>
-       <button type="action" name="act_character">Character</button>
-       <button type="action" name="act_backpack">Backpack</button>
+       <button type="action" class="Char_btn" name="act_character">Character</button>
+       <button type="action" class="Back_btn" name="act_backpack">Backpack</button>
    </div>
 
    <div class="sheet-character">
@@ -274,40 +274,40 @@
       <input class="Wounds" type="text" name="attr_Wounds" value="0">
 
       <input class="Skill_ArTech" type="text" name="attr_Skill_ArTech" value="-5">
-      <button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:ATDW} {{title=Arsaidh Technology}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_ArTech}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <button type="roll" class="Roll_ArTech" name="roll_attack" value="&{template:ATDW} {{title=Arsaidh Technology}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Skill_ArTech}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{desc=}}"></button>
 
       <input class="Skill_ClComb" type="text" name="attr_Skill_ClComb" value="0">
       <button type="roll" class="Roll_ClComb" name="roll_attack" value="&{template:ATDW} {{title=Close Combat}} {{subtitle=}} {{CLC_roll=[[{@{AdvQuant}d20+@{Skill_ClComb}+@{Skill_Bonus_ArTech}}@{AdvSelc}]]}} {{Close Combat Damage=[@{ClCombWeap}](~ClCombDMG)}} {{desc=}}"></button>
 
       <input class="Skill_Percept" type="text" name="attr_Skill_Percept" value="0">
-      <button type="roll" class="Roll_Percept" name="roll_attack" value="&{template:ATDW} {{title=Perception}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Percept}+@{Skill_Bonus_Percept}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <button type="roll" class="Roll_Percept" name="roll_attack" value="&{template:ATDW} {{title=Perception}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Skill_Percept}+@{Skill_Bonus_Percept}}@{AdvSelc}]]}} {{desc=}}"></button>
 
       <input class="Skill_Manipul" type="text" name="attr_Skill_Manipul" value="0">
-      <button type="roll" class="Roll_Manipul" name="roll_attack" value="&{template:ATDW} {{title=Manipulation}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Manipul}+@{Skill_Bonus_Manipul}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <button type="roll" class="Roll_Manipul" name="roll_attack" value="&{template:ATDW} {{title=Manipulation}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Skill_Manipul}+@{Skill_Bonus_Manipul}}@{AdvSelc}]]}} {{desc=}}"></button>
 
       <input class="Skill_MedAid" type="text" name="attr_Skill_MedAid" value="0">
-      <button type="roll" class="Roll_MedAid" name="roll_attack" value="&{template:ATDW} {{title=Medical Aid}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_MedAid}+@{Skill_Bonus_MedAid}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <button type="roll" class="Roll_MedAid" name="roll_attack" value="&{template:ATDW} {{title=Medical Aid}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Skill_MedAid}+@{Skill_Bonus_MedAid}}@{AdvSelc}]]}} {{desc=}}"></button>
 
       <input class="Skill_Pilot" type="text" name="attr_Skill_Pilot" value="0">
-      <button type="roll" class="Roll_Pilot" name="roll_attack" value="&{template:ATDW} {{title=Pilot}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Pilot}+@{Skill_Bonus_Pilot}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <button type="roll" class="Roll_Pilot" name="roll_attack" value="&{template:ATDW} {{title=Pilot}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Skill_Pilot}+@{Skill_Bonus_Pilot}}@{AdvSelc}]]}} {{desc=}}"></button>
 
       <input class="Skill_RaComb" type="text" name="attr_Skill_RaComb" value="0">
       <button type="roll" class="Roll_RaComb" name="roll_attack" value="&{template:ATDW} {{title=Ranged Combat}} {{subtitle=}} {{RAC_roll=[[{@{AdvQuant}d20+@{Skill_RaComb}+@{Skill_Bonus_RaComb}}@{AdvSelc}]]}} {{Range Combat Damage=[@{RaCombWeap}](~RaCombDMG)}} {{desc=}}"></button>
 
       <input class="Skill_Resolve" type="text" name="attr_Skill_Resolve" value="0">
-      <button type="roll" class="Roll_Resolve" name="roll_attack" value="&{template:ATDW} {{title=Resolve}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Resolve}+@{Skill_Bonus_Resolve}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <button type="roll" class="Roll_Resolve" name="roll_attack" value="&{template:ATDW} {{title=Resolve}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Skill_Resolve}+@{Skill_Bonus_Resolve}}@{AdvSelc}]]}} {{desc=}}"></button>
 
       <input class="Skill_Science" type="text" name="attr_Skill_Science" value="0">
-      <button type="roll" class="Roll_Science" name="roll_attack" value="&{template:ATDW} {{title=Science}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Science}+@{Skill_Bonus_Science}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <button type="roll" class="Roll_Science" name="roll_attack" value="&{template:ATDW} {{title=Science}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Skill_Science}+@{Skill_Bonus_Science}}@{AdvSelc}]]}} {{desc=}}"></button>
 
       <input class="Skill_Stealth" type="text" name="attr_Skill_Stealth" value="0">
-      <button type="roll" class="Roll_Stealth" name="roll_attack" value="&{template:ATDW} {{title=Stealth}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Stealth}+@{Skill_Bonus_Stealth}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <button type="roll" class="Roll_Stealth" name="roll_attack" value="&{template:ATDW} {{title=Stealth}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Skill_Stealth}+@{Skill_Bonus_Stealth}}@{AdvSelc}]]}} {{desc=}}"></button>
 
       <input class="Skill_Survival" type="text" name="attr_Skill_Survival" value="0">
-      <button type="roll" class="Roll_Survival" name="roll_attack" value="&{template:ATDW} {{title=Survival}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Survival}+@{Skill_Bonus_Survival}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <button type="roll" class="Roll_Survival" name="roll_attack" value="&{template:ATDW} {{title=Survival}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Skill_Survival}+@{Skill_Bonus_Survival}}@{AdvSelc}]]}} {{desc=}}"></button>
 
       <input class="Skill_Techno" type="text" name="attr_Skill_Techno" value="0">
-      <button type="roll" class="Roll_Techno" name="roll_attack" value="&{template:ATDW} {{title=Technology}} {{subtitle=}} {{color=}} {{[[{@{AdvQuant}d20+@{Skill_Techno}+@{Skill_Bonus_Techno}}@{AdvSelc}]]}} {{desc=}}"></button>
+      <button type="roll" class="Roll_Techno" name="roll_attack" value="&{template:ATDW} {{title=Technology}} {{subtitle=}} {{Normal_roll=[[{@{AdvQuant}d20+@{Skill_Techno}+@{Skill_Bonus_Techno}}@{AdvSelc}]]}} {{desc=}}"></button>
 
       <input type="radio" name="attr_Advantage" id="Advantage_0" class="radio-label_Disadvantage" value="0">
       <label for="Advantage_0" class="radio-label_Disadvantage"></label>
