@@ -77,6 +77,18 @@ button.C2_btn
    background-color: #272727;
 }
 
+.Cargo_0,
+.Cargo_1,
+.Cargo_2
+{
+	padding-left	: 10px;
+	padding-top		: 10px;
+	position			: float;
+	height			: 53px;
+	width				: 150px;
+}
+
+
 /* show the selected tab */
 .charsheet .cargo-toggle[value="Ship"] ~ div.Ship,
 .charsheet .cargo-toggle[value="C0"] ~ div.C0,
@@ -109,7 +121,7 @@ button.Back_btn
 
 div.sheet-character
 {
-   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Character_sheet_0_darkMode.png');
+   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Character_sheet_0_darkMode_cyan.png');
    background-repeat			: no-repeat;
    background-attachment	: absolute;
 	background-size			: 1135px 804px;
@@ -121,7 +133,7 @@ div.sheet-character
 
 div.sheet-backpack
 {
-   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Character_sheet_1_darkMode.png');
+   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Character_sheet_1_darkMode_cyan.png');
    background-repeat			: no-repeat;
    background-attachment	: absolute;
 	background-size			: 1135px 804px;
@@ -890,9 +902,9 @@ input.Character_level
 input.Character_XP
 {
    position : absolute;
-   left     : 450px;
+   left     : 400px;
    top      : 266px;
-   width    : 150px;
+   width    : 100px;
 }
 
 /*    STATS CSS         */
