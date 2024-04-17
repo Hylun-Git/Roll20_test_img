@@ -324,6 +324,7 @@ div.C2
   grid-column: span 2;
   padding: 5px;
   text-align: center;
+  height    : 50px;
 }
 
 /* Roll Buttons */
@@ -874,10 +875,22 @@ input.C2I49
 
 /*    CHARACTER CSS     */
 
+.charsheet button[type=roll]::before 
+{
+    display:none;
+}
+
+.sheet-PC_s button[type=roll]
+{
+   height            : 20px;
+   opacity           : 0.5;
+}
+
 input[type=text]
 {
-   background-color : black;
-   color       : white;
+   background-color  : black;
+   color             : white;
+   border            : 1px solid #5EBDC1;
 }
 
 input.Character_name
@@ -921,8 +934,9 @@ input.Stats_STR
 button.Roll_STR
 {
 	position		: absolute;
-	left			: 97px;
-	top			: 393px;
+	left			: 62px;
+	top			: 328px;
+   width       : 30px;
 }
 
 input.Stats_DEX
@@ -937,8 +951,9 @@ input.Stats_DEX
 button.Roll_DEX
 {
 	position		: absolute;
-	left			: 172px;
-	top			: 393px;
+	left			: 137px;
+	top			: 328px;
+   width       : 30px;
 }
 
 input.Stats_CON
@@ -953,8 +968,9 @@ input.Stats_CON
 button.Roll_CON
 {
 	position		: absolute;
-	left			: 247px;
-	top			: 393px;
+	left			: 212px;
+	top			: 328px;
+   width       : 30px;
 }
 
 input.Stats_WIL
@@ -969,8 +985,9 @@ input.Stats_WIL
 button.Roll_WIL
 {
 	position		: absolute;
-	left			: 322px;
-	top			: 393px;
+	left			: 287px;
+	top			: 328px;
+   width       : 30px;
 }
 
 input.Stats_INT
@@ -985,8 +1002,9 @@ input.Stats_INT
 button.Roll_INT
 {
 	position		: absolute;
-	left			: 397px;
-	top			: 393px;
+	left			: 362px;
+	top			: 328px;
+   width       : 30px;
 }
 
 input.Stats_CHA
@@ -1001,8 +1019,9 @@ input.Stats_CHA
 button.Roll_CHA
 {
 	position		: absolute;
-	left			: 472px;
-	top			: 393px;
+	left			: 437px;
+	top			: 328px;
+   width       : 30px;
 }
 
 /*    STRESS CSS        */
@@ -1110,8 +1129,9 @@ input.Skill_ArTech
 button.Roll_ArTech
 {
 	position		: absolute;
-	left			: 550px;
-	top			: 196px;
+	left			: 604px;
+   width       : 193px;
+	top			: 195px;
 }
 
 input.Skill_ClComb
@@ -1126,8 +1146,9 @@ input.Skill_ClComb
 button.Roll_ClComb
 {
 	position		: absolute;
-	left			: 550px;
-	top			: 231px;
+	left			: 604px;
+   width       : 193px;
+	top			: 230px;
 }
 
 input.Skill_Percept
@@ -1142,8 +1163,9 @@ input.Skill_Percept
 button.Roll_Percept
 {
 	position		: absolute;
-	left			: 550px;
-   top      	: 266px;
+	left			: 604px;
+   width       : 193px;
+   top      	: 265px;
 }
 
 input.Skill_Manipul
@@ -1158,8 +1180,9 @@ input.Skill_Manipul
 button.Roll_Manipul
 {
 	position		: absolute;
-	left			: 550px;
-   top      	: 301px;
+	left			: 604px;
+   width       : 193px;
+   top      	: 300px;
 }
 
 input.Skill_MedAid
@@ -1174,8 +1197,9 @@ input.Skill_MedAid
 button.Roll_MedAid
 {
 	position		: absolute;
-	left			: 550px;
-   top      	: 336px;
+	left			: 604px;
+   width       : 193px;
+   top      	: 335px;
 }
 
 input.Skill_Pilot
@@ -1190,8 +1214,9 @@ input.Skill_Pilot
 button.Roll_Pilot
 {
 	position		: absolute;
-	left			: 550px;
-   top      	: 371px;
+	left			: 604px;
+   width       : 193px;
+   top      	: 370px;
 }
 
 input.Skill_RaComb
@@ -1206,8 +1231,9 @@ input.Skill_RaComb
 button.Roll_RaComb
 {
 	position		: absolute;
-	left			: 550px;
-   top      	: 406px;
+	left			: 604px;
+   width       : 193px;
+   top      	: 405px;
 }
 
 input.Skill_Resolve
@@ -1222,8 +1248,9 @@ input.Skill_Resolve
 button.Roll_Resolve
 {
 	position		: absolute;
-	left			: 550px;
-   top      	: 441px;
+	left			: 604px;
+   width       : 193px;
+   top      	: 440px;
 }
 
 input.Skill_Science
@@ -1238,8 +1265,9 @@ input.Skill_Science
 button.Roll_Science
 {
 	position		: absolute;
-	left			: 550px;
-   top      	: 476px;
+	left			: 604px;
+   width       : 193px;
+   top      	: 475px;
 }
 
 input.Skill_Stealth
@@ -1254,8 +1282,9 @@ input.Skill_Stealth
 button.Roll_Stealth
 {
 	position		: absolute;
-	left			: 550px;
-   top      	: 511px;
+	left			: 604px;
+   width       : 193px;
+   top      	: 510px;
 }
 
 input.Skill_Survival
@@ -1270,8 +1299,9 @@ input.Skill_Survival
 button.Roll_Survival
 {
 	position		: absolute;
-	left			: 550px;
-   top      	: 546px;
+	left			: 604px;
+   width       : 193px;
+   top      	: 545px;
 }
 
 input.Skill_Techno
@@ -1286,8 +1316,9 @@ input.Skill_Techno
 button.Roll_Techno
 {
 	position		: absolute;
-	left			: 550px;
-   top      	: 581px;
+	left			: 604px;
+   width       : 193px;
+   top      	: 580px;
 }
 
 .radio-label_Disadvantage {
@@ -1304,7 +1335,7 @@ button.Roll_Techno
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Disadvantage:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Standard {
@@ -1321,7 +1352,7 @@ input[type="radio"]:checked + .radio-label_Disadvantage:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Standard:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Advantage {
@@ -1338,7 +1369,7 @@ input[type="radio"]:checked + .radio-label_Standard:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Advantage:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 input.Talent_0
@@ -1418,7 +1449,7 @@ input[type="radio"] {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Hopeless:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Mid_0 {
@@ -1435,7 +1466,7 @@ input[type="radio"]:checked + .radio-label_Hopeless:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_0:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Enraged {
@@ -1452,7 +1483,7 @@ input[type="radio"]:checked + .radio-label_Mid_0:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Enraged:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Mid_1 {
@@ -1469,7 +1500,7 @@ input[type="radio"]:checked + .radio-label_Enraged:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_1:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Nervous {
@@ -1486,7 +1517,7 @@ input[type="radio"]:checked + .radio-label_Mid_1:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Nervous:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Mid_2 {
@@ -1503,7 +1534,7 @@ input[type="radio"]:checked + .radio-label_Nervous:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_2:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Composed {
@@ -1520,7 +1551,7 @@ input[type="radio"]:checked + .radio-label_Mid_2:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Composed:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Mid_3 {
@@ -1537,7 +1568,7 @@ input[type="radio"]:checked + .radio-label_Composed:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_3:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Calm {
@@ -1554,7 +1585,7 @@ input[type="radio"]:checked + .radio-label_Mid_3:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Calm:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Mid_4 {
@@ -1571,7 +1602,7 @@ input[type="radio"]:checked + .radio-label_Calm:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_4:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Hopeful {
@@ -1588,7 +1619,7 @@ input[type="radio"]:checked + .radio-label_Mid_4:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Hopeful:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Mid_5 {
@@ -1605,7 +1636,7 @@ input[type="radio"]:checked + .radio-label_Hopeful:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Mid_5:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 .radio-label_Pleased {
@@ -1622,7 +1653,7 @@ input[type="radio"]:checked + .radio-label_Mid_5:before {
    /*border: 2px solid #000;  Black border */
 }
 input[type="radio"]:checked + .radio-label_Pleased:before {
-    background-color: #FFFFFF; /* Black fill */
+    background-color: #79D4C3; /* Black fill */
 }
 
 
@@ -1636,7 +1667,7 @@ input.Equip_Head
 {
    position 	: absolute;
    left     	: 97px;	/*50*/
-   top      	: 167px; /*156*/
+   top      	: 165px; /*156*/
    width    	: 158px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1646,7 +1677,7 @@ input.Equip_Torso
 {
    position 	: absolute;
    left     	: 97px;	/*50*/
-   top      	: 257px; /*156*/
+   top      	: 255px; /*156*/
    width    	: 158px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1656,7 +1687,7 @@ input.Equip_Waist
 {
    position 	: absolute;
    left     	: 97px;	/*50*/
-   top      	: 347px; /*156*/
+   top      	: 345px; /*156*/
    width    	: 158px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1666,7 +1697,7 @@ input.Equip_Back
 {
    position 	: absolute;
    left     	: 496px;	/*50*/
-   top      	: 373px; /*156*/
+   top      	: 371px; /*156*/
    width    	: 156px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1676,7 +1707,7 @@ input.Equip_RHand
 {
    position 	: absolute;
    left     	: 99px;	/*50*/
-   top      	: 510px; /*156*/
+   top      	: 508px; /*156*/
    width    	: 156px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1686,7 +1717,7 @@ input.ClCombWeap
 {
    position 	: absolute;
    left     	: 99px;	/*50*/
-   top      	: 590px; /*156*/
+   top      	: 588px; /*156*/
    width    	: 156px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1696,7 +1727,7 @@ input.RaCombWeap
 {
    position 	: absolute;
    left     	: 460px;	/*50*/
-   top      	: 590px; /*156*/
+   top      	: 588px; /*156*/
    width    	: 156px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1706,7 +1737,7 @@ input.Equip_LHand
 {
    position 	: absolute;
    left     	: 460px;	/*50*/
-   top      	: 510px; /*156*/
+   top      	: 508px; /*156*/
    width    	: 156px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1716,7 +1747,7 @@ input.Equip_Legs
 {
    position 	: absolute;
    left     	: 98px;	/*50*/
-   top      	: 670px; /*156*/
+   top      	: 668px; /*156*/
    width    	: 156px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1726,7 +1757,7 @@ input.Equip_Feet
 {
    position 	: absolute;
    left     	: 460px;	/*50*/
-   top      	: 665px; /*156*/
+   top      	: 663px; /*156*/
    width    	: 156px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1736,7 +1767,7 @@ input.Equip_Body_Suit
 {
    position 	: absolute;
    left     	: 658px;	/*50*/
-   top      	: 532px; /*156*/
+   top      	: 530px; /*156*/
    width    	: 255px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1746,7 +1777,7 @@ input.Drake_Coins
 {
    position 	: absolute;
    left     	: 944px;	/*50*/
-   top      	: 532px; /*156*/
+   top      	: 530px; /*156*/
    width    	: 177px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1756,7 +1787,7 @@ input.ClComb_Dmg
 {
 	position		: absolute;
 	Left			: 97px;
-	top			: 431px;
+	top			: 429px;
 	width			: 112px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1765,15 +1796,16 @@ input.ClComb_Dmg
 button.Roll_ClComb_Dmg
 {
 	position		: absolute;
-	left			: 70px;
-   top      	: 432px;
+	left			: 87px;
+   top      	: 465px;
+   width       : 120px;
 }
 
 input.RaComb_Dmg
 {
 	position		: absolute;
-	Left			: 509px;
-	top			: 436px;
+	Left			: 502px;
+	top			: 434px;
 	width			: 112px;
 	text-align	: center;
 	font-size	: 18px;
@@ -1782,15 +1814,26 @@ input.RaComb_Dmg
 button.Roll_RaComb_Dmg
 {
 	position		: absolute;
-	left			: 481px;
-   top      	: 438px;
+	left			: 495px;
+   top      	: 470px;
+   width       : 115px;
+}
+
+input.Range
+{
+	position		: absolute;
+	Left			: 630px;
+	top			: 434px;
+	width			: 60px;
+	text-align	: center;
+	font-size	: 18px;
 }
 
 input.Backpack_Qua_00
 {
    position 	: absolute;
    left     	: 500px;	/*50*/
-   top      	: 150px; /*156*/
+   top      	: 148px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1799,7 +1842,7 @@ input.Backpack_Obj_00
 {
    position 	: absolute;
    left     	: 530px;	/*50*/
-   top      	: 150px; /*156*/
+   top      	: 148px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1809,7 +1852,7 @@ input.Backpack_Qua_01
 {
    position 	: absolute;
    left     	: 500px;	/*50*/
-   top      	: 181px; /*156*/
+   top      	: 179px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1818,7 +1861,7 @@ input.Backpack_Obj_01
 {
    position 	: absolute;
    left     	: 530px;	/*50*/
-   top      	: 181px; /*156*/
+   top      	: 179px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1828,7 +1871,7 @@ input.Backpack_Qua_02
 {
    position 	: absolute;
    left     	: 500px;	/*50*/
-   top      	: 211px; /*156*/
+   top      	: 209px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1837,7 +1880,7 @@ input.Backpack_Obj_02
 {
    position 	: absolute;
    left     	: 530px;	/*50*/
-   top      	: 211px; /*156*/
+   top      	: 209px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1847,7 +1890,7 @@ input.Backpack_Qua_03
 {
    position 	: absolute;
    left     	: 500px;	/*50*/
-   top      	: 242px; /*156*/
+   top      	: 240px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1856,7 +1899,7 @@ input.Backpack_Obj_03
 {
    position 	: absolute;
    left     	: 530px;	/*50*/
-   top      	: 242px; /*156*/
+   top      	: 240px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1866,7 +1909,7 @@ input.Backpack_Qua_04
 {
    position 	: absolute;
    left     	: 500px;	/*50*/
-   top      	: 273px; /*156*/
+   top      	: 271px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1875,7 +1918,7 @@ input.Backpack_Obj_04
 {
    position 	: absolute;
    left     	: 530px;	/*50*/
-   top      	: 273px; /*156*/
+   top      	: 271px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1885,7 +1928,7 @@ input.Backpack_Qua_10
 {
    position 	: absolute;
    left     	: 709px;	/*50*/
-   top      	: 150px; /*156*/
+   top      	: 148px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1894,7 +1937,7 @@ input.Backpack_Obj_10
 {
    position 	: absolute;
    left     	: 739px;	/*50*/
-   top      	: 150px; /*156*/
+   top      	: 148px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1904,7 +1947,7 @@ input.Backpack_Qua_11
 {
    position 	: absolute;
    left     	: 709px;	/*50*/
-   top      	: 181px; /*156*/
+   top      	: 179px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1913,7 +1956,7 @@ input.Backpack_Obj_11
 {
    position 	: absolute;
    left     	: 739px;	/*50*/
-   top      	: 181px; /*156*/
+   top      	: 179px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1923,7 +1966,7 @@ input.Backpack_Qua_12
 {
    position 	: absolute;
    left     	: 709px;	/*50*/
-   top      	: 211px; /*156*/
+   top      	: 209px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1932,7 +1975,7 @@ input.Backpack_Obj_12
 {
    position 	: absolute;
    left     	: 739px;	/*50*/
-   top      	: 211px; /*156*/
+   top      	: 209px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1942,7 +1985,7 @@ input.Backpack_Qua_13
 {
    position 	: absolute;
    left     	: 709px;	/*50*/
-   top      	: 242px; /*156*/
+   top      	: 240px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1951,7 +1994,7 @@ input.Backpack_Obj_13
 {
    position 	: absolute;
    left     	: 739px;	/*50*/
-   top      	: 242px; /*156*/
+   top      	: 240px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1961,7 +2004,7 @@ input.Backpack_Qua_14
 {
    position 	: absolute;
    left     	: 709px;	/*50*/
-   top      	: 273px; /*156*/
+   top      	: 271px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1970,7 +2013,7 @@ input.Backpack_Obj_14
 {
    position 	: absolute;
    left     	: 739px;	/*50*/
-   top      	: 273px; /*156*/
+   top      	: 271px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1980,7 +2023,7 @@ input.Backpack_Qua_20
 {
    position 	: absolute;
    left     	: 918px;	/*50*/
-   top      	: 150px; /*156*/
+   top      	: 148px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1989,7 +2032,7 @@ input.Backpack_Obj_20
 {
    position 	: absolute;
    left     	: 948px;	/*50*/
-   top      	: 150px; /*156*/
+   top      	: 148px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -1999,7 +2042,7 @@ input.Backpack_Qua_21
 {
    position 	: absolute;
    left     	: 918px;	/*50*/
-   top      	: 181px; /*156*/
+   top      	: 179px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2008,7 +2051,7 @@ input.Backpack_Obj_21
 {
    position 	: absolute;
    left     	: 948px;	/*50*/
-   top      	: 181px; /*156*/
+   top      	: 179px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2018,7 +2061,7 @@ input.Backpack_Qua_22
 {
    position 	: absolute;
    left     	: 918px;	/*50*/
-   top      	: 211px; /*156*/
+   top      	: 209px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2027,7 +2070,7 @@ input.Backpack_Obj_22
 {
    position 	: absolute;
    left     	: 948px;	/*50*/
-   top      	: 211px; /*156*/
+   top      	: 209px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2037,7 +2080,7 @@ input.Backpack_Qua_23
 {
    position 	: absolute;
    left     	: 918px;	/*50*/
-   top      	: 242px; /*156*/
+   top      	: 240px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2046,7 +2089,7 @@ input.Backpack_Obj_23
 {
    position 	: absolute;
    left     	: 948px;	/*50*/
-   top      	: 242px; /*156*/
+   top      	: 240px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2056,7 +2099,7 @@ input.Backpack_Qua_24
 {
    position 	: absolute;
    left     	: 918px;	/*50*/
-   top      	: 273px; /*156*/
+   top      	: 271px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2065,7 +2108,7 @@ input.Backpack_Obj_24
 {
    position 	: absolute;
    left     	: 948px;	/*50*/
-   top      	: 273px; /*156*/
+   top      	: 271px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2079,7 +2122,7 @@ input.Pockets_Qua_00
 {
    position 	: absolute;
    left     	: 709px;	/*50*/
-   top      	: 336px; /*156*/
+   top      	: 334px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2088,7 +2131,7 @@ input.Pockets_Obj_00
 {
    position 	: absolute;
    left     	: 739px;	/*50*/
-   top      	: 336px; /*156*/
+   top      	: 334px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2098,7 +2141,7 @@ input.Pockets_Qua_01
 {
    position 	: absolute;
    left     	: 709px;	/*50*/
-   top      	: 367px; /*156*/
+   top      	: 365px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2107,7 +2150,7 @@ input.Pockets_Obj_01
 {
    position 	: absolute;
    left     	: 739px;	/*50*/
-   top      	: 367px; /*156*/
+   top      	: 365px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2117,7 +2160,7 @@ input.Pockets_Qua_02
 {
    position 	: absolute;
    left     	: 709px;	/*50*/
-   top      	: 398px; /*156*/
+   top      	: 396px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2126,7 +2169,7 @@ input.Pockets_Obj_02
 {
    position 	: absolute;
    left     	: 739px;	/*50*/
-   top      	: 398px; /*156*/
+   top      	: 396px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2136,7 +2179,7 @@ input.Pockets_Qua_03
 {
    position 	: absolute;
    left     	: 709px;	/*50*/
-   top      	: 429px; /*156*/
+   top      	: 427px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2145,7 +2188,7 @@ input.Pockets_Obj_03
 {
    position 	: absolute;
    left     	: 739px;	/*50*/
-   top      	: 429px; /*156*/
+   top      	: 427px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2155,7 +2198,7 @@ input.Pockets_Qua_04
 {
    position 	: absolute;
    left     	: 709px;	/*50*/
-   top      	: 459px; /*156*/
+   top      	: 457px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2164,7 +2207,7 @@ input.Pockets_Obj_04
 {
    position 	: absolute;
    left     	: 739px;	/*50*/
-   top      	: 459px; /*156*/
+   top      	: 457px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2174,7 +2217,7 @@ input.Pockets_Qua_10
 {
    position 	: absolute;
    left     	: 918px;	/*50*/
-   top      	: 336px; /*156*/
+   top      	: 334px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2183,7 +2226,7 @@ input.Pockets_Obj_10
 {
    position 	: absolute;
    left     	: 948px;	/*50*/
-   top      	: 336px; /*156*/
+   top      	: 334px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2193,7 +2236,7 @@ input.Pockets_Qua_11
 {
    position 	: absolute;
    left     	: 918px;	/*50*/
-   top      	: 367px; /*156*/
+   top      	: 365px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2202,7 +2245,7 @@ input.Pockets_Obj_11
 {
    position 	: absolute;
    left     	: 948px;	/*50*/
-   top      	: 367px; /*156*/
+   top      	: 365px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2212,7 +2255,7 @@ input.Pockets_Qua_12
 {
    position 	: absolute;
    left     	: 918px;	/*50*/
-   top      	: 398px; /*156*/
+   top      	: 396px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2221,7 +2264,7 @@ input.Pockets_Obj_12
 {
    position 	: absolute;
    left     	: 948px;	/*50*/
-   top      	: 398px; /*156*/
+   top      	: 396px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2231,7 +2274,7 @@ input.Pockets_Qua_13
 {
    position 	: absolute;
    left     	: 918px;	/*50*/
-   top      	: 429px; /*156*/
+   top      	: 427px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2240,7 +2283,7 @@ input.Pockets_Obj_13
 {
    position 	: absolute;
    left     	: 948px;	/*50*/
-   top      	: 429px; /*156*/
+   top      	: 427px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2250,7 +2293,7 @@ input.Pockets_Qua_14
 {
    position 	: absolute;
    left     	: 918px;	/*50*/
-   top      	: 459px; /*156*/
+   top      	: 457px; /*156*/
    width    	: 30px;
 	text-align	: center;
 	font-size	: 15px;
@@ -2259,7 +2302,7 @@ input.Pockets_Obj_14
 {
    position 	: absolute;
    left     	: 948px;	/*50*/
-   top      	: 459px; /*156*/
+   top      	: 457px; /*156*/
    width    	: 168px;
 	text-align	: center;
 	font-size	: 15px;
