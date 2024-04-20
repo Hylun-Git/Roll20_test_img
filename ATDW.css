@@ -181,6 +181,7 @@ div.C2
 	left							: 0px;
 }
 
+/*======================*/
 /*============ROLL TEMPLATE==============*/
 
 .sheet-rolltemplate-ATDW,
@@ -361,6 +362,7 @@ div.C2
   top : -3px;
 }
 
+/*======================*/
 /*    SHIP CSS     */
 
 input.C0I0,
@@ -873,6 +875,26 @@ input.C2I49
 
 /*======================*/
 
+/*    CREATURE CSS      */
+
+.sheet-PC_s input[type=text]
+{
+   background  		: rgba(0,0,0,0);
+   color             : white;
+   border            : 0px;
+}
+
+input.CR_name
+{
+	position	: absolute;
+	left		: 100px;
+	top		: 100px;
+	width		: 275px;
+	font-size: 23px;
+}
+
+/*======================*/
+
 /*    CHARACTER CSS     */
 
 .charsheet button[type=roll]::before 
@@ -886,7 +908,7 @@ input.C2I49
    opacity           : 0.5;
 }
 
-input[type=text]
+.sheet-PC_s input[type=text]
 {
    background-color  : black;
    color             : white;
