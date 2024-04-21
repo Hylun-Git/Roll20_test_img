@@ -21,23 +21,21 @@
 </rolltemplate>
 
 <rolltemplate class="sheet-rolltemplate-ATDW_CR">
-   <div class="sheet-container sheet-color-{{color}}">
+   <div class="sheet-CR_container sheet-color-{{color}}">
      <div class="sheet-CR_header">
        <!-- <img class="sheet-phoenix" src="https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/KSA_Logo_square.png">  -->
-       {{#title}}<div class="sheet-title">{{title}}</div>{{/title}}
-       {{#subtitle}}<div class="sheet-subtitle">{{subtitle}} </div>{{/subtitle}}
+       {{#CR_title}}<div @{CR_header} class="sheet-CR_title">{{CR_title}}</div>{{/CR_title}}
+       {{#CR_subtitle}}<div class="sheet-CR_subtitle">{{CR_subtitle}} </div>{{/CR_subtitle}}
      </div>
      <div class="sheet-CR_roll">
-       {{#CLC_roll}}<div class="CLC_roll_s">{{CLC_roll}}</div>{{/CLC_roll}}
-       {{#RAC_roll}}<div class="RAC_roll_s">{{RAC_roll}}</div>{{/RAC_roll}}
-       {{#Normal_roll}}<div class="Normal_roll">{{Normal_roll}}</div>{{/Normal_roll}}
+       {{#CR_Normal_roll}}<div class="CR_Normal_roll_s">{{CR_Normal_roll}}</div>{{/CR_Normal_roll}}
      </div>
      <div class="sheet-CR_content">
-       {{#allprops() title subtitle Normal_roll CLC_roll RAC_roll desc}}
+       {{#allprops() CR_title CR_subtitle CR_Normal_roll  CR_desc}}
        <div class="sheet-key">{{key}}</div>
        <div class="sheet-value">{{value}}</div>
-       {{/allprops() title subtitle Normal_roll CLC_roll RAC_roll desc}}
-       {{#desc}}<div class="sheet-desc">{{desc}}</div>{{/desc}}
+       {{/allprops() CR_title CR_subtitle CR_Normal_roll  CR_desc}}
+       {{#CR_desc}}<div class="sheet-CR_desc">{{CR_desc}}</div>{{/CR_desc}}
      </div>
    </div>
  </rolltemplate>
@@ -228,25 +226,27 @@
 </div>
 
 <div class="sheet-CR_s">
+   <input type="hidden" name="attr_CR_header" value=""/>
+
 	<input type="text" class="CR_name" name="attr_Cr_name" value=""/>
 
    <input type="text" class="CR_Stats_STR" name="attr_CR_Stats_STR" value="8">
-   <button type="roll" class="CR_Roll_STR" name="roll_attack" value="&{template:ATDW} {{title=Strength Check}} {{Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_STR}}@{CR_AdvSelc}]]}}"></button>
+   <button type="roll" class="CR_Roll_STR" name="roll_attack" value="&{template:ATDW_CR} {{CR_title=Strength Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_STR}}@{CR_AdvSelc}]]}}"></button>
 
    <input type="text" class="CR_Stats_DEX" name="attr_CR_Stats_DEX" value="8">
-   <button type="roll" class="CR_Roll_DEX" name="roll_attack" value="&{template:ATDW} {{title=Dexterity Check}} {{Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_DEX}}@{CR_AdvSelc}]]}}"></button>
+   <button type="roll" class="CR_Roll_DEX" name="roll_attack" value="&{template:ATDW_CR} {{CR_title=Dexterity Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_DEX}}@{CR_AdvSelc}]]}}"></button>
    
    <input type="text" class="CR_Stats_CON" name="attr_CR_Stats_CON" value="8">
-   <button type="roll" class="CR_Roll_CON" name="roll_attack" value="&{template:ATDW} {{title=Constitution Check}} {{Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_CON}}@{CR_AdvSelc}]]}}"></button>
+   <button type="roll" class="CR_Roll_CON" name="roll_attack" value="&{template:ATDW_CR} {{CR_title=Constitution Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_CON}}@{CR_AdvSelc}]]}}"></button>
    
    <input type="text" class="CR_Stats_WIL" name="attr_CR_Stats_WIL" value="8">
-   <button type="roll" class="CR_Roll_WIL" name="roll_attack" value="&{template:ATDW} {{title=Will Check}} {{Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_WIL}}@{CR_AdvSelc}]]}}"></button>
+   <button type="roll" class="CR_Roll_WIL" name="roll_attack" value="&{template:ATDW_CR} {{CR_title=Will Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_WIL}}@{CR_AdvSelc}]]}}"></button>
    
    <input type="text" class="CR_Stats_INT" name="attr_CR_Stats_INT" value="8">
-   <button type="roll" class="CR_Roll_INT" name="roll_attack" value="&{template:ATDW} {{title=Intelligence Check}} {{Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_INT}}@{CR_AdvSelc}]]}}"></button>
+   <button type="roll" class="CR_Roll_INT" name="roll_attack" value="&{template:ATDW_CR} {{CR_title=Intelligence Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_INT}}@{CR_AdvSelc}]]}}"></button>
    
    <input type="text" class="CR_Stats_CHA" name="attr_CR_Stats_CHA" value="8">
-   <button type="roll" class="CR_Roll_CHA" name="roll_attack" value="&{template:ATDW} {{title=Charisma Check}} {{Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_CHA}}@{CR_AdvSelc}]]}}"></button>
+   <button type="roll" class="CR_Roll_CHA" name="roll_attack" value="&{template:ATDW_CR} {{CR_title=Charisma Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_CHA}}@{CR_AdvSelc}]]}}"></button>
 
    <input type="text" class="CR_Wounds" name="attr_CR_Wounds" value="">
    <input type="text" class="CR_Awarness" name="attr_CR_Awarness" value="">
