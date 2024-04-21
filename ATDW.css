@@ -42,7 +42,7 @@ div.sheet-PC_s
 
 div.sheet-CR_s
 {
-   background-image			: url('https://github.com/Hylun-Git/Roll20_test_img/blob/main/Creature_back.png?raw=true');
+   background-image			: url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Creature_back.png');
    background-repeat			: no-repeat;
    background-attachment	: absolute;
 	background-size			: 1360px 1006px;
