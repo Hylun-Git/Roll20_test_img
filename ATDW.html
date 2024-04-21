@@ -24,11 +24,11 @@
    <div class="sheet-CR_container sheet-color-{{color}}">
      <div class="sheet-CR_header">
        <!-- <img class="sheet-phoenix" src="https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/KSA_Logo_square.png">  -->
-       {{#CR_title}}<div @{CR_header} class="sheet-CR_title">{{CR_title}}</div>{{/CR_title}}
+       {{#CR_title}}<div class="sheet-CR_title">{{CR_title}}</div>{{/CR_title}}
        {{#CR_subtitle}}<div class="sheet-CR_subtitle">{{CR_subtitle}} </div>{{/CR_subtitle}}
      </div>
      <div class="sheet-CR_roll">
-       {{#CR_Normal_roll}}<div class="CR_Normal_roll_s">{{CR_Normal_roll}}</div>{{/CR_Normal_roll}}
+       {{#CR_Normal_roll}}<div @{CR_header} class="CR_Normal_roll_s">{{CR_Normal_roll}}</div>{{/CR_Normal_roll}}
      </div>
      <div class="sheet-CR_content">
        {{#allprops() CR_title CR_subtitle CR_Normal_roll  CR_desc}}
@@ -226,7 +226,7 @@
 </div>
 
 <div class="sheet-CR_s">
-   <input type="hidden" name="attr_CR_header" value=""/>
+   <input type="hidden" name="attr_CR_header" value="Header"/>
 
 	<input type="text" class="CR_name" name="attr_Cr_name" value=""/>
 
