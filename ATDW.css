@@ -873,29 +873,395 @@ input.C2I49
    width    : 130px;
 }
 
-/*======================*/
+/*============================================================================================================*/
 
-/*    CREATURE CSS      */
+/*=================================================CREATURE CSS===============================================*/
 
-.sheet-PC_s input[type=text]
+.sheet-CR_s button[type=roll]
 {
-   background  		: rgba(0,0,0,0);
-   color             : white;
-   border            : 0px;
+   height            : 20px;
+   opacity           : 0;
+}
+
+.sheet-CR_s input[type=text]
+{
+   background-color	: rgba(0, 0, 0, 0);
+   border            :0px solid blueviolet;
 }
 
 input.CR_name
 {
-	position	: absolute;
-	left		: 100px;
-	top		: 100px;
-	width		: 275px;
-	font-size: 23px;
+   color       : #FFF570;
+	position	   : absolute;
+	left		   : 95px;
+	top		   : 100px;
+	width		   : 275px;
+	font-size   : 30px;
+   text-align  : center;
 }
 
-/*======================*/
+input.CR_Stats_STR
+{
+   color       : white;
+   position 	: absolute;
+   left     	: 433px;
+   top      	: 125px;
+   width    	: 40px;
+	text-align	: center;
+	font-size	: 23px;
+}
+button.CR_Roll_STR
+{
+	position		: absolute;
+	left			: 390px;
+	top			: 95px;
+   width       : 35px;
+   height      : 20px;
+}
 
-/*    CHARACTER CSS     */
+input.CR_Stats_DEX
+{
+   color       : white;
+   position 	: absolute;
+   left     	: 518px;
+   top      	: 125px;
+   width    	: 40px;
+	text-align	: center;
+	font-size	: 23px;
+}
+button.CR_Roll_DEX
+{
+	position		: absolute;
+	left			: 475px;
+	top			: 95px;
+   width       : 35px;
+   height      : 20px;
+}
+
+input.CR_Stats_CON
+{
+   color       : white;
+   position 	: absolute;
+   left     	: 603px;
+   top      	: 125px;
+   width    	: 40px;
+	text-align	: center;
+	font-size	: 23px;
+}
+button.CR_Roll_CON
+{
+	position		: absolute;
+	left			: 561px;
+	top			: 95px;
+   width       : 35px;
+   height      : 20px;
+}
+
+input.CR_Stats_WIL
+{
+   color       : white;
+   position 	: absolute;
+   left     	: 689px;
+   top      	: 125px;
+   width    	: 40px;
+	text-align	: center;
+	font-size	: 23px;
+}
+button.CR_Roll_WIL
+{
+	position		: absolute;
+	left			: 645px;
+	top			: 95px;
+   width       : 35px;
+   height      : 20px;
+}
+
+input.CR_Stats_INT
+{
+   color       : white;
+   position 	: absolute;
+   left     	: 774px;
+   top      	: 125px;
+   width    	: 40px;
+	text-align	: center;
+	font-size	: 23px;
+}
+button.CR_Roll_INT
+{
+	position		: absolute;
+	left			: 731px;
+	top			: 95px;
+   width       : 35px;
+   height      : 20px;
+}
+
+input.CR_Stats_CHA
+{
+   color       : white;
+   position 	: absolute;
+   left     	: 859px;
+   top      	: 125px;
+   width    	: 40px;
+	text-align	: center;
+	font-size	: 23px;
+}
+button.CR_Roll_CHA
+{
+	position		: absolute;
+	left			: 817px;
+	top			: 95px;
+   width       : 35px;
+   height      : 20px;
+}
+
+input.CR_Wounds
+{
+   color       : #FFF570;
+   position 	: absolute;
+   left     	: 506px;
+   top      	: 188px;
+   width    	: 20px;
+	text-align	: center;
+	font-size	: 23px;
+}
+
+input.CR_Awarness
+{
+   color       : #FFF570;
+   position 	: absolute;
+   left     	: 663px;
+   top      	: 188px;
+   width    	: 20px;
+	text-align	: center;
+	font-size	: 23px;
+}
+
+input.CR_Armor
+{
+   color       : #FFF570;
+   position 	: absolute;
+   left     	: 779px;
+   top      	: 188px;
+   width    	: 20px;
+	text-align	: center;
+	font-size	: 23px;
+}
+
+input.CR_Defense
+{
+   color       : #FFF570;
+   position 	: absolute;
+   left     	: 912px;
+   top      	: 188px;
+   width    	: 20px;
+	text-align	: center;
+	font-size	: 23px;
+}
+
+.radio-CR_Disadvantage {
+   position: absolute;
+   cursor: pointer;
+}
+.radio-CR_Disadvantage:before {
+   content: "";
+   position: absolute;
+   top: 73px;
+   left: 940px;
+   width: 14px; /* Adjust as needed */
+   height: 15px; /* Adjust as needed */
+  /*border: 2px solid #000;  Black border */
+}
+input[type="radio"]:checked + .radio-CR_Disadvantage:before {
+   background-color: #79D4C3; /* Black fill */
+}
+
+.radio-CR_Standard {
+   position: absolute;
+   cursor: pointer;
+}
+.radio-CR_Standard:before {
+   content: "";
+   position: absolute;
+   top: 97px;
+   left: 940px;
+   width: 14px; /* Adjust as needed */
+   height: 15px; /* Adjust as needed */
+  /*border: 2px solid #000;  Black border */
+}
+input[type="radio"]:checked + .radio-CR_Standard:before {
+   background-color: #79D4C3; /* Black fill */
+}
+
+.radio-CR_Advantage {
+   position: absolute;
+   cursor: pointer;
+}
+.radio-CR_Advantage:before {
+   content: "";
+   position: absolute;
+   top: 121px;
+   left: 940px;
+   width: 14px; /* Adjust as needed */
+   height: 15px; /* Adjust as needed */
+  /*border: 2px solid #000;  Black border */
+}
+input[type="radio"]:checked + .radio-CR_Advantage:before {
+   background-color: #79D4C3; /* Black fill */
+}
+
+input.CR_Type
+{
+   color       : #FFFFFF;
+   position 	: absolute;
+   left     	: 95px;
+   top      	: 185px;
+   width    	: 20px;
+	text-align	: center;
+	font-size	: 23px;
+   width       : 250px;
+}
+
+.CR_Size
+{
+   color       : #FFFFFF;
+   position 	: absolute;
+   left     	: 175px;
+   top      	: 235px;
+   width    	: 20px;
+	font-size	: 23px;
+   width       : 250px;
+}
+
+.CR_Movement_number
+{
+   color       : #FFF570;
+   position 	: absolute;
+   left     	: 227px;
+   top      	: 272px;
+   width    	: 20px;
+	font-size	: 23px;
+   width       : 20px;
+}
+
+.CR_Movement
+{
+   color       : #FFFFFF;
+   position 	: absolute;
+   left     	: 247px;
+   top      	: 272px;
+   width    	: 20px;
+	font-size	: 23px;
+   width       : 250px;
+}
+
+.CR_AttSkill
+{
+   color       : #FFF570;
+   position 	: absolute;
+   left     	: 265px;
+   top      	: 309px;
+   width    	: 20px;
+	font-size	: 23px;
+   width       : 250px;
+}
+
+.CR_AttRange
+{
+   color       : #FFFFFF;
+   position 	: absolute;
+   left     	: 278px;
+   top      	: 346px;
+   width    	: 20px;
+	font-size	: 23px;
+   width       : 250px;
+}
+
+.CR_Priority_hidden
+{
+   display           : none;
+}
+
+.CR_Priority
+{
+   background-color  : rgba(0, 0, 0, 0);
+   color             : #FFFFFF;
+   position          : absolute;
+   left              : 103px;
+   top               : 415px;
+   height            : 80px;
+   font-size         : 23px;
+   width             : 850px;
+   border            : 0px;
+}
+
+.CR_Bloodied_number
+{
+   color             : #FFF570;
+   position          : absolute;
+   left              : 303px;
+   top               : 530px;
+   height            : 80px;
+   font-size         : 23px;
+   width             : 40px;
+}
+
+.CR_Bloodied
+{
+   color             : #FFFFFF;
+   position          : absolute;
+   left              : 343px;
+   top               : 530px;
+   height            : 80px;
+   font-size         : 23px;
+   width             : 250px;
+}
+
+.CR_Cornered_number
+{
+   color             : #FFF570;
+   position          : absolute;
+   left              : 303px;
+   top               : 567px;
+   height            : 80px;
+   font-size         : 23px;
+   width             : 40px;
+}
+
+.CR_Cornered
+{
+   color             : #FFFFFF;
+   position          : absolute;
+   left              : 343px;
+   top               : 567px;
+   height            : 80px;
+   font-size         : 23px;
+   width             : 250px;
+}
+
+.CR_Overwhelmed_number
+{
+   color             : #FFF570;
+   position          : absolute;
+   left              : 346px;
+   top               : 604px;
+   height            : 80px;
+   font-size         : 23px;
+   width             : 40px;
+}
+
+.CR_Overwhelmed
+{
+   color             : #FFFFFF;
+   position          : absolute;
+   left              : 386px;
+   top               : 604px;
+   height            : 80px;
+   font-size         : 23px;
+   width             : 250px;
+}
+/*============================================================================================================*/
+
+/*=================================================CHARACTER CSS==============================================*/
 
 .charsheet button[type=roll]::before 
 {
