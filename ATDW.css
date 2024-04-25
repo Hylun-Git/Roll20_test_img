@@ -250,21 +250,67 @@ div.C2
   --header-text-color: #000;
 }
 
-.sheet-rolltemplate-ATDW_CR .sheet-CR_roll 
+.sheet-rolltemplate-ATDW_CR .sheet-CR_roll
 {
    line-height: 4em;
    height	: 50px;
    width: 280px;
 }
 
-.sheet-rolltemplate-ATDW_CR .sheet-CR_Normal_roll_s {
-   background-image : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Monsters/Ethlimyn/Ethlimyn_header.png');
+/*===================================================================*/
+
+/* .sheet-rolltemplate-ATDW_CR .sheet-CR_Normal_roll_s
+{
+   display: none;
+} */
+
+input.CRHEADER[value="0"] ~ .sheet-CR_s input[type=text]
+{
+   background-color	: rgba(0, 0, 0, 0);
+   border            :5px solid pink;
+}
+
+input.CRHEADER[value="0"] ~ .sheet-rolltemplate-ATDW_CR .sheet-CR_Normal_roll_s
+{
+   background-image  : url('https://github.com/Hylun-Git/Roll20_test_img/blob/main/Monsters/Ethlimyn/Ethlimyn_header.png');
+   color             : red ;
    position : float;
    left : 140px;
    line-height: 4em;
    height	: 50px;
-   /*width: 280px;*/
 }
+
+.sheet-rolltemplate-ATDW_CR .sheet-CR_Normal_roll_s
+{
+   background-image  : url('https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/Monsters/Cecaelia/Cecaelia_header.png');
+   color             : purple ;
+   position : float;
+   left : 140px;
+   line-height: 4em;
+   height	: 50px;
+}
+
+input.CRHEADER[value="Cecaelia"] ~ .sheet-CR_Normal_roll_s 
+{
+   background-image  : url('https://github.com/Hylun-Git/Roll20_test_img/blob/main/Monsters/Ethlimyn/Ethlimyn_header.png');
+   color             : pink ;
+   position : float;
+   left : 140px;
+   line-height: 4em;
+   height	: 50px;
+}
+
+input.CRHEADER[value="Ethilyn"] ~ .sheet-CR_Normal_roll_s 
+{
+   background-image  : url('https://github.com/Hylun-Git/Roll20_test_img/blob/main/Monsters/Ethlimyn/Ethlimyn_header.png');
+   color             : white ;
+   position : float;
+   left : 140px;
+   line-height: 4em;
+   height	: 50px;
+}
+
+/*===================================================================*/
 
 .sheet-rolltemplate-ATDW_CR .sheet-CR_content
 {

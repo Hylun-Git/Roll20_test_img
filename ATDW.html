@@ -21,6 +21,7 @@
 </rolltemplate>
 
 <rolltemplate class="sheet-rolltemplate-ATDW_CR">
+   <input type="hidden" class="CRHEADER" name="attr_CRHEADER" value="Cecaelia"/>
    <div class="sheet-CR_container sheet-color-{{color}}">
      <div class="sheet-CR_header">
        <!-- <img class="sheet-phoenix" src="https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/KSA_Logo_square.png">  -->
@@ -28,7 +29,7 @@
        {{#CR_subtitle}}<div class="sheet-CR_subtitle">{{CR_subtitle}} </div>{{/CR_subtitle}}
      </div>
      <div class="sheet-CR_roll">
-       {{#CR_Normal_roll}}<div @{CR_header} class="CR_Normal_roll_s">{{CR_Normal_roll}}</div>{{/CR_Normal_roll}}
+       {{#CR_Normal_roll}}<div class="CR_Normal_roll_s">{{CR_Normal_roll}}</div>{{/CR_Normal_roll}}
      </div>
      <div class="sheet-CR_content">
        {{#allprops() CR_title CR_subtitle CR_Normal_roll  CR_desc}}
@@ -226,27 +227,25 @@
 </div>
 
 <div class="sheet-CR_s">
-   <input type="hidden" name="attr_CR_header" value="Header"/>
-
 	<input type="text" class="CR_name" name="attr_Cr_name" value=""/>
 
    <input type="text" class="CR_Stats_STR" name="attr_CR_Stats_STR" value="8">
-   <button type="roll" class="CR_Roll_STR" name="roll_attack" value="&{template:ATDW_CR} {{CR_title=Strength Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_STR}}@{CR_AdvSelc}]]}}"></button>
+   <button type="roll" class="CR_Roll_STR" name="roll_CR_STR" value="&{template:ATDW_CR} {{CR_title=@{CRHEADER}}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_STR}}@{CR_AdvSelc}]]}}"></button>
 
    <input type="text" class="CR_Stats_DEX" name="attr_CR_Stats_DEX" value="8">
-   <button type="roll" class="CR_Roll_DEX" name="roll_attack" value="&{template:ATDW_CR} {{CR_title=Dexterity Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_DEX}}@{CR_AdvSelc}]]}}"></button>
+   <button type="roll" class="CR_Roll_DEX" name="roll_CR_DEX" value="&{template:ATDW_CR} {{CR_title=Dexterity Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_DEX}}@{CR_AdvSelc}]]}}"></button>
    
    <input type="text" class="CR_Stats_CON" name="attr_CR_Stats_CON" value="8">
-   <button type="roll" class="CR_Roll_CON" name="roll_attack" value="&{template:ATDW_CR} {{CR_title=Constitution Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_CON}}@{CR_AdvSelc}]]}}"></button>
+   <button type="roll" class="CR_Roll_CON" name="roll_CR_CON" value="&{template:ATDW_CR} {{CR_title=Constitution Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_CON}}@{CR_AdvSelc}]]}}"></button>
    
    <input type="text" class="CR_Stats_WIL" name="attr_CR_Stats_WIL" value="8">
-   <button type="roll" class="CR_Roll_WIL" name="roll_attack" value="&{template:ATDW_CR} {{CR_title=Will Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_WIL}}@{CR_AdvSelc}]]}}"></button>
+   <button type="roll" class="CR_Roll_WIL" name="roll_CR_WIL" value="&{template:ATDW_CR} {{CR_title=Will Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_WIL}}@{CR_AdvSelc}]]}}"></button>
    
    <input type="text" class="CR_Stats_INT" name="attr_CR_Stats_INT" value="8">
-   <button type="roll" class="CR_Roll_INT" name="roll_attack" value="&{template:ATDW_CR} {{CR_title=Intelligence Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_INT}}@{CR_AdvSelc}]]}}"></button>
+   <button type="roll" class="CR_Roll_INT" name="roll_CR_INT" value="&{template:ATDW_CR} {{CR_title=Intelligence Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_INT}}@{CR_AdvSelc}]]}}"></button>
    
    <input type="text" class="CR_Stats_CHA" name="attr_CR_Stats_CHA" value="8">
-   <button type="roll" class="CR_Roll_CHA" name="roll_attack" value="&{template:ATDW_CR} {{CR_title=Charisma Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_CHA}}@{CR_AdvSelc}]]}}"></button>
+   <button type="roll" class="CR_Roll_CHA" name="roll_CR_CHA" value="&{template:ATDW_CR} {{CR_title=Charisma Check}} {{CR_Normal_roll=[[{@{CR_AdvQuant}d20+@{CR_Stats_CHA}}@{CR_AdvSelc}]]}}"></button>
 
    <input type="text" class="CR_Wounds" name="attr_CR_Wounds" value="">
    <input type="text" class="CR_Awarness" name="attr_CR_Awarness" value="">
@@ -280,8 +279,6 @@
 
    <input type="text" class="CR_Overwhelmed_number" name="attr_CR_Overwhelmed_number" value="">
    <input type="text" class="CR_Overwhelmed" name="attr_CR_Overwhelmed" value="">
-
-   <input type="text" class=""/>
 </div>
 
 <div class="sheet-PC_s">
@@ -577,7 +574,17 @@
        });
    });
 </script>
-   
+
+<script type="text/worker">
+   on("sheet:opened change:CR_header", function(){
+      getAttrs("CR_header", function (values){
+         let CR_header = values.CR_header;
+         setAttrs({"CR_read"   : CR_header
+         });
+      });
+   });
+</script>
+
 <script type="text/worker">
    on("sheet:opened change:Emotional_State", function () {
       getAttrs(["Emotional_State", "Skill_ArTech", "Skill_ClComb", "Skill_Percept", "Skill_Manipul", "Skill_MedAid", "Skill_Pilot", "Skill_RaComb", "Skill_Resolve", "Skill_Science", "Skill_Stealth", "Skill_Survival", "Skill_Techno", "Stamina"], function (values) {
