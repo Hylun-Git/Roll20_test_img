@@ -21,7 +21,6 @@
 </rolltemplate>
 
 <rolltemplate class="sheet-rolltemplate-ATDW_CR">
-   <input type="hidden" class="CRHEADER" name="attr_CRHEADER" value="Cecaelia"/>
    <div class="sheet-CR_container sheet-color-{{color}}">
      <div class="sheet-CR_header">
        <!-- <img class="sheet-phoenix" src="https://raw.githubusercontent.com/Hylun-Git/Roll20_test_img/main/KSA_Logo_square.png">  -->
@@ -29,7 +28,7 @@
        {{#CR_subtitle}}<div class="sheet-CR_subtitle">{{CR_subtitle}} </div>{{/CR_subtitle}}
      </div>
      <div class="sheet-CR_roll">
-       {{#CR_Normal_roll}}<div class="CR_Normal_roll_s">{{CR_Normal_roll}}</div>{{/CR_Normal_roll}}
+       {{#CR_Normal_roll}}<div class="sheet-CR_Normal_roll_s">{{CR_Normal_roll}}</div>{{/CR_Normal_roll}}
      </div>
      <div class="sheet-CR_content">
        {{#allprops() CR_title CR_subtitle CR_Normal_roll  CR_desc}}
@@ -42,6 +41,7 @@
  </rolltemplate>
 
 <input type="hidden" class="sheet-toggle" name="attr_sheet"  value="PC_s"/>
+<input type="hidden" class="sheet-CRHEADER" name="attr_CRHEADER" value="Cecaelia"/>
 
 <div class="Sheet_btn">
    <button class="PC_s_btn" type="action" name="act_PC_s"></button>
@@ -263,14 +263,23 @@
 
    <input type="text" class="CR_Type" name="attr_CR_Type" value="">
 
-   <input type="text" class="CR_Size" name="attr_CR_Size" value="">
+   <!-- <input type="text" class="CR_Size" name="attr_CR_Size" value=""> -->
+
+   <datalist id="Size">
+      <option>Rodent to housecat</option>
+      <option>Large dog to wildcat</option>
+      <option>Humanoid in size</option>
+      <option>Larger than human-like a large gorilla</option>
+      <option>Cow to alligator</option>
+   </datalist>
+
+   <input type="text" class="CR_Size" name="attr_CR_Size" list="Size">
    <input type="text" class="CR_Movement_number" name="attr_CR_Movement_number" value="">
    <input type="text" class="CR_Movement" name="attr_CR_Movement" value="">
    <input type="text" class="CR_AttSkill" name="attr_CR_AttSkill" value="">
    <input type="text" class="CR_AttRange" name="attr_CR_AttRange" value="">
    <span class="CR_Priority" name="attr_CR_Priority"></span>
    <textarea class="CR_Priority_hidden" name="attr_CR_Priority"></textarea>
-
    <input type="text" class="CR_Bloodied_number" name="attr_CR_Bloodied_number" value="">
    <input type="text" class="CR_Bloodied" name="attr_CR_Bloodied" value="">
 
@@ -279,6 +288,8 @@
 
    <input type="text" class="CR_Overwhelmed_number" name="attr_CR_Overwhelmed_number" value="">
    <input type="text" class="CR_Overwhelmed" name="attr_CR_Overwhelmed" value="">
+
+   <textarea class="CR_creation_roll_results" name="attr_CR_creation_roll_results"></textarea>
 </div>
 
 <div class="sheet-PC_s">

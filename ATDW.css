@@ -264,13 +264,13 @@ div.C2
    display: none;
 } */
 
-input.CRHEADER[value="0"] ~ .sheet-CR_s input[type=text]
+.sheet-CRHEADER[value="0"] ~ .sheet-CR_s input[type=text]
 {
    background-color	: rgba(0, 0, 0, 0);
    border            :5px solid pink;
 }
 
-input.CRHEADER[value="0"] ~ .sheet-rolltemplate-ATDW_CR .sheet-CR_Normal_roll_s
+.sheet-CRHEADER[value="0"] ~ .sheet-rolltemplate-ATDW_CR .sheet-CR_Normal_roll_s
 {
    background-image  : url('https://github.com/Hylun-Git/Roll20_test_img/blob/main/Monsters/Ethlimyn/Ethlimyn_header.png');
    color             : red ;
@@ -290,7 +290,7 @@ input.CRHEADER[value="0"] ~ .sheet-rolltemplate-ATDW_CR .sheet-CR_Normal_roll_s
    height	: 50px;
 }
 
-input.CRHEADER[value="Cecaelia"] ~ .sheet-CR_Normal_roll_s 
+.sheet-CRHEADER[value="Cecaelia"] ~ .sheet-CR_Normal_roll_s 
 {
    background-image  : url('https://github.com/Hylun-Git/Roll20_test_img/blob/main/Monsters/Ethlimyn/Ethlimyn_header.png');
    color             : pink ;
@@ -300,7 +300,7 @@ input.CRHEADER[value="Cecaelia"] ~ .sheet-CR_Normal_roll_s
    height	: 50px;
 }
 
-input.CRHEADER[value="Ethilyn"] ~ .sheet-CR_Normal_roll_s 
+.sheet-CRHEADER[value="Ethilyn"] ~ .sheet-CR_Normal_roll_s 
 {
    background-image  : url('https://github.com/Hylun-Git/Roll20_test_img/blob/main/Monsters/Ethlimyn/Ethlimyn_header.png');
    color             : white ;
@@ -1444,6 +1444,18 @@ input.CR_Type
    height            : 80px;
    font-size         : 23px;
    width             : 250px;
+}
+
+.CR_creation_roll_results
+{
+   color             : #FFF570;
+   background-color  : transparent;
+   position          : absolute;
+   left              : 103px;
+   top               : 678px;
+   height            : 80px;
+   font-size         : 23px;
+   width             : 40px;
 }
 /*============================================================================================================*/
 
