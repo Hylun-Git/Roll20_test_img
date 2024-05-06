@@ -548,6 +548,141 @@ div.C2
 }
 
 /*===================================================================*/
+/*===========================RULE TEMPLATE===========================*/
+
+.sheet-rolltemplate-ATDW_RULE {
+  margin-left: -37px;
+}
+.withoutavatars .sheet-rolltemplate-ATDW_RULE {
+  margin-left: -7px;
+}
+.sheet-rolltemplate-ATDW_RULE .sheet-container {
+  border: 3px solid black;
+  border-radius: 3px;
+  width: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-header {
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+  text-align: left;
+  text-transform: capitalize;
+  /*padding: 5px;*/
+  border-bottom: 2px solid black;
+  height: 50px;
+  width: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-title {
+   color: #FECB00;
+   font-size: 1.6em;
+   line-height: 2em;
+   font-weight: bold;
+   width	: 280px;
+   height : 50px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-header img.sheet-phoenix {
+  float : right;
+  width: 50px;
+  height: 50px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-subtitle {
+  font-size: 0.9em;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-container {
+  --header-bg-color: #000d10;
+  --header-text-color: #FFF;
+}
+.sheet-rolltemplate-ATDW_RULE .sheet-container.sheet-color-green {
+  --header-bg-color: #008000;
+}
+.sheet-rolltemplate-ATDW_RULE .sheet-container.sheet-color-black {
+  --header-bg-color: #000;
+}
+.sheet-rolltemplate-ATDW_RULE .sheet-container.sheet-color-white {
+  --header-bg-color: #FFF;
+  --header-text-color: #000;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-Section_title {
+   font-size: 0.9em;
+   font-weight: bold;
+   width	: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-Section_desc {
+   font-size: 0.9em;
+   padding-left: 25px;
+   width	: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-roll {
+   line-height: 4em;
+   height	: 50px;
+   width: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-Normal_roll_s {
+   line-height: 4em;
+   height	: 50px;
+   width: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-content,
+.sheet-rolltemplate-ATDW_RULE .sheet-Section  {
+   line-height: 1.2em;
+   background: #0d282f;
+   width: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-content .sheet-key {
+  font-weight: bold;
+  padding-right: 10px;
+  text-align: right;
+  height	: 25px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-content :nth-child(4n+3),
+.sheet-rolltemplate-ATDW_RULE .sheet-content :nth-child(4n),
+.sheet-rolltemplate-ATDW_RULE .sheet-Section :nth-child(4n+3),
+.sheet-rolltemplate-ATDW_RULE .sheet-Section :nth-child(4n) {
+  background: #192326;
+  width: 255px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-desc {
+  grid-column: span 2;
+  padding: 5px;
+  text-align: center;
+  height    : 50px;
+}
+
+/* Roll Buttons */
+.sheet-rolltemplate-ATDW_RULE a[href^='!'],
+.sheet-rolltemplate-ATDW_RULE a[href^='~'],
+.sheet-rolltemplate-ATDW_RULE a[href^='`'] {
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    border: 0px solid black;
+    background-color: rgba(2, 17, 22, 0);
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    position: relative;
+    top: 0;
+    transition: ease 0.2s;
+    padding: 2px 5px;
+}
+
+.sheet-rolltemplate-ATDW_RULE a[href^='!']:hover,
+.sheet-rolltemplate-ATDW_RULE a[href^='~']:hover,
+.sheet-rolltemplate-ATDW_RULE a[href^='`']:hover {
+  top : -5px;
+}
+
+/*===================================================================*/
 /*    SHIP CSS     */
 
 input.C0I0,
