@@ -26,29 +26,40 @@
          {{#title}}<div class="sheet-title">{{title}}</div>{{/title}}
          {{#subtitle}}<div class="sheet-subtitle">{{subtitle}} </div>{{/subtitle}}
       </div>
-      <div class="sheet-Section_dark">
+      <div class="sheet-Section">
          {{#Section_0}}<div class="sheet-Section_title">{{Section_0}}</div>{{/Section_0}}
          {{#Section_0E0}}<div class="sheet-Section_desc">{{Section_0E0}}</div>{{/Section_0E0}}
          {{#Section_0E1}}<div class="sheet-Section_desc">{{Section_0E1}}</div>{{/Section_0E1}}
+         {{#Section_0E}}<div class="sheet-Section_Elem">{{Section_0E}}</div>{{/Section_0E}}
       </div>
-      <div class="sheet-Section_light">
+      <div class="sheet-Section">
          {{#Section_1}}<div class="sheet-Section_title">{{Section_1}}</div>{{/Section_1}}
          {{#Section_1E0}}<div class="sheet-Section_desc">{{Section_1E0}}</div>{{/Section_1E0}}
          {{#Section_1E1}}<div class="sheet-Section_desc">{{Section_1E1}}</div>{{/Section_1E1}}
+         {{#Section_1E}}<div class="sheet-Section_Elem">{{Section_1E}}</div>{{/Section_1E}}
       </div>
-      <div class="sheet-Section_dark">
+      <div class="sheet-Section">
          {{#Section_2}}<div class="sheet-Section_title">{{Section_2}}</div>{{/Section_2}}
          {{#Section_2E0}}<div class="sheet-Section_desc">{{Section_2E0}}</div>{{/Section_2E0}}
          {{#Section_2E1}}<div class="sheet-Section_desc">{{Section_2E1}}</div>{{/Section_2E1}}
          {{#Section_2E2}}<div class="sheet-Section_desc">{{Section_2E2}}</div>{{/Section_2E2}}
          {{#Section_2E3}}<div class="sheet-Section_desc">{{Section_2E3}}</div>{{/Section_2E3}}
          {{#Section_2E4}}<div class="sheet-Section_desc">{{Section_2E4}}</div>{{/Section_2E4}}
+         {{#Section_2E}}<div class="sheet-Section_Elem">{{Section_2E}}</div>{{/Section_2E}}
+      </div>
+      <div class="sheet-Section">
+         {{#Section_3}}<div class="sheet-Section_title">{{Section_3}}</div>{{/Section_3}}
+         {{#Section_3E0}}<div class="sheet-Section_desc">{{Section_3E0}}</div>{{/Section_3E0}}
+         {{#Section_3E1}}<div class="sheet-Section_desc">{{Section_3E1}}</div>{{/Section_3E1}}
+         {{#Section_3E2}}<div class="sheet-Section_desc">{{Section_3E2}}</div>{{/Section_3E2}}
+         {{#Section_3E3}}<div class="sheet-Section_desc">{{Section_3E3}}</div>{{/Section_3E3}}
+         {{#Section_3E}}<div class="sheet-Section_Elem">{{Section_3E}}</div>{{/Section_3E}}
       </div>
       <div class="sheet-content">
-         {{#allprops() title subtitle Section_0 Section_0E0 Section_0E1 Section_1 Section_1E0 Section_1E1 Section_2 Section_2E0 Section_2E1 Normal_roll desc}}
+         {{#allprops() title subtitle Section_0 Section_0E Section_0E0 Section_0E1 Section_1 Section_1E Section_1E0 Section_1E1 Section_2 Section_2E Section_2E0 Section_2E1 Section_2E2 Section_2E3 Section_2E4  Section_3 Section_3E Section_3E0 Section_3E2 Section_3E3 Normal_roll desc}}
          <div class="sheet-key">{{key}}</div>
          <div class="sheet-value">{{value}}</div>
-         {{/allprops() title subtitle Section_0 Section_0E0 Section_0E1 Section_1 Section_1E0 Section_1E1 Section_2 Section_2E0 Section_2E1 Normal_roll desc}}
+         {{/allprops() title subtitle Section_0 Section_0E Section_0E0 Section_0E1 Section_1 Section_1E Section_1E0 Section_1E1 Section_2 Section_2E Section_2E0 Section_2E1 Section_2E2 Section_2E3 Section_2E4 Section_3 Section_3E Section_3E0 Section_3E2 Section_3E3 Normal_roll desc}}
          {{#desc}}<div class="sheet-desc">{{desc}}</div>{{/desc}}
       </div>
    </div>

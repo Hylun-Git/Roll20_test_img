@@ -575,6 +575,7 @@ div.C2
 
 .sheet-rolltemplate-ATDW_RULE .sheet-title {
    color: #FECB00;
+   text-align: center;
    font-size: 1.6em;
    line-height: 2em;
    font-weight: bold;
@@ -608,16 +609,24 @@ div.C2
 }
 
 .sheet-rolltemplate-ATDW_RULE .sheet-Section_title {
-   color: #f05c91;
+   color: #FECB00;
    font-size: 0.9em;
    font-weight: bold;
    width	: 280px;
 }
 
 .sheet-rolltemplate-ATDW_RULE .sheet-Section_desc {
-   color: #58b2b8;
+   color: #b9b9b9;
    font-size: 0.9em;
    padding-left: 25px;
+   width	: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-Section_Elem {
+   color: #b9b9b9;
+   font-size: 1em;
+   padding-top: 5px;
+   padding-bottom: 5px;
    width	: 280px;
 }
 
@@ -634,18 +643,10 @@ div.C2
 }
 
 .sheet-rolltemplate-ATDW_RULE .sheet-content,
-.sheet-rolltemplate-ATDW_RULE .sheet-Section_dark
+.sheet-rolltemplate-ATDW_RULE .sheet-Section
 {
    line-height: 1.2em;
-   background: #192326;
-   width: 280px;
-}
-
-
-.sheet-rolltemplate-ATDW_RULE .sheet-Section_light 
-{
-   line-height: 1.2em;
-   background: #0d282f;
+   background: #2e2e2e;
    width: 280px;
 }
 
@@ -676,7 +677,7 @@ div.C2
 .sheet-rolltemplate-ATDW_RULE a[href^='~'],
 .sheet-rolltemplate-ATDW_RULE a[href^='`'] {
     border-radius: 5px;
-    color: #58b2b8;
+    color: #b9b9b9;
     display: inline-block;
     border: 0px solid black;
     background-color: rgba(2, 17, 22, 0);
