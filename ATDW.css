@@ -611,7 +611,7 @@ div.C2
 .sheet-rolltemplate-ATDW_RULE .sheet-Section_title {
    color: #FECB00;
    font-size: 0.9em;
-   font-weight: bold;
+   /* font-weight: bold; */
    width	: 280px;
 }
 
@@ -619,6 +619,41 @@ div.C2
    color: #b9b9b9;
    font-size: 0.9em;
    padding-left: 25px;
+   width	: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-Section_desc_albtn {
+   color: #FECB00;
+   font-size: 0.9em;
+   padding-left: 30px;
+   width	: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-Section__desc {
+   color: #b9b9b9;
+   font-size: 0.9em;
+   padding-left: 50px;
+   width	: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-Section__desc_albtn {
+   color: #FECB00;
+   font-size: 0.9em;
+   padding-left: 55px;
+   width	: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-Section___desc {
+   color: #b9b9b9;
+   font-size: 0.9em;
+   padding-left: 75px;
+   width	: 280px;
+}
+
+.sheet-rolltemplate-ATDW_RULE .sheet-Section____desc {
+   color: #b9b9b9;
+   font-size: 0.9em;
+   padding-left: 100px;
    width	: 280px;
 }
 
@@ -657,14 +692,6 @@ div.C2
   height	: 25px;
 }
 
-/* .sheet-rolltemplate-ATDW_RULE .sheet-content :nth-child(4n+3),
-.sheet-rolltemplate-ATDW_RULE .sheet-content :nth-child(4n),
-.sheet-rolltemplate-ATDW_RULE .sheet-Section :nth-child(4n+3),
-.sheet-rolltemplate-ATDW_RULE .sheet-Section :nth-child(4n) {
-  background: #192326;
-  width: 255px;
-} */
-
 .sheet-rolltemplate-ATDW_RULE .sheet-desc {
   grid-column: span 2;
   padding: 5px;
@@ -681,7 +708,6 @@ div.C2
     display: inline-block;
     border: 0px solid black;
     background-color: rgba(2, 17, 22, 0);
-    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
     position: relative;
     top: 0;
     transition: ease 0.2s;
